@@ -461,8 +461,9 @@ left: 0;
 </script>
 
 <script>
-	const mydivs = document.querySelectorAll("#tab2, #tab3");
-mydivs.forEach((element) => {
+	const mytabs = document.querySelectorAll("#tab2, #tab3");
+	console.log(mytabs);
+mytabs.forEach((element) => {
   element.style.transform="translateX(-55vw)";
 });
 </script>
@@ -603,7 +604,7 @@ mydivs.forEach((element) => {
 <div class="recording" style="top: 50%; left: 90%; right: 0%">ELECTIONS</div>
 	</div></div>
 <div id="tab3" style="cursor:pointer">
-	<div class="AS-menu" onClick="slidetab4()">
+	<div class="AS-menu" onClick="mytabs()">
 		<div class="AS-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
 			  <div class="top-logo" style="margin-top:0vw" id="animal_services_top"><img src="Logos/Animal_services.jpeg" alt="black and white image of three triangular trees" width="250px"/></div></div>
