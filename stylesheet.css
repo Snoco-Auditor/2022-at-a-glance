@@ -172,6 +172,8 @@ h4 {
 	padding: 0% 5% 0% 5%;
     -webkit-box-pack: start;
     -webkit-justify-content: normal;
+	justify-content:normal;
+	align-items: start;
     -webkit-box-align: start;
     -webkit-align-items: start
 }
@@ -529,6 +531,7 @@ h4 {
 	text-transform: none;
 	opacity: 0;
 	-webkit-backface-visibility: hidden;
+	backface-visibility:hidden;
 	-webkit-transition: opacity .35s;
 	transition: opacity .35s;
 	line-height: 18px;
@@ -1393,8 +1396,10 @@ margin: 2px;
 	width: 56vw;
     -webkit-box-pack: start;
     -webkit-justify-content: normal;
+	justify-content:normal;
     -webkit-box-align: start;
     -webkit-align-items: start;
+	align-items:start;
 }
 
 .AS_img {
@@ -1447,8 +1452,10 @@ margin: 2px;
 	width: 65vw;
     -webkit-box-pack: start;
     -webkit-justify-content: normal;
+	justify-content:normal;
     -webkit-box-align: start;
     -webkit-align-items: start;
+	align-items: start;
 }
 
 .E_img {
