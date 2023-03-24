@@ -454,11 +454,19 @@ left: 0;
 </style>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
 <script type="text/javascript">
-function MM_DW_effectSlide(obj,method,effect,direction,distance,speed)
-{
-    obj[method](effect, { direction: direction, distance: distance}, speed);
-}
-</script>
+	(function () {
+		var tab3 = document.getElementById('tab3');
+		move.onclick = function() {
+	
+			if (tab3.style.width === "70vw") {
+				tab3.style.width= "-55vw";
+	
+			} else {
+				tab3.style.width = "-55vw";
+			}
+		};
+	})();
+	</script>
 </head>
 <body>
 <div class="bgimg-1 w3-display-container">
@@ -594,7 +602,7 @@ function MM_DW_effectSlide(obj,method,effect,direction,distance,speed)
     </div>
 <div class="recording" style="top: 50%; left: 90%; right: 0%">ELECTIONS</div>
 	</div></div>
-<div id="tab3" onclick="myFunction();MM_DW_effectSlide($('#tab4'),'show','slide','left',50,1000)">
+<div id="tab3">
 	<div class="AS-menu">
 		<div class="AS-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
