@@ -462,9 +462,10 @@ left: 0;
 
 <script>
 	function slidetab3() {
-	const mytabs = document.querySelectorAll('#tab3, #tab4');
-	console.log(mytabs);
-	mytabs.transform((element) => "translateX(-55vw)")
+	document.getElementById("tab3").style.transform="translateX(-55vw)";
+	document.getElementById("tab3").style.transition=" all .5s";
+	document.getElementById("tab4").style.transform="translateX(-55vw)";
+	document.getElementById("tab4").style.transition=" all .5s";
 	}
 </script>
 
