@@ -450,22 +450,18 @@ top: 0;
 right: 0vw;
 left: 0;
 }
-	
+
+#slide ~ div {
+	transform: translateX(-55vw);
+}
+
 </style>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
-<script type="text/javascript">
-	(function () {
-		var move = object.getElementById('tab3');
-		move.onclick = function() {
-	
-			if (tab3.style.width === "70vw") {
-				tab3.style.translateX = "-55vw";
-	
-			} else {
-				tab3.style.translateX = "-55vw";
-			}
-		};
-	})();
+<script>
+	function openNav() {
+		document.getElementById ("tab3").style.width="70vw";
+		document.getElementById ("slide")
+	}
 	</script>
 </head>
 <body>
@@ -602,7 +598,7 @@ left: 0;
     </div>
 <div class="recording" style="top: 50%; left: 90%; right: 0%">ELECTIONS</div>
 	</div></div>
-<div id="tab3">
+<div id="tab3" onclick="OpenNav()" style="cursor:pointer">
 	<div class="AS-menu">
 		<div class="AS-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
