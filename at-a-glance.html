@@ -459,6 +459,18 @@ left: 0;
 	document.getElementById("tab4").style.transition=" all .5s" 
 	}
 </script>
+<script>
+	function slidetab3() {
+	document.querySelectorAll("#tab4, #tab3,").style.transform="translateX(-55vw)";
+	document.querySelectorAll("#tab4, #tab3,").style.transition=" all .5s" 
+	}
+</script>
+<script>
+	function slidetab2() {
+	document.getElementById("tab4").style.transform="translateX(-55vw)";
+	document.getElementById("tab4").style.transition=" all .5s" 
+	}
+</script>
 
 </head>
 <body>
@@ -547,7 +559,7 @@ left: 0;
 	<div class="recording" style="top:45%; left: 72%; right: 0%;color:white">LICENSING</div>
 	</div></div>
 <div id="tab2">
-	<div class ="E-menu">
+	<div class ="E-menu" onClick="slidetab3()">
 			<div class="E-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
 			  <div class="top-logo" style="margin-left: 2vw"><img src="Logos/Elections.jpg" alt="black and white image of three triangular trees" width="250px"/></div></div>
@@ -774,11 +786,11 @@ left: 0;
 			<img src="Photos/2023/construction.jpeg" alt="chart" width ="100%"/>
 			<p>We are adding approximately 25,000 square feet of secure ballot counting space on the county campus.  This large-scale remodeling project will provide increased security and safety of ballots, observers, and elections staff; will improve the observation of ballot counting activities through live-streaming and in-person observation corridors; and will increase the daily ballot counting capacity in preparation for anticipated high returns in the 2024 Presidential election year.</p>
 		 </div></div>
-	 <div class="column-4 column-sm-6 column-md-6 column-xs-12 box-tab" style="width:45%;float:right;">
+	 <div class="column-4 column-sm-6 column-md-6 column-xs-12 box-tab" style="width:55%;float:right;">
 	  <div style="margin: 5%">
 		<h4 style="margin-bottom:2vh;">Expanding outreach and education</h4>
 		<img src="Photos/2023/community.JPEG" alt="chart" width="100%" style="float:right;"/>
-		<p>Through social media tools, traditional media, and trusted partnerships, the Auditor’s Office will share timely, accurate information regarding voting, licensing, animal services and recording services.  The implementation of our language access plan will ensure that underserved populations are better served.</p></div>
+		<p style="display:block">Through social media tools, traditional media, and trusted partnerships, the Auditor’s Office will share timely, accurate information regarding voting, licensing, animal services and recording services.  The implementation of our language access plan will ensure that underserved populations are better served.</p></div>
 	 </div>
 </div></div>
 </div>
