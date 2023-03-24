@@ -211,7 +211,6 @@ h4 {
 	position: relative;
 	display: block;
 	min-height: 20%;
-	opacity: .9
 }
 
 .tab .effect .tab-text {
@@ -615,7 +614,6 @@ h4 {
 	min-height: 480px!important
 }
 
-.effect.effect-seven .tab-text:after,
 .effect.effect-six .tab-text:before {
 	height: 100%;
 	left: 0;
@@ -633,7 +631,7 @@ h4 {
 }
 
 .effect.effect-six:hover img {
-	opacity: .4;
+	opacity: .8;
 	transform: translate3d(-50px, 0, 0) scale(1);
 	-webkit-transform: translate3d(-50px, 0, 0) scale(1)
 }
@@ -658,7 +656,7 @@ h4 {
 }
 
 .effect.effect-six .tab-text:before {
-	background-color: rgba(255, 255, 255, .4);
+	background-color: rgba(128, 168, 255, 0.7);
 	transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -101%, 0);
 	transition: all .6s;
 	-webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -101%, 0);
@@ -670,157 +668,8 @@ h4 {
 	-webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 101%, 0)
 }
 
-.effect.effect-eight,
 .effect.effect-nine {
 	background: linear-gradient(-180deg, #fff 10%, #000 100%)
-}
-
-.effect.effect-eight img {
-	transition: all .3s ease-in-out;
-	transform: translate3d(0, 0, 0) scale(1, 1);
-	-webkit-transition: all .3s ease-in-out;
-	-webkit-transform: translate3d(0, 0, 0) scale(1, 1)
-}
-
-.effect.effect-eight:hover img {
-	opacity: .6;
-	transform: translate3d(-20px, 0, 0) scale(1.1, 1.1);
-	-webkit-transform: translate3d(-20px, 0, 0) scale(1.1, 1.1)
-}
-
-.effect.effect-eight .tab-text h2 {
-	font-family: Oswald;
-	transform: scale3d(.9, .9, 1);
-	transition: all .5s ease-in-out;
-	-webkit-transform: scale3d(.9, .9, 1);
-	-webkit-transition: all .5s ease-in-out
-}
-
-.effect.effect-eight .col8-head {
-	padding-top: 9%
-}
-
-.effect.effect-eight:hover h2 {
-	transform: scale3d(1.1, 1.1, 1);
-	transition: all .5s ease-in-out;
-	-webkit-transform: scale3d(1.1, 1.1, 1);
-	-webkit-transition: all .5s ease-in-out
-}
-
-.effect.effect-eight p {
-	font-size: .9rem;
-	padding: 10px 5px;
-	transform: scale3d(.8, .8, 1);
-	-webkit-transform: scale3d(.8, .8, 1);
-	opacity: 0;
-	transition: all .35s;
-	-transition: all .35s;
-	font-family: Poppins
-}
-
-.effect.effect-eight:hover p {
-	transform: scale3d(1, 1, 1);
-	-webkit-transform: scale3d(1, 1, 1);
-	opacity: 1
-}
-
-.effect.effect-eight .tab-text:after {
-	content: "";
-	position: absolute;
-	left: -230px;
-	top: 0;
-	border-top: 208px solid rgba(7, 0, 2, .3);
-	border-left: 140px solid rgba(240, 74, 126, .6);
-	border-bottom: 188px solid transparent;
-	border-right: 160px solid transparent;
-	transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out
-}
-
-.effect.effect-eight:hover .tab-text:after {
-	transform: rotate3d(0, 0, 1, 52deg) scale3d(1, 1, 1);
-	-webkit-transform: rotate3d(0, 0, 1, 52deg) scale3d(1, 1, 1);
-	opacity: 1;
-	top: 103px;
-	left: -378px;
-	border-top: 325px solid rgba(237, 110, 90, .8);
-	border-left: 422px solid rgba(237, 110, 90, .8);
-	border-bottom: 218px solid transparent;
-	border-right: 160px solid transparent
-}
-
-.effect.effect-eightL img {
-	transition: all .3s ease-in-out;
-	transform: translate3d(0, 0, 0) scale(1, 1);
-	-webkit-transition: all .3s ease-in-out;
-	-webkit-transform: translate3d(0, 0, 0) scale(1, 1)
-}
-
-.effect.effect-eightL:hover img {
-	opacity: .6;
-	transform: translate3d(-20px, 0, 0) scale(1.1, 1.1);
-	-webkit-transform: translate3d(-20px, 0, 0) scale(1.1, 1.1)
-}
-
-.effect.effect-eightL .tab-text h2 {
-	font-family: Oswald;
-	transform: scale3d(.9, .9, 1);
-	transition: all .5s ease-in-out;
-	-webkit-transform: scale3d(.9, .9, 1);
-	-webkit-transition: all .5s ease-in-out
-}
-
-.effect.effect-eightL .col8-head {
-	padding-top: 9%
-}
-
-.effect.effect-eightL:hover h2 {
-	transform: scale3d(1.1, 1.1, 1);
-	transition: all .5s ease-in-out;
-	-webkit-transform: scale3d(1.1, 1.1, 1);
-	-webkit-transition: all .5s ease-in-out
-}
-
-.effect.effect-eightL p {
-	font-size: .9rem;
-	padding: 10px 5px;
-	transform: scale3d(.8, .8, 1);
-	-webkit-transform: scale3d(.8, .8, 1);
-	opacity: 0;
-	transition: all .35s;
-	-transition: all .35s;
-	font-family: Poppins
-}
-
-.effect.effect-eightL:hover p {
-	transform: scale3d(1, 1, 1);
-	-webkit-transform: scale3d(1, 1, 1);
-	opacity: 1
-}
-
-.effect.effect-eightL .tab-text:after {
-	content: "";
-	position: absolute;
-	left: -230px;
-	top: 0;
-	border-top: 208px solid rgba(7, 0, 2, .3);
-	border-left: 140px solid rgba(63,136,197,0.83); 
-	border-bottom: 188px solid transparent;
-	border-right: 160px solid transparent;
-	transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out
-}
-
-.effect.effect-eightL:hover .tab-text:after {
-	transform: rotate3d(0, 0, 1, 52deg) scale3d(1, 1, 1);
-	-webkit-transform: rotate3d(0, 0, 1, 52deg) scale3d(1, 1, 1);
-	opacity: 1;
-	top: 103px;
-	left: -378px;
-	border-top: 325px solid rgba(63,136,197,0.83);
-	border-left: 422px solid rgba(63,136,197,0.83);
-	border-bottom: 218px solid transparent;
-	border-right: 160px solid transparent
 }
 
 .effect.effect-nine img {
@@ -896,104 +745,6 @@ h4 {
 	border-left: 135px solid rgba(0, 0, 0, .5);
 	border-bottom: 135px solid rgba(0, 0, 0, .5);
 	border-right: 135px solid rgba(0, 0, 0, .5)
-}
-
-.effect.effect-ten {
-	background-color: #162633
-}
-
-.effect.effect-ten img {
-	transition: all .35s;
-	transform: translate3d(-20px, 0, 0) scale(1.1, 1.1);
-	-webkit-transition: all .35s;
-	-webkit-transform: translate3d(-20px, 0, 0) scale(1.1, 1.1)
-}
-
-.effect.effect-ten:hover img {
-	opacity: .85;
-	transform: translate3d(0, 0, 0) scale(1, 1);
-	-webkit-transform: translate3d(0, 0, 0) scale(1, 1)
-}
-
-.effect.effect-ten h2 {
-	transform: translate3d(0, 5px, 0);
-	-webkit-transform: translate3d(0, 5px, 0);
-	transition: all .35s;
-	-webkit-transition: all .35s;
-	font-family: Oswald;
-	z-index: 2;
-	position: relative;
-	padding-top: 10%
-}
-
-.effect.effect-ten:hover h2 {
-	transform: translate3d(0, 0, 0);
-	-webkit-transform: translate3d(0, 0, 0)
-}
-
-.effect.effect-ten p {
-	font-size: .8rem;
-	line-height: 1.1;
-	padding-top: 5px;
-	transform: translate3d(0, 10px, 0);
-	transition: all .35s;
-	-webkit-transform: translate3d(0, 10px, 0);
-	-webkit-transition: all .35s;
-	font-family: Poppins
-}
-
-.effect.effect-ten:hover p {
-	transform: translate3d(0, 0, 0);
-	-webkit-transform: translate3d(0, 0, 0)
-}
-
-.effect.effect-ten .tab-text {
-	transform-style: preserve-3d;
-	-webkit-transform-style: preserve-3d;
-	perspective: 300px
-}
-
-.effect.effect-ten .tab-text:after {
-	content: "";
-	width: 180%;
-	height: 180%;
-	background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, .45) 50%);
-	position: absolute;
-	top: 0;
-	left: 0;
-	-webkit-transition: all .4s linear;
-	transition: all .4s linear
-}
-
-.effect.effect-ten .tab-text:before {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 60px;
-	height: 60px;
-	background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49%, rgba(132, 132, 132, .45) 50%, rgba(255, 255, 255, .65) 65%);
-	transform: rotate3d(-1, 1, 0, 20deg);
-	transform-origin: 50% 50%;
-	transition: width .2s linear .2s, height .2s linear .2s, bottom .2s linear 0s, right .2s linear 0s;
-	-webkit-transform: rotate3d(-1, 1, 0, 20deg);
-	-webkit-transform-origin: 50% 50%;
-	-webkit-transition: width .2s linear .2s, height .2s linear .2s, bottom .2s linear 0s, right .2s linear 0s
-}
-
-.effect.effect-ten:hover .tab-text:after {
-	top: -80%;
-	left: -80%;
-	background: linear-gradient(-45deg, rgba(0, 0, 0, 0) 49%, rgba(0, 0, 0, .45) 60%)
-}
-
-.effect.effect-ten:hover .tab-text:before {
-	width: 100%;
-	height: 100%;
-	bottom: 50%;
-	right: 50%;
-	-webkit-transition: width .2s linear 0s, height .2s linear 0s, bottom .2s linear .2s, right .2s linear .2s;
-	transition: width .2s linear 0s, height .2s linear 0s, bottom .2s linear .2s, right .2s linear .2s
 }
 
 .effect.effect-eleven img {
