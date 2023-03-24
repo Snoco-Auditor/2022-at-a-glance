@@ -461,11 +461,11 @@ left: 0;
 </script>
 
 <script>
-	const mytabs = document.querySelectorAll("#tab2, #tab3");
+	function slidetab3() {
+	const mytabs = document.querySelectorAll('#tab3, #tab4');
 	console.log(mytabs);
-mytabs.forEach((element) => {
-  element.style.transform="translateX(-55vw)";
-});
+	mytabs.transform((element) => "translateX(-55vw)")
+	}
 </script>
 
 </head>
@@ -555,7 +555,7 @@ mytabs.forEach((element) => {
 	<div class="recording" style="top:45%; left: 72%; right: 0%;color:white">LICENSING</div>
 	</div></div>
 <div id="tab2">
-	<div class ="E-menu" onClick="mytabs" style="cursor:pointer;">
+	<div class ="E-menu" onClick="slidetab3()" style="cursor:pointer;">
 			<div class="E-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
 			  <div class="top-logo" style="margin-left: 2vw"><img src="Logos/Elections.jpg" alt="black and white image of three triangular trees" width="250px"/></div></div>
