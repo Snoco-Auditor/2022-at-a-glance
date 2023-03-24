@@ -170,6 +170,8 @@ h4 {
 
 .tab-container {
 	padding: 0% 5% 0% 5%;
+	justify-content:normal;
+	align-items: start;
     -webkit-box-pack: start;
     -webkit-justify-content: normal;
     -webkit-box-align: start;
@@ -589,7 +591,6 @@ h4 {
 	word-break: break-all;
 	width: 50%;
 	text-align: left;
-	display: inline-block
 }
 
 .effect-two .col3-head {
@@ -620,6 +621,7 @@ h4 {
 	color: #fff;
 	text-transform: none;
 	opacity: 0;
+	backface-visibility: hidden;
 	-webkit-backface-visibility: hidden;
 	-webkit-transition: opacity .35s;
 	transition: opacity .35s;
@@ -1967,6 +1969,8 @@ margin: 2px;
     position: absolute;
     margin-top: 7em;
 	width: 56vw;
+	justify-content:normal;
+	align-items:start;
     -webkit-box-pack: start;
     -webkit-justify-content: normal;
     -webkit-box-align: start;
@@ -2021,6 +2025,8 @@ margin: 2px;
     position: absolute;
     margin-top: 7%;
 	width: 65vw;
+	justify-content:normal;
+	align-items:start;
     -webkit-box-pack: start;
     -webkit-justify-content: normal;
     -webkit-box-align: start;
