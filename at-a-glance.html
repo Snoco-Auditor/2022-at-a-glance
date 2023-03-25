@@ -363,8 +363,15 @@ color: #FFFFFF;
 	font-weight: 800;
 	font-size: 50px;
 	}
+
+.tab {
+height: 100vh;
+position: absolute;
+box-shadow: 6px 0px 6px rgba(0, 0, 0, 0.3);
+transition: transform 0.5s ease-in-out;
+  }
 	
-.tab, #tab0, #tab1, #tab2, #tab3, #tab4 {
+#tab0, #tab1, #tab2, #tab3, #tab4 {
   height: 100%;
   position: absolute;
   box-shadow: 6px 0px 6px rgba(0, 0, 0, 0.3);
@@ -518,7 +525,7 @@ left: 0;
 	<div class="recording" style="top:45%; left: 72%; right: 0%; color: white">RECORDING</div>
 	</div></div>
 <div id="tab1">
-<div class="AS-menu">
+<div class="AS-menu tab" onclick="transitionTab('tab2')">
 	  <div class="AS-row" style="margin-left: 23vw;">
 			  <div class="row" style="width: 100vw; height: 100px;">
 			  <div class="top-logo"><img src="Logos/Licensing.jpg" alt="black and white image of three triangular trees" width="250px"/></div></div>
@@ -563,7 +570,7 @@ left: 0;
 	<div class="recording" style="top:45%; left: 72%; right: 0%;color:white">LICENSING</div>
 	</div></div>
 <div id="tab2">
-	<div class ="E-menu" onClick="slidetab3()" style="cursor:pointer;">
+	<div class ="E-menu tab" onClick="slidetab3()" style="cursor:pointer;">
 			<div class="E-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
 			  <div class="top-logo" style="margin-left: 2vw"><img src="Logos/Elections.jpg" alt="black and white image of three triangular trees" width="250px"/></div></div>
