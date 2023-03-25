@@ -455,21 +455,25 @@ left: 0;
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
 
 <script>
-	function transformTab3() {
-  const tab3 = document.querySelector('#tab3');
+	function slidetab3() {
+	  const tab3 = document.getElementById("tab3");
+	  const tab4 = document.getElementById("tab4");
   
-  if (tab3.style.width === '70vw') {
-    tab3.style.transform = 'translateX(-55vw)';
-    tab3.style.width = '15vw';
-  } else if (tab3.style.width === '15vw') {
-    tab3.style.transform = 'translateX(55vw)';
-    tab3.style.width = '70vw';
-  }
-}
-
-const tab3 = document.querySelector('#tab3');
-tab3.addEventListener('click', transformTab3);
-</script>
+	  if (tab3.style.transform === "translateX(-55vw)") {
+		// if the tabs are already translated, move them back
+		tab3.style.transform = "";
+		tab4.style.transform = "";
+	  } else {
+		// otherwise, translate the tabs
+		tab3.style.transform = "translateX(-55vw)";
+		tab4.style.transform = "translateX(-55vw)";
+	  }
+  
+	  // set the transition for both cases
+	  tab3.style.transition = "all .5s";
+	  tab4.style.transition = "all .5s";
+	}
+  </script>
 
 <script>
 	function slidetab3() {
