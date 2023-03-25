@@ -523,7 +523,7 @@ left: 0;
 </head>
 <body>
 <div class="bgimg-1 w3-display-container">
-<div id="tab0">
+<div id="tab0" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])">
 <div class ="AS-menu">
 		  <div class="AS-row" style="margin-left: 32vw;">
 			 <div class="row" style="width: 100vw; height: 100px;">
@@ -562,7 +562,7 @@ left: 0;
 	<div class="recording" style="top:45%; left: 72%; right: 0%; color: white">RECORDING</div>
 	</div></div>
 <div id="tab1">
-<div class="AS-menu tab" onclick="slidetab2()">
+<div class="AS-menu tab" onclick="slideTab('tab1', ['tab2', 'tab3', 'tab4'])">
 	  <div class="AS-row" style="margin-left: 23vw;">
 			  <div class="row" style="width: 100vw; height: 100px;">
 			  <div class="top-logo"><img src="Logos/Licensing.jpg" alt="black and white image of three triangular trees" width="250px"/></div></div>
@@ -607,7 +607,7 @@ left: 0;
 	<div class="recording" style="top:45%; left: 72%; right: 0%;color:white">LICENSING</div>
 	</div></div>
 <div id="tab2">
-	<div class ="E-menu tab" onClick="slidetab3()" style="cursor:pointer;">
+	<div class ="E-menu tab" onclick="slideTab('tab2', ['tab3', 'tab4'])" style="cursor:pointer;">
 			<div class="E-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
 			  <div class="top-logo" style="margin-left: 2vw"><img src="Logos/Elections.jpg" alt="black and white image of three triangular trees" width="250px"/></div></div>
@@ -656,7 +656,7 @@ left: 0;
 <div class="recording" style="top: 50%; left: 90%; right: 0%">ELECTIONS</div>
 	</div></div>
 <div id="tab3" style="cursor:pointer">
-	<div class="AS-menu" onClick="slidetab3()">
+	<div class="AS-menu" onclick="slideTab('tab3', ['tab4'])">
 		<div class="AS-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
 			  <div class="top-logo" style="margin-top:0vw" id="animal_services_top"><img src="Logos/Animal_services.jpeg" alt="black and white image of three triangular trees" width="250px"/></div></div>
