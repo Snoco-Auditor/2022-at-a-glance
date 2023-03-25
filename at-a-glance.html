@@ -455,37 +455,37 @@ left: 0;
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
 
 <script>
-	function slidetab3() {
-	  const tab3 = document.getElementById("tab3");
-	  const tab4 = document.getElementById("tab4");
+	function slideTab(selectedTabId, tabsToTransformIds) {
+	  const selectedTab = document.getElementById(selectedTabId);
+	  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
   
-	  if (tab3.style.transform === "translateX(-55vw)") {
-		// if the tabs are already translated, move them back
-		tab3.style.transform = "";
-		tab4.style.transform = "";
-	  } else {
-		// otherwise, translate the tabs
-		tab3.style.transform = "translateX(-55vw)";
-		tab4.style.transform = "translateX(-55vw)";
-	  }
+	  // Check if any of the tabs are already translated, and move them back if they are
+	  tabsToTransform.forEach(tab => {
+	    if (tab.style.transform === "translateX(-55vw)" || tab.style.transform === "") {
+	      tab.style.transform = "translateX(0)";
+	    }
+	  });
   
-	  // set the transition for both cases
-	  tab3.style.transition = "all .5s";
-	  tab4.style.transition = "all .5s";
+	  // Translate the selected tab and the other tabs together
+	  tabsToTransform.forEach(tab => {
+	    tab.style.transform = "translateX(-55vw)";
+	    tab.style.transition = "all .5s";
+	  });
+	  selectedTab.style.transform = "translateX(0)";
 	}
   </script>
 
 <script>
 	function slidetab3() {
-	  const tab3 = document.getElementById("tab3");
-	  const tab4 = document.getElementById("tab4");
-	  const tab2 = document.getElementById("tab4");
+		const tab4 = document.getElementById("tab4");
+		const tab3 = document.getElementById("tab3");
+		const tab2 = document.getElementById("tab2");
   
-	  if (tab3.style.transform === "translateX(-55vw)") {
+	  if (tab3.style.transform === "translateX(-55vw)" || tab3.style.transform === "") {
 		// if the tabs are already translated, move them back
-		tab3.style.transform = "";
-		tab4.style.transform = "";
-		tab2.style.transform = "";
+		tab3.style.transform = "translateX(0)";
+		tab4.style.transform = "translateX(0)";
+		tab2.style.transform = "translateX(0)";
 	  } else {
 		// otherwise, translate the tabs
 		tab3.style.transform = "translateX(-55vw)";
@@ -700,7 +700,7 @@ left: 0;
 	</div>
 	</div>
 <div id="tab4">
-<div class="AS-menu" onClick="slidetab3()">
+<div class="AS-menu"><button onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])">Tab 0</button>
   <div class="row">
 		<div class="top-logo" style="padding: 1%"><a id ="home"></a><img src="Logos/Auditor.png" width="250px" alt="white logo of three triangular trees"/></div>
     <div class="column">
