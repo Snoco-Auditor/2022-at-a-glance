@@ -477,6 +477,31 @@ left: 0;
 
 <script>
 	function slidetab3() {
+	  const tab3 = document.getElementById("tab3");
+	  const tab4 = document.getElementById("tab4");
+	  const tab2 = document.getElementById("tab4");
+  
+	  if (tab3.style.transform === "translateX(-55vw)") {
+		// if the tabs are already translated, move them back
+		tab3.style.transform = "";
+		tab4.style.transform = "";
+		tab2.style.transform = "";
+	  } else {
+		// otherwise, translate the tabs
+		tab3.style.transform = "translateX(-55vw)";
+		tab4.style.transform = "translateX(-55vw)";
+		tab2.style.transform = "translateX(-55vw)";
+	  }
+  
+	  // set the transition for both cases
+	  tab3.style.transition = "all .5s";
+	  tab4.style.transition = "all .5s";
+	  tab2.style.transition = "all .5s";
+	}
+  </script>
+
+<script>
+	function slidetab3() {
 	document.getElementById("tab3").style.transform="translateX(-55vw)";
 	document.getElementById("tab3").style.transition=" all .5s";
 	document.getElementById("tab4").style.transform="translateX(-55vw)";
