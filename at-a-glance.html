@@ -364,13 +364,6 @@ color: #FFFFFF;
 	font-size: 50px;
 	}
 
-.tab {
-height: 100vh;
-position: absolute;
-box-shadow: 6px 0px 6px rgba(0, 0, 0, 0.3);
-transition: transform 0.5s ease-in-out;
-  }
-	
 #tab0, #tab1, #tab2, #tab3, #tab4 {
   height: 100%;
   position: absolute;
@@ -460,22 +453,27 @@ left: 0;
 
 </style>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
-<script>
-	function transitionTab(tabID) {
-  // hide all tabs
-  const tabs = document.querySelectorAll('.tab');
-  tabs.forEach(tab => {
-    tab.style.transform = 'translateX(-55vw)';
-  });
 
-  // show the selected tab
-  const selectedTab = document.getElementById(tabID);
-  selectedTab.style.transform = 'translateX(0)';
-}
+<script>
+	function slidetab4() {
+	document.getElementById("tab4").style.transform="translateX(-55vw)";
+	document.getElementById("tab4").style.transition=" all .5s";
+	}
 </script>
 
 <script>
 	function slidetab3() {
+	document.getElementById("tab3").style.transform="translateX(-55vw)";
+	document.getElementById("tab3").style.transition=" all .5s";
+	document.getElementById("tab4").style.transform="translateX(-55vw)";
+	document.getElementById("tab4").style.transition=" all .5s";
+	}
+</script>
+
+<script>
+	function slidetab2() {
+	document.getElementById("tab2").style.transform="translateX(-55vw)";
+	document.getElementById("tab2").style.transition=" all .5s";
 	document.getElementById("tab3").style.transform="translateX(-55vw)";
 	document.getElementById("tab3").style.transition=" all .5s";
 	document.getElementById("tab4").style.transform="translateX(-55vw)";
@@ -525,7 +523,7 @@ left: 0;
 	<div class="recording" style="top:45%; left: 72%; right: 0%; color: white">RECORDING</div>
 	</div></div>
 <div id="tab1">
-<div class="AS-menu tab" onclick="transitionTab('tab2')">
+<div class="AS-menu tab" onclick="slidetab2">
 	  <div class="AS-row" style="margin-left: 23vw;">
 			  <div class="row" style="width: 100vw; height: 100px;">
 			  <div class="top-logo"><img src="Logos/Licensing.jpg" alt="black and white image of three triangular trees" width="250px"/></div></div>
