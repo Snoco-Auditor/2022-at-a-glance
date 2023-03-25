@@ -454,16 +454,16 @@ left: 0;
 </style>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
 <script>
-	var first_click = true;
- onclick = function slidetab4() {
-    if (first_click) {
-	document.getElementById("tab4").style.transform="translateX(-55vw)";
-	document.getElementById("tab4").style.transition=" all .5s" 
-        first_click = false;
-    } else {
-    document.getElementById("tab4").style.transform="translateX(55vw)";
-	document.getElementById("tab4").style.transition=" all .5s" 
-    }
+	function transitionTab(tabID) {
+  // hide all tabs
+  const tabs = document.querySelectorAll('.tab');
+  tabs.forEach(tab => {
+    tab.style.transform = 'translateX(-55vw)';
+  });
+
+  // show the selected tab
+  const selectedTab = document.getElementById(tabID);
+  selectedTab.style.transform = 'translateX(0)';
 }
 </script>
 

@@ -1382,18 +1382,6 @@ margin-left: 3vw;
     }
 }
 
-.w3-auto{
-	max-width:1140px
-}
-
-.w3-cell-row{
-	display:table;width:100%
-}
-
-.w3-cell{
-	display:table-cell
-}
-
 .w3-cell-top{vertical-align:top}.w3-cell-middle{vertical-align:middle}.w3-cell-bottom{vertical-align:bottom}
 .w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
 @media (max-width:1205px){.w3-auto{max-width:95%}}
