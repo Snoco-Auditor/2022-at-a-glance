@@ -443,58 +443,6 @@ h4 {
 	}
 }
 
-.effect.effect-one {
-	background: #18a367;
-	position: relative
-}
-
-.effect.effect-one .tab-text {
-	padding: 1em
-}
-
-.effect.effect-one .tab-text::after,
-.effect.effect-one .tab-text::before {
-	position: absolute;
-	content: '';
-	opacity: 0
-}
-
-.effect.effect-one .tab-text::before {
-	top: 50px;
-	right: 30px;
-	bottom: 50px;
-	left: 30px;
-	border-top: 2px solid rgba(255, 255, 255, .3);
-	border-bottom: 2px solid rgba(255, 255, 255, .3);
-	-webkit-transform: scale(0, 1);
-	transform: scale(0, 1);
-	-webkit-transform-origin: 0 0;
-	transform-origin: 0 0
-}
-
-.effect.effect-one .tab-text::after {
-	top: 30px;
-	right: 50px;
-	bottom: 30px;
-	left: 50px;
-	border-right: 1px solid #fff;
-	border-left: 1px solid #fff;
-	-webkit-transform: scale(1, 0);
-	transform: scale(1, 0);
-	-webkit-transform-origin: 100% 0;
-	transform-origin: 100% 0
-}
-
-.effect.effect-one h2 {
-	padding-top: 20%;
-	-webkit-transition: -webkit-transform .35s;
-	transition: transform .35s;
-	font-weight: 600;
-	font-size: 1.7rem;
-	font-family: Oswald, sans-serif
-}
-
-.effect.effect-one p,
 .effect.effect-two h2,
 .effect.effect-two p.description {
 	font-family: Poppins
@@ -553,8 +501,7 @@ h4 {
 }
 
 .effect.effect-two:hover .tab-text,
-.effect.effect-two:hover h2,
-.effect.effect-two:hover p.icon-links a {
+.effect.effect-two:hover {
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
 	padding-right: 10px
@@ -563,51 +510,6 @@ h4 {
 .effect.effect-two:hover h2 {
 	-webkit-transition-delay: 50ms;
 	transition-delay: 50ms
-}
-
-.effect.effect-three img {
-	transform: scale3d(1.1, 1.1, 1) translate3d(15px, 0, 0);
-	transition: all .35s;
-	transform-origin: 85% 100%;
-	-webkit-transform: scale3d(1.1, 1.1, 1) translate3d(15px, 0, 0);
-	-webkit-transition: all .35s;
-	-webkit-transform-origin: 85% 100%
-}
-
-.effect.effect-three:hover img {
-	transform: scale3d(1.1, 1.1, 1) translate3d(0, 0, 0);
-	-webkit-transform: scale3d(1.1, 1.1, 1) translate3d(0, 0, 0);
-	opacity: .6
-}
-
-.effect.effect-four {
-	background: #2e5d5a
-}
-
-.effect-four .tab-text h2 {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	padding: 1em 1.2em;
-	font-family: Oswald
-}
-
-.effect-four .tab-text p {
-	width: 65%;
-	font-size: 68%;
-	line-height: 1;
-	letter-spacing: 1px;
-	text-align: left;
-	float: right;
-	padding-left: 15px;
-	border-left: 1px solid #fff;
-	border-bottom: 1px solid #fff;
-	transform: translate3d(40px, 0, 0);
-	-webkit-transform: translate3d(40px, 0, 0);
-	opacity: 0;
-	transition: all .35s;
-	font-family: "Open sans";
-	padding-bottom: 5px
 }
 
 .col3-block-height {
@@ -637,18 +539,19 @@ h4 {
 }
 
 .effect.effect-six p {
-	text-align: left;
-    max-width: 150px;
-    margin: 9px;
-    padding-left: 1px;
-    font-size: 2rem;
-    line-height: 1.1;
-    position: absolute;
-    bottom: 0;
-    opacity: 0;
-    transition: all .35s;
-    font-family: Poppins;
-    display: block;
+	max-width: 130px;
+	padding: 0 10px;
+	margin: 30px;
+	text-align: right;
+	font-size: .9rem;
+	line-height: 1.1;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-right: 3px solid #fff;
+	opacity: 0;
+	transition: all .35s;
+	font-family: Poppins
 }
 
 .effect.effect-six:hover p {
@@ -686,7 +589,7 @@ h4 {
 }
 
 .effect.effect-nine .tab-text h2 {
-	font-family: Oswald;
+	font-family: Poppins;
 	transform: scale3d(.9, .9, 1);
 	transition: all .5s ease-in-out;
 	-webkit-transform: scale3d(.9, .9, 1);
