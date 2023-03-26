@@ -230,7 +230,7 @@ h4 {
 .tab-text h2 {
 	color: #fff;
 	margin: 0;
-	font-size: 1.5rem
+	font-size: 1.25rem
 }
 
 .tab-text p {
@@ -451,7 +451,7 @@ h4 {
 .effect.effect-two .tab-text {
 	top: auto;
 	bottom: 0;
-	padding: 1em;
+	padding: 0em;
 	height: 3.75em;
 	background: rgba(241, 169, 1, .95);
 	color: #3c4a50;
@@ -572,7 +572,7 @@ h4 {
 }
 
 .effect.effect-nine {
-	background: linear-gradient(-180deg, #fff 10%, #000 100%)
+	background: linear-gradient(-180deg, #fff 10%, #DC4040 100%)
 }
 
 .effect.effect-nine img {
@@ -607,7 +607,7 @@ h4 {
 }
 
 .effect.effect-nine p {
-	font-size: .8rem;
+	font-size: 1.25rem;
 	padding: 10px 5px;
 	transform: scale3d(.8, .8, 1);
 	-webkit-transform: scale3d(.8, .8, 1);
