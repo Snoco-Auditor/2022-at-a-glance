@@ -1097,7 +1097,7 @@ margin: 2px;
 
 .E-left-about{   
     position: absolute;
-    margin-top: 7%;
+    margin-top: 7em;
 	width: 65vw;
     -webkit-box-pack: start;
     -webkit-justify-content: normal;
