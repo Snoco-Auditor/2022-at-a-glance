@@ -547,6 +547,14 @@ left: 0;
 	  });
 	  selectedTab.style.transform = "translateX(0)";
 	}
+
+	// Add a media query for mobile screens
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+
+    // Only run the function on mobile screens
+    if (mediaQuery.matches) {
+		mobileslide (selectedTabId, tabsToTransformIds)
+    }
   </script>
 
 <script>
@@ -556,14 +564,14 @@ left: 0;
   
 	  // Check if any of the tabs are already translated, and move them back if they are
 	  tabsToTransform.forEach(tab => {
-	    if (tab.style.transform === "translateY(-55vw)" || tab.style.transform === "") {
+	    if (tab.style.transform === "translateY(-55vh)" || tab.style.transform === "") {
 	      tab.style.transform = "translateY(0)";
 	    }
 	  });
   
 	  // Translate the selected tab and the other tabs together
 	  tabsToTransform.forEach(tab => {
-	    tab.style.transform = "translateY(-55vw)";
+	    tab.style.transform = "translateY(-55vh)";
 	    tab.style.transition = "all .5s";
 	  });
 	  selectedTab.style.transform = "translateY(0)";
