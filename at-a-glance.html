@@ -36,7 +36,7 @@ html, body {
 
 @media (max-width: 767px) {
   .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-    height:105vh;
+    min-height: 105vh;
   }
 }
 
@@ -111,6 +111,12 @@ html, body {
 @media only screen and (max-device-width: 767px) {
   .custom-row {
 	  visibility:hidden;
+}
+}
+
+@media only screen and (max-device-width: 767px) {
+  .column-4 {
+	  min-width: 100vw;
 }
 }
 
@@ -554,7 +560,7 @@ left: 0;
 
     // Only run the function on mobile screens
     if (mediaQuery.matches) {
-		mobileslide (selectedTabId, tabsToTransformIds)
+		slideTab ()
     }
   </script>
 
@@ -843,7 +849,7 @@ left: 0;
 	<div class="w3-row w3-center w3-dark-grey w3-padding-16">
  </div>
 <div class="w3-content w3-container" style="padding:0;display:block; height:auto;">
-<div class="bgimg-3 w3-display-container" style="height:80vw;"><a id="Elections_more"></a>
+<div class="bgimg-3 w3-display-container"><a id="Elections_more"></a>
 	<h3 style="background-color:#772D8B; float:left; padding-left: 15%;text-align: right; letter-spacing:2px;">Elections</h3>
 	<div class="w3-display-topmiddle" style="width:50%; height: 100%; margin:0 15%;">
 	  <div class="column-4 column-sm-6 column-md-6 column-xs-12 box-tab" style="width: 60%">
