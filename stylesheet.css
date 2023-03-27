@@ -525,37 +525,36 @@ h4 {
 	transition: all .35s;
 	transform: translate3d(0, 0, 0) scale(1.05);
 	-webkit-transition: all .35s;
-	-webkit-transform: translate3d(0, 0, 0) scale(1.05)
+	-webkit-transform: translate3d(0, 0, 0) scale(.9)
 }
 
 .effect.effect-six:hover img {
 	opacity: .8;
-	transform: translate3d(-50px, 0, 0) scale(1);
-	-webkit-transform: translate3d(-50px, 0, 0) scale(1)
+	transform: translate3d(-30px, 0, 0) scale(1);
+	-webkit-transform: translate3d(-30px, 0, 0) scale(1)
 }
 
 .effect.effect-six p {
 	max-width: 130px;
 	padding: 0 10px;
 	margin: 30px;
-	text-align: right;
+	text-align: left;
 	font-size: 1.25rem;
-	line-height: 1.1;
+	line-height: 1.5;
 	position: absolute;
 	bottom: 0;
-	right: 0;
-	border-right: 3px solid #fff;
+	left: 0;
 	opacity: 0;
 	transition: all .35s;
 	font-family: Poppins
 }
 
 .effect.effect-six:hover p {
-	opacity: 1
+	opacity: 1;
 }
 
 .effect.effect-six .tab-text:before {
-	background-color: rgba(128, 168, 255, 0.7);
+	background-color: rgba(53, 136, 204, 0.7);
 	transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -101%, 0);
 	transition: all .6s;
 	-webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, -101%, 0);
@@ -564,7 +563,7 @@ h4 {
 
 .effect.effect-six:hover .tab-text:before {
 	transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 101%, 0);
-	-webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 101%, 0)
+	-webkit-transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0, 0%, 0)
 }
 
 .effect.effect-nine {
