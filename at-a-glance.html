@@ -34,6 +34,33 @@ html, body {
       width: 8px;
     }
 
+@media (max-width: 767px) {
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  p {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  h2 {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 @media only screen and (max-device-width: 1280px) {
   .AS-row {
 	  max-width: 100vw;
@@ -338,10 +365,6 @@ margin-top:75vw;
 	max-height: 50vw;
 	}
 	}
-
-	@media screen and (max-width: 1280px) {
-		.tab:onclick ~ div, #tab0:onclick ~ div, #tab1:onclick ~ div, #tab2:onclick ~ div, #tab3:onclick ~ div, #tab4:onclick ~ div { transform: translateX(55vw); }
-	}
 	
 @media screen and (max-width: 1280px) {
 	.column {
@@ -378,8 +401,6 @@ color: #FFFFFF;
   box-shadow: 6px 0px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease;
 }
-
-.tab:hover ~ div, #tab0:hover ~ div, #tab4:hover ~ div { transform: translateX(-55vw); }
 
 #tab0 {
 width: 100vw;
@@ -711,8 +732,7 @@ left: 0;
         <p style="display:block;margin-left: .5vw; padding: 1em 1em 2em 1em; border-radius: 30px; background: linear-gradient(70deg, #dceae4, #f1f1f1d1);font-size:1.25em;">Welcome to our 2022 Auditor’s Office At A Glance! This report provides highlights from the past year and a brief look ahead at 2023 and beyond.<br><br>Through direct service as well as partnering with other agencies and organizations, the Auditor’s Office delivers essential services to our county residents and customers through four distinct divisions: Animal Services, Elections, Licensing and Recording.<br><br>The Auditor’s Office supports 46 full-time employees spread among each of the divisions.  In 2022 the office collected $10.2 million in revenue and expended $8.9 million in general fund dollars.</p>
 		<button class="button_green" style="margin:1em"><a href="#admin">Read More</a></button>
 	  </div>
-	  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" onclick="slideTab('tab4', ['tab4'])" style="
-	  top: 35vh; display: block; position: relative; cursor:pointer">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" onclick="slideTab('tab4', ['tab4'])" style="top: 35vh; display: block; position: relative; cursor:pointer">
 		<path d="M5.5 17.5l8-8-8-8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 	  </svg>
     </div>
