@@ -539,58 +539,23 @@ left: 0;
 	function slideTab(selectedTabId, tabsToTransformIds) {
 	  const selectedTab = document.getElementById(selectedTabId);
 	  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
+	  
+	  const mq = window.matchMedia("(max-width: 767px)");
   
 	  // Check if any of the tabs are already translated, and move them back if they are
 	  tabsToTransform.forEach(tab => {
-	    if (tab.style.transform === "translateX(-55vw)" || tab.style.transform === "") {
-	      tab.style.transform = "translateX(0)";
-	    }
+		if (tab.style.transform === "translateX(-55vw)" || tab.style.transform === "") {
+		  tab.style.transform = mq.matches ? "translate(0, -55vw)" : "translate(-55vw, 0)";
+		}
 	  });
-  
+	  
 	  // Translate the selected tab and the other tabs together
 	  tabsToTransform.forEach(tab => {
-	    tab.style.transform = "translateX(-55vw)";
-	    tab.style.transition = "all .5s";
+		tab.style.transform = mq.matches ? "translate(-55vw, 0)" : "translate(0, -55vw)";
+		tab.style.transition = "all .5s";
 	  });
 	  selectedTab.style.transform = "translateX(0)";
 	}
-
-	// Add a media query for mobile screens
-    const mediaQuery = window.matchMedia("(min-width: 768px)");
-
-    // Only run the function on mobile screens
-    if (mediaQuery.matches) {
-		slideTab ()
-    }
-  </script>
-
-<script>
-    function mobileslide(selectedTabId, tabsToTransformIds) {
-	  const selectedTab = document.getElementById(selectedTabId);
-	  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
-  
-	  // Check if any of the tabs are already translated, and move them back if they are
-	  tabsToTransform.forEach(tab => {
-	    if (tab.style.transform === "translateY(-55vh)" || tab.style.transform === "") {
-	      tab.style.transform = "translateY(0)";
-	    }
-	  });
-  
-	  // Translate the selected tab and the other tabs together
-	  tabsToTransform.forEach(tab => {
-	    tab.style.transform = "translateY(-55vh)";
-	    tab.style.transition = "all .5s";
-	  });
-	  selectedTab.style.transform = "translateY(0)";
-	}
-
-    // Add a media query for mobile screens
-    const mediaQuery = window.matchMedia("(max-width: 767px)");
-
-    // Only run the function on mobile screens
-    if (mediaQuery.matches) {
-		mobileslide (selectedTabId, tabsToTransformIds)
-    }
   </script>
 
 <script>
@@ -702,7 +667,7 @@ left: 0;
   	  </section>
       </div>
     </div>
-	<div class="recording" style="top:45%; left: 72%; right: 0%;color:white" onclick="mobileslide('tab1', ['tab2', 'tab3', 'tab4'])">LICENSING</div>
+	<div class="recording" style="top:45%; left: 72%; right: 0%;color:white">LICENSING</div>
 	</div></div>
 <div id="tab2">
 	<div class ="E-menu tab" onclick="slideTab('tab2', ['tab3', 'tab4'])" style="cursor:pointer;">
@@ -749,7 +714,7 @@ left: 0;
 	<button class="button_purple" style="margin-left:0vw; margin-top:30vh; position:relative; z-index: 5;"><a href="#Elections_more">Read More</a></button>
   	</div>
     </div>
-<div class="recording" style="top: 50%; left: 90%; right: 0%" onclick="mobileslide('tab2', ['tab3', 'tab4'])">ELECTIONS</div>
+<div class="recording" style="top: 50%; left: 90%; right: 0%">ELECTIONS</div>
 	</div></div>
 <div id="tab3">
 	<div class="AS-menu" onclick="slideTab('tab3', ['tab4'])">
@@ -785,7 +750,7 @@ left: 0;
 				</section>
 				<button class="button_red" style="margin-top:35vh; z-index: 5;"><a href="#animal_services_more">Read More</a></button>
     	</div>
-	<div class="recording" style="color:white" onclick="mobileslide('tab3', ['tab4'])">ANIMAL SERVICES</div>
+	<div class="recording" style="color:white">ANIMAL SERVICES</div>
 	</div>
 	</div>
 	</div>
