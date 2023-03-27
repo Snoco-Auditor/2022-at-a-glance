@@ -1042,6 +1042,8 @@ margin: 2px;
 .AS-left-about{   
     position: absolute;
     margin-top: 7em;
+	margin-left: 5vw;
+	padding-right:10vw;
 	width: 56vw;
     -webkit-box-pack: start;
     -webkit-justify-content: normal;
@@ -1098,7 +1100,9 @@ margin: 2px;
 .E-left-about{   
     position: absolute;
     margin-top: 7em;
+	padding-right:10vw;
 	width: 65vw;
+	margin-left: 5vw;
     -webkit-box-pack: start;
     -webkit-justify-content: normal;
 	justify-content:normal;
