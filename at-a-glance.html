@@ -132,6 +132,26 @@ font-size-adjust:calc(20%);
   .E-row {
     -webkit-flex-direction: column;
     flex-direction: column;
+	min-width:100vw;
+	max-height: 60vh;
+}
+}
+
+@media only screen and (max-device-width: 767px) {
+  .E-menu .recording {
+	rotate: 90deg;
+    margin-top: 37vh;
+    margin-left: -67vw;
+    width: 100vw;
+}
+}
+
+@media only screen and (max-device-width: 767px) {
+  #tab1 .AS-menu .recording {
+	rotate: 90deg;
+    margin-top: -67vh;
+    margin-left: -67vw;
+    width: 100vw;
 }
 }
 
@@ -312,8 +332,9 @@ text-shadow: 2px 2px 400px #1b1a1936;
 	@media screen and (max-width: 767px){
 	.AS-menu .recording {
 	rotate:90deg;
-	margin-top:30%;
-	margin-left:-40vw;
+	margin-top:35vw;
+	margin-left:-67vw;
+	width: 100vw;
 		}
 	}
 
@@ -535,14 +556,14 @@ left: 0;
   
 	  // Check if any of the tabs are already translated, and move them back if they are
 	  tabsToTransform.forEach(tab => {
-	    if (tab.style.transform === "translateY(50vw)" || tab.style.transform === "") {
+	    if (tab.style.transform === "translateY(-55vw)" || tab.style.transform === "") {
 	      tab.style.transform = "translateY(0)";
 	    }
 	  });
   
 	  // Translate the selected tab and the other tabs together
 	  tabsToTransform.forEach(tab => {
-	    tab.style.transform = "translateY(50vw)";
+	    tab.style.transform = "translateY(-55vw)";
 	    tab.style.transition = "all .5s";
 	  });
 	  selectedTab.style.transform = "translateY(0)";
@@ -553,8 +574,33 @@ left: 0;
 
     // Only run the function on mobile screens
     if (mediaQuery.matches) {
-      mobileslide();
+		mobileslide (selectedTabId, tabsToTransformIds)
     }
+  </script>
+
+<script>
+    // Create an array of image URLs to preload
+    const imageUrls = [
+      "https://snoco-auditor.github.io/2022_Auditor_Report/Photos/Home/Home3.jpg",
+      "https://snoco-auditor.github.io/2022_Auditor_Report/graphics/Animals/Animal%20Control%20Officers-01.png",
+      "https://snoco-auditor.github.io/2022_Auditor_Report/graphics/Animals/Animal%20Services%20Cases_alt-03.png",
+	  "https://snoco-auditor.github.io/2022_Auditor_Report/graphics/Animals/Animal%20Services%20Cases-04.png"
+    ];
+
+    // Create an empty array to hold the image objects
+    const images = [];
+
+    // Preload the images
+    function preloadImages() {
+      for (let i = 0; i < imageUrls.length; i++) {
+        const image = new Image();
+        image.src = imageUrls[i];
+        images.push(image);
+      }
+    }
+
+    // Call the preloadImages function when the page loads
+    window.onload = preloadImages;
   </script>
 
 </head>
