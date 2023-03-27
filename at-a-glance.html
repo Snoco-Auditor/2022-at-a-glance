@@ -34,7 +34,19 @@ html, body {
       width: 8px;
     }
 
-@media (max-width: 767px) {
+@media (max-width: 1280px) {
+  .bgimg-4 {
+    height:105vh;
+  }
+}
+
+@media (max-width: 1280px) {
+  .bgimg-4 {
+    height:105vh;
+  }
+}
+
+@media (max-width: 1280px) {
   img {
     display: block;
     margin: 0 auto;
@@ -43,7 +55,7 @@ html, body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1280px) {
   p {
     display: block;
     margin: 0 auto;
@@ -52,7 +64,7 @@ html, body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1280px) {
   h2 {
     display: block;
     margin: 0 auto;
@@ -63,7 +75,27 @@ html, body {
 
 @media only screen and (max-device-width: 1280px) {
   .AS-row {
-	  max-width: 100vw;
+	  min-width: 100vw;
+	  top: 5vw;
+	  z-index:5;
+	  position:relative;
+	  min-height:20vw;
+}
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .AS-left-about {
+	  min-width: 100vw;
+	  top: 5vw;
+	  z-index:5;
+	  position:relative;
+	  min-height:20vw;
+}
+}
+
+@media only screen and (max-device-width: 1280px) {
+  .AS-menu {
+	  min-width: 100vw;
 }
 }
 
@@ -182,17 +214,6 @@ html, body {
 		font-family: 'DM Sans', sans-serif;
 	}
 	
-	.title-animation {
-	animation-duration: 30s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: gradient;
-	}
-	
 	.column-img {
 		float: right;
 		width: 20%;
@@ -217,41 +238,7 @@ html, body {
 		min-width: 130px;
 		padding: 10px 10px 10px 0px;
 	}
-	
-.menu {
-  font-weight: 100;
-  width: 150px;
-  height: 50%;
-  padding-left: 10px;
-  position: relative;
-  z-index: 100;
-  left: 85%;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  color: #FFFFFF;
-}
-	
-	
-.menu:hover {
-	cursor:pointer;
-	}
-	
-.menu .recording {
-  top: 80%;
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  transform: rotate(270deg);
-  left: -5px;
-  font-weight: 800;
-  font-size: 50px;
-}
 
-.menu .recording:hover {
-  cursor:pointer;
-}
-	
 .AS-menu and (min-width: 1281px){
 font-weight: 100;
 display: contents;
@@ -281,17 +268,17 @@ color: #FFFFFF;
 	font-size: 50px;
 }
 
-	.AS-menu .recording:hover {
-	cursor:pointer;
-	color: #d4d4d4db;
-	text-shadow: 2px 2px 400px #1b1a1936;
-	}
+.AS-menu .recording:hover {
+cursor:pointer;
+color: #d4d4d4db;
+text-shadow: 2px 2px 400px #1b1a1936;
+}
 
-	.E-menu .recording:hover {
-	cursor:pointer;
-	color: #f0f0f0db;
-	text-shadow: 2px 2px 400px #1b1a1936;
-	}
+.E-menu .recording:hover {
+cursor:pointer;
+color: #f0f0f0db;
+text-shadow: 2px 2px 400px #1b1a1936;
+}
 
 	@media screen and (max-width: 1280px){
 	.recording {
@@ -309,7 +296,8 @@ color: #FFFFFF;
 @media screen and (max-width: 1280px) {
 	#tab0 {
 min-width: 100vw;
-margin-top:75vw;
+top:85vw;
+max-height:15vw;
 	}
 	}
 
@@ -327,6 +315,8 @@ margin-top:75vw;
 @media screen and (max-width: 1280px) {
 	#tab1 {
  min-width: 100vw;
+ max-height: 15vw;
+ top: 70vw;
 	}
 	}
 
@@ -340,6 +330,8 @@ margin-top:75vw;
 @media screen and (max-width: 1280px) {
 	#tab2 {
  min-width: 100vw;
+ max-height: 15vw;
+ top: 55vw;
 	}
 	}
 
@@ -353,8 +345,8 @@ margin-top:75vw;
 @media screen and (max-width: 1280px) {
 	#tab3 {
  	min-width: 100vw;
-	max-height: 10%; 
-	top: 50vw;
+	max-height: 50vw; 
+	top: 15vw;
 	}
 	}
 	
@@ -362,13 +354,13 @@ margin-top:75vw;
 	#tab4 {
 	min-width: 100vw;	
 	margin-top: 0vw;
-	max-height: 50vw;
+	max-height: 40vw;
 	}
 	}
 	
 @media screen and (max-width: 1280px) {
 	.column {
- 	width:50vw;
+ 	width:75vw;
 	}
 	}
 	
