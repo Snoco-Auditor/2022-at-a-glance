@@ -35,6 +35,14 @@ html, body {
     }
 
 @media (max-width: 767px) {
+  .column-xs-6 img {
+    position:relative;
+	left: 0vw;
+	max-width: 30vw;
+  }
+}
+
+@media (max-width: 767px) {
   .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
     min-height: 105vh;
   }
@@ -51,6 +59,12 @@ html, body {
 
 @media (max-width: 767px) {
   h1 {
+	top: -5vh;
+  }
+}
+
+@media (max-width: 767px) {
+  h3 {
 	top: -5vh;
   }
 }
@@ -241,32 +255,6 @@ html, body {
 		width: 50vw;
 		padding: 10px 10px;
 		z-index: 1;
-	}
-	
-	h1 {
-    font-size: 90px;
-    padding-top: 0em;
-    display: flex;
-    margin: 3vw 0em 0em 1vw;
-    line-height: 1.1;
-    color: white;
-	position:relative;
-	}
-	
-	h3 {
-	font-size: 300%;
-	color:white;
-	padding: 2%;
-	}
-	
-	p {
-		font-size: 1.15em;
-		font-weight: 400;
-		padding-top: 0em;
-		display: flex;
-		margin-top: 1em;
-		line-height: 1.5;
-		font-family: 'DM Sans', sans-serif;
 	}
 	
 	.column-img {
@@ -545,13 +533,13 @@ left: 0;
 	  // Check if any of the tabs are already translated, and move them back if they are
 	  tabsToTransform.forEach(tab => {
 		if (tab.style.transform === "translateX(-55vw)" || tab.style.transform === "") {
-		  tab.style.transform = mq.matches ? "translate(0, -55vw)" : "translate(-55vw, 0)";
+		  tab.style.transform = mq.matches ? "translate(-55vw, 0)" : "translate(0, -55vw)";
 		}
 	  });
 	  
 	  // Translate the selected tab and the other tabs together
 	  tabsToTransform.forEach(tab => {
-		tab.style.transform = mq.matches ? "translate(-55vw, 0)" : "translate(0, -55vw)";
+		tab.style.transform = mq.matches ? "translate(0, -55vw)" : "translate(-55vw, 0)";
 		tab.style.transition = "all .5s";
 	  });
 	  selectedTab.style.transform = "translateX(0)";
@@ -778,7 +766,7 @@ left: 0;
 	<h3 style="background-color: #55A595; float:left">A word from the County Auditor</h3>
   <div class="w3-center" style="margin:0% 10%; float:left;position:relative;">
   <div class="column-xs-6" style="margin:0 5%;">
-  <img src="Photos/Home/Garth_auditor.jpg" width="300em" alt="" style="border-radius:50px;float:left;margin-top:2%;"/>
+  <img src="Photos/Home/Garth_auditor.jpg" width="300em" alt="" style="border-radius:50px;float:left;margin: 2% 1% 1% 2%;"/>
   <p style="padding: 2% 3% 0 2%;font-size:1.075em;">What do dogs, elections, cars, property records, and marriages all have in common? The Snohomish County Auditor’s Office provides essential services to our residents and customers related to all of these areas of life.  In fact, the Auditor’s Office touches more county residents through its myriad services than any other county office!<br><br>Through the dedicated work of 46 employees in four divisions and an administrative support unit, the Auditor’s Office registers voters and conducts elections; issues pet and kennel licenses; responds to animal related incidents and investigates cruelty cases; licenses cars, boats and other vehicles; records property and other legal documents; issues marriage licenses; and performs many other customer-focused functions. <br><br>And in 2022 we accomplished several important initiatives to better serve our residents and customers better.<br></p></div><br>
   <p style="font-size:1.075em;float:right; margin:0 5%;">With safe, secure elections at the forefront of both the local and national conversation, we proposed legislation and worked with state legislators to improve the security of our elections statewide.  As a result, our ballot counting centers and accessible voting sites are now designated gun-free zones, like our courts and schools.  In addition, we secured funding to make significant security improvements in our ballot counting center ahead of the 2024 Presidential election year. This large-scale remodel project will provide enhanced security that allows for greater public observation and process transparency for both in-person and through live-streaming technology.<br><br>We also made large investments in improving how we reach our customers.  In September we launched new social media accounts, allowing us to connect directly with customers in a timely manner with important information about elections, licensing, recording and animal services.  We continue to increase our followers and grow our social media presence.  In addition, we developed a language access plan to guide us as we extend our services and provide information to customers in their preferred language.<br><br>Throughout the year we worked to advocate for the needs of our customers by being active participants in federal, state, and local boards.  I serve on the U.S. Elections Assistance Commission’s Local Leadership Council, the Washington State Recording Standard’s Commission and am co-chair of the Washington State Association of County Auditor’s Elections Committee.  Members of my leadership team and I are actively involved in cross-county workgroups on election, licensing and recording issues.  We are making sure the Auditor’s Office is at the table representing the needs of Snohomish County residents and customers.<br><br>The 2022 Year-At-A-Glance highlights some of the other work accomplished in the Snohomish County Auditor’s Office last year and provides a glimpse into 2023 and beyond.  We hope you will take this opportunity to learn more.<br><br>It’s a pleasure serving our Snohomish County community!<br><br>Sincerely,<br><br></p>
   <img src="Photos/Home/Garth_Signature.png" width="15%" alt="Signature image" style="margin-left:5%;"/><p style="font-size:1.075em; margin:0 5%;">Garth Fell<br>Snohomish County Auditor<br></p></div></a>
