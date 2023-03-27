@@ -66,8 +66,8 @@ html, body {
 
 @media (max-width: 1280px) {
   .column p {
-    -webkit-transform: translateX(55%);
-	transform:translateX(55%);
+    -webkit-transform: translate(65%, -65%);
+	transform: translate(65%, -65%);
   }
 }
 
@@ -86,7 +86,7 @@ html, body {
 	  top: 0vw;
 	  z-index:5;
 	  position:relative;
-	  max-height:45vh;
+	  max-height:35vh;
 }
 }
 
@@ -528,49 +528,33 @@ left: 0;
   </script>
 
 <script>
-	function slidetab3() {
-		const tab4 = document.getElementById("tab4");
-		const tab3 = document.getElementById("tab3");
-		const tab2 = document.getElementById("tab2");
+    function mobileslide(selectedTabId, tabsToTransformIds) {
+	  const selectedTab = document.getElementById(selectedTabId);
+	  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
   
-	  if (tab3.style.transform === "translateX(-55vw)" || tab3.style.transform === "") {
-		// if the tabs are already translated, move them back
-		tab3.style.transform = "translateX(0)";
-		tab4.style.transform = "translateX(0)";
-		tab2.style.transform = "translateX(0)";
-	  } else {
-		// otherwise, translate the tabs
-		tab3.style.transform = "translateX(-55vw)";
-		tab4.style.transform = "translateX(-55vw)";
-		tab2.style.transform = "translateX(-55vw)";
-	  }
+	  // Check if any of the tabs are already translated, and move them back if they are
+	  tabsToTransform.forEach(tab => {
+	    if (tab.style.transform === "translateY(50vw)" || tab.style.transform === "") {
+	      tab.style.transform = "translateY(0)";
+	    }
+	  });
   
-	  // set the transition for both cases
-	  tab3.style.transition = "all .5s";
-	  tab4.style.transition = "all .5s";
-	  tab2.style.transition = "all .5s";
+	  // Translate the selected tab and the other tabs together
+	  tabsToTransform.forEach(tab => {
+	    tab.style.transform = "translateY(50vw)";
+	    tab.style.transition = "all .5s";
+	  });
+	  selectedTab.style.transform = "translateY(0)";
 	}
+
+    // Add a media query for mobile screens
+    const mediaQuery = window.matchMedia("(max-width: 1280px)");
+
+    // Only run the function on mobile screens
+    if (mediaQuery.matches) {
+      mobileslide();
+    }
   </script>
-
-<script>
-	function slidetab3() {
-	document.getElementById("tab3").style.transform="translateX(-55vw)";
-	document.getElementById("tab3").style.transition=" all .5s";
-	document.getElementById("tab4").style.transform="translateX(-55vw)";
-	document.getElementById("tab4").style.transition=" all .5s";
-	}
-</script>
-
-<script>
-	function slidetab2() {
-	document.getElementById("tab2").style.transform="translateX(-55vw)";
-	document.getElementById("tab2").style.transition=" all .5s";
-	document.getElementById("tab3").style.transform="translateX(-55vw)";
-	document.getElementById("tab3").style.transition=" all .5s";
-	document.getElementById("tab4").style.transform="translateX(-55vw)";
-	document.getElementById("tab4").style.transition=" all .5s";
-	}
-</script>
 
 </head>
 <body>
