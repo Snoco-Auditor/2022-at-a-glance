@@ -1338,7 +1338,7 @@ a:link {
 
 .button_green {
 	z-index: 50;
-	font-family: 'Poppins';
+	font-family: 'Poppins', sans-serif;
 	position:relative;
 	font-weight: 400;
 	background-color:#55A595;
