@@ -83,22 +83,33 @@
   }
   
   @media only screen and (max-device-width: 767px) {
-	.AS-row {
-		min-width: 95vw;
-		top: 0vw;
+	#tab1 .AS-row {
+		min-width: 100vw;
+		top: 1vw;
 		z-index:5;
 		position:relative;
-		max-height:35vh;
+		min-height: 70vh;
+		left:-24vw;
   }
   }
   
   @media only screen and (max-device-width: 767px) {
-	.AS-left-about {
-		min-width: 90vw;
-		top: 0vw;
+	#tab1 .AS-left-about {
+		min-width: 100vw;
+		top: 3vw;
 		z-index:5;
 		position:relative;
-		min-height:20vw;
+		min-height: 20vw;
+  }
+  }
+
+    
+  @media only screen and (max-device-width: 767px) {
+	#tab1 .AS-menu .recording {
+	  rotate: 90deg;
+	  margin-top: 37vh;
+	  margin-left: -100vw;
+	  width: 100vw;
   }
   }
   
@@ -165,15 +176,7 @@
 	  left: 1vw;
   }
   }
-  
-  @media only screen and (max-device-width: 767px) {
-	#tab1 .AS-menu .recording {
-	  rotate: 90deg;
-	  margin-top: -67vh;
-	  margin-left: -67vw;
-	  width: 100vw;
-  }
-  }
+
   
   @media only screen and (max-device-width: 767px) {
 	.row {
@@ -401,7 +404,7 @@ min-width: 100vw;
 	  #tab1 {
    min-width: 100vw;
    max-height: 85vh;
-   top: 0vh;
+   top: 25vh;
 	  }
 	  }
   
