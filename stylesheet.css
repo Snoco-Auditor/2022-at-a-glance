@@ -69,7 +69,7 @@
   @media (max-width: 767px) {
 	.column p {
 	  width: 90vw;
-	  top: -15vh;
+	  top: -5vh;
 	}
   }
   
@@ -337,14 +337,14 @@
   text-shadow: 2px 2px 400px #1b1a1936;
   }
   
-	  @media screen and (max-width: 767px){
-	  .AS-menu .recording {
-	  rotate:90deg;
-	  margin-top:35vw;
-	  margin-left:-67vw;
-	  width: 100vw;
-		  }
-	  }
+@media screen and (max-width: 767px){
+.AS-menu .recording {
+rotate:90deg;
+margin-top:35vw;
+margin-left:-40vh;
+min-width: 100vh;
+	}
+}
   
 	  
   @media screen and (max-width: 767px) {
@@ -390,8 +390,8 @@
   @media screen and (max-width: 767px) {
 	  #tab2 {
    min-width: 100vw;
-   max-height: 75vh;
-   top: 0vh;
+   max-height: 90vh;
+   top: 20vh;
 	  }
 	  }
   
@@ -404,9 +404,9 @@
 	  
   @media screen and (max-width: 767px) {
 	  #tab3 {
-	   min-width: 100vw;
-	  max-height: 65vh; 
-	  top: 0vw;
+		min-width: 100vw;
+		max-height: 100vh; 
+		top: 0vw;
 	  }
 	  }
 	  
@@ -414,7 +414,7 @@
 	  #tab4 {
 	  min-width: 100vw;	
 	  margin-top: 0vh;
-	  max-height: 55vh;
+	  max-height: 90vh;
 	  }
 	  }
 	  
