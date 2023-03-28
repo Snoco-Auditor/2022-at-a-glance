@@ -183,7 +183,31 @@
 	  flex-direction: column;
   }
   }
+
+.flex-container {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+  }
   
+  .flex-item-left {
+	padding: 10px;
+	flex: 50%;
+  }
+  
+  .flex-item-right {
+	padding: 10px;
+	flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+	.flex-container {
+	  flex-direction: column;
+	}
+  }
+
   /* Create a Parallax Effect */
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
 	background-attachment: fixed;
@@ -1473,15 +1497,6 @@ display: flex;
 margin: 0em 1em 0em 2em;
 }
 
-.column_overflow {
-float: left;
-width: 100%;
-flex-wrap: wrap;
-padding: 2px;
-display: flex;
-margin: 0em 1em 0em 2em;
-}
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -1490,34 +1505,6 @@ margin: 0em 1em 0em 2em;
 
 .row {
 	padding-left: 40px;
-}
-
-.AS-img-column {
-  float: left;
-  width: 35%;
-	padding: 5px;
-	display: block;
-	margin: 2px;
-}
-
-.AS-img-column img {
-margin: 2px;
-}
-
-.AS-column {
-	flex-wrap: wrap;
-    height: 100%;
-    padding: 0em 2px 1vw 2px;
-	display: inline-flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 }
 
 /* Clear floats after the columns */
@@ -1617,22 +1604,6 @@ margin: 2px;
 	height: 95%;
 	background: white;
 	z-index: 15
-}
-
-.animation_shape1 {
-position: absolute;
-animation: shape1 5s;
-animation-fill-mode: forwards;
-left: 0;
-top: 2vw;
-z-index: 0;
-width: 15vw;
-margin-left: 3vw;
-}
-
-@keyframes shape1{
-  from {left: 200px;}
-  to {left: 0px;}	
 }
 
 .AS-row {
