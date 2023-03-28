@@ -415,6 +415,11 @@
 	  
   .E-menu .recording {
 	  position: absolute;
+	  text-align:center;
+	  width: 45%;
+	  right: 0;
+	  left: 70%;
+	  top: 45%;
 	  -webkit-transform: translateY(-50%);
 	  -ms-transform: translateY(-50%);
 	  transform: translateY(-50%);
@@ -1333,9 +1338,9 @@ a:link {
 
 .button_green {
 	z-index: 50;
+	font-family: 'Poppins';
 	position:relative;
-  	letter-spacing: 1px;
-	font-weight: 200;
+	font-weight: 400;
 	background-color:#55A595;
   	border-radius: 10px;
 	color: white;
@@ -1344,7 +1349,7 @@ a:link {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-  	font-size: 18px;
+  	font-size: 115%;
 	margin: 4px 2px 2px 0px;
 	transition-duration: 0.4s;
 	cursor: pointer;
@@ -1438,7 +1443,7 @@ a:link {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 18px;
+	font-size:115%;
 	margin: 4px 2px 2px 0px;
 	transition-duration: 0.4s;
 	cursor: pointer;
@@ -1448,6 +1453,7 @@ a:link {
 .button_yellow:hover {
   background-color: #c0b19b;
   color: black;
+  font-weight:400;
 }
 
 .row:after {
