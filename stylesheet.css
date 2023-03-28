@@ -227,6 +227,7 @@
 	flex-wrap: wrap;
 	font-size: 30px;
 	text-align: center;
+	position:relative;
   }
   
   .flex-item-left {
@@ -240,6 +241,12 @@
 	padding: 10px;
 	flex: 50%;
   }
+
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+	.flex-item-right, .flex-item-left {
+	  flex: 100%;
+	}
   
   /* Turn off parallax scrolling for tablets and phones */
   @media only screen and (max-device-width: 767px) {
@@ -1681,10 +1688,8 @@ margin-left: 3vw;
 .w3-btn.w3-disabled:hover,.w3-btn:disabled:hover{box-shadow:none}
 .w3-badge,.w3-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.w3-badge{border-radius:50%}
 .w3-ul{list-style-type:none;padding:0;margin:0}.w3-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.w3-ul li:last-child{border-bottom:none}
-.w3-tooltip,.w3-display-container{
-	position:relative
-}
-.w3-tooltip,.w3-display-container{position:relative}.w3-tooltip .w3-text{display:none}.w3-tooltip:hover .w3-text{display:inline-block}
+
+.w3-tooltip .w3-text{display:none}.w3-tooltip:hover .w3-text{display:inline-block}
 .w3-ripple:active{opacity:0.5}.w3-ripple{transition:opacity 0s}
 .w3-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
 .w3-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
@@ -1715,7 +1720,6 @@ margin-left: 3vw;
 	display:flex;
 	overflow:hidden;
 }
-.w3-display-container:hover .w3-display-hover{display:block}.w3-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
 
 .w3-bar .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
 .w3-bar .w3-dropdown-hover,.w3-bar .w3-dropdown-click{position:static;float:left}
