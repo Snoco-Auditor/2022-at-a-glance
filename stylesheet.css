@@ -259,12 +259,13 @@
 		  padding-top: -5px;
 	  }
 	  
+	  
 	  .top-logo {
 		  display: flex;
 		  width: 5vw;
 		  position: relative;
 		  margin-top: .7vw;
-		  margin-bottom: 1vw;
+		  margin-bottom: 0vw;
 		  margin-left: 3vw;
 		  min-width: 130px;
 		  padding: 10px 10px 10px 0px;
