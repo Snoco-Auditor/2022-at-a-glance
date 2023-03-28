@@ -188,7 +188,8 @@
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	text-align: center;
+	text-align: left;
+	font-size: 1.075em;
   }
   
   .flex-item-left {
