@@ -17,6 +17,12 @@
 }
 
 @media (max-width: 767px) {
+	.column-4 div {
+	  left:10vw;
+	}
+  }
+
+@media (max-width: 767px) {
 	.column-xs-6 img {
 	  position:relative;
 	  left: 0vw;
@@ -1445,6 +1451,7 @@ a:link {
 
 .button_yellow {
 	z-index: 50;
+	position: relative;
 	background-color: #FFBF00;
 	border-radius: 10px;
 	color: black;
