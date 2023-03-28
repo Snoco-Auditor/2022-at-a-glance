@@ -203,9 +203,22 @@
   }
   
   /* Responsive layout - makes a one column-layout instead of two-column layout */
-  @media (max-width: 800px) {
+  @media (max-width: 1000px) {
 	.flex-container {
 	  flex-direction: column;
+	}
+  }
+
+  @media (max-width: 1000px) {
+	.w3-container {
+	  min-height:190vh;
+	}
+  }
+
+  @media (max-width: 1000px) {
+	.w3-content .w3-container .button_red {
+	 top:125vh;
+	 left:10vw;
 	}
   }
 
