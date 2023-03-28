@@ -141,7 +141,9 @@
 	  -webkit-flex-direction: column;
 	  flex-direction: column;
 	  min-width:100vw;
-	  max-height: 60vh;
+	  max-height: 70vh;
+	  left: -13vw;
+	  position: relative;
   }
   }
   
@@ -151,6 +153,15 @@
 	  margin-top: 37vh;
 	  margin-left: -67vw;
 	  width: 100vw;
+  }
+  }
+
+  @media only screen and (max-device-width: 767px) {
+	.E-left-about {
+	  margin-top: 20em;
+	  min-width: 100vw;
+	  position:relative;
+	  left: 1vw;
   }
   }
   
@@ -351,11 +362,11 @@
   }
   
 @media screen and (max-width: 767px){
-.AS-menu .recording {
+#tab3 .AS-menu .recording {
 rotate:90deg;
-margin-top:35vw;
-margin-left:-40vh;
-min-width: 100vh;
+margin-top:70vh;
+margin-left:-53vw;
+min-width: 100vw;
 	}
 }
   
