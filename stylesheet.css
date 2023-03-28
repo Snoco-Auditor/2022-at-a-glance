@@ -124,7 +124,8 @@
   
   @media only screen and (max-device-width: 767px) {
 	.button_red {
-		margin-block-start: 0vh;
+		top: 80vh;
+		left: 10vw;
   }
   }
   
