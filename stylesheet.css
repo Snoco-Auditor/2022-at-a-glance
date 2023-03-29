@@ -593,7 +593,6 @@ h1 {
     line-height: 1.1;
     color: white;
 	position:relative;
-	font-weight: 400;
 	}
 	
 	h3 {
@@ -932,7 +931,7 @@ h4 {
 	.column-sm-6 {
 		width: 50%;
 		float: left;
-		padding: 15px
+		padding: 0px
 	}
 	.column-sm-7 {
 		width: 58.33333333333333%
