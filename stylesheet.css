@@ -247,6 +247,12 @@
 	}
   }
 
+  @media (max-width: 767px) {
+	.flex-item-left {
+	 left:0vw;
+	 right:0vw;
+	}
+  }
   /* Create a Parallax Effect */
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
 	background-attachment: fixed;
