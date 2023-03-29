@@ -239,7 +239,7 @@
 	}
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 767px) {
 	.w3-content .w3-container .button_green {
 	 top:50vh;
 	 left:10vw;
