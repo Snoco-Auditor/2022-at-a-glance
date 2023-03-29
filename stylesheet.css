@@ -31,12 +31,6 @@
   }
   
   @media (max-width: 767px) {
-	.bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-	  min-height: 105vh;
-	}
-  }
-  
-  @media (max-width: 767px) {
 	img {
 	  display: block;
 	  margin: 0 auto;
@@ -48,9 +42,17 @@
   @media (max-width: 767px) {
 	h1 {
 	  top: -5vh;
+	  font-size: 4rem;
 	}
   }
   
+  @media (min-width: 1000px) {
+	h1 {
+	  top: -5vh;
+	  font-size: 5rem;
+	}
+  }
+
   @media (max-width: 767px) {
 	h3 {
 	  top: -5vh;
@@ -115,9 +117,9 @@
   
   @media only screen and (max-device-width: 767px) {
 	.top-logo {
-		max-width:20vw;
-		margin-block-start:0;
-		max-width:200px;
+		left: -4vw;
+		top: 2vh;
+		max-width: 20%;
   }
   }
   
@@ -226,13 +228,13 @@
 
   @media (max-width: 1000px) {
 	.w3-container {
-	  min-height:190vh;
+	  min-height:250vh;
 	}
   }
 
   @media (max-width: 1000px) {
 	.w3-content .w3-container .button_red {
-	 top:125vh;
+	 top:150vh;
 	 left:10vw;
 	}
   }
@@ -324,19 +326,6 @@
 		  padding: 10px 10px 10px 0px;
 	  }
   
-  .AS-menu and (min-width: 1281px){
-  font-weight: 100;
-  display: contents;
-  width: 150px;
-  height: 50%;
-  position: fixed;
-  z-index: 50;
-  left: 70%;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  color: #FFFFFF;
-  }
-	  
   .AS-menu .recording {
 	  color: white;
 	  width: 45%;
@@ -373,7 +362,26 @@ margin-left:-53vw;
 min-width: 100vw;
 	}
 }
-  
+
+@media screen and (max-width: 767px){
+	#tab3 .AS-menu .row {
+	rotate:90deg;
+	margin-top:70vh;
+	margin-left:-53vw;
+	min-width: 100vw;
+		}
+	}
+
+@media screen and (max-width: 767px){
+	#tab3 .AS-menu .AS-row {
+	min-width: 95vw;
+	top: 0vw;
+	z-index: 5;
+	position: relative;
+	max-height: 85vh;
+		}
+	}
+	  
 	  
   @media screen and (max-width: 767px) {
 	  .tab, #tab0, #tab1, #tab2, #tab3{
@@ -579,7 +587,6 @@ min-width: 100vw;
   }
 
 h1 {
-    font-size: 90px;
     padding-top: 0em;
     display: flex;
     margin: 3vw 0em 0em 1vw;
@@ -737,14 +744,6 @@ h4 {
 	max-width: 2000px;
 	margin: 0 0;
 	position: relative
-}
-
-.rotate {
-	position: absolute;
-	transform: rotate(-20deg);
-	left: 0;
-	font-size: 2.8rem;
-	top: 5px
 }
 
 .ex_padd {
@@ -964,13 +963,6 @@ h4 {
 	}
 }
 
-@media (max-width:1000px) {
-	.header h1 {
-		padding-left: 70px
-	}
-	.rotate {
-		left: 30px
-	}
 	@media (min-width:768px) and (max-width:991px) {
 		.column-md-1,
 		.column-md-10,
@@ -1543,6 +1535,7 @@ margin: 0em 1em 0em 2em;
 
 .row {
 	padding-left: 40px;
+	position:relative;
 }
 
 /* Clear floats after the columns */
