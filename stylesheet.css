@@ -71,7 +71,7 @@
   @media (max-width: 767px) {
 	.column p {
 	  width: 90vw;
-	  top: -5vh;
+	  top: -6vh;
 	}
   }
   
@@ -353,7 +353,14 @@
   color: #f0f0f0db;
   text-shadow: 2px 2px 400px #1b1a1936;
   }
-  
+
+@media screen and (max-width: 767px) {
+svg {
+rotate: 90deg;
+top: 50vh;
+}
+}
+
 @media screen and (max-width: 767px){
 #tab3 .AS-menu .recording {
 rotate:90deg;
@@ -449,9 +456,9 @@ min-width: 100vw;
 	  
   @media screen and (max-width: 767px) {
 	  #tab3 {
-		min-width: 100vw;
-		max-height: 100vh; 
-		top: 0vw;
+		min-width: 166vw;
+   		max-height: 100vh;
+    	top: 15vw;
 	  }
 	  }
 	  
@@ -459,10 +466,18 @@ min-width: 100vw;
 	  #tab4 {
 	  min-width: 100vw;	
 	  margin-top: 0vh;
-	  max-height: 90vh;
+	  max-height: 100vh;
 	  }
 	  }
-	  
+@media screen and (max-width: 767px) {
+#tab4 .button_green {
+min-width: 100vw;	
+margin-top: 0vh;
+max-height: 95vh;
+font-size: 0.75rem;
+}
+}
+
   @media screen and (max-width: 767px) {
 	  .column {
 	   min-width:90vw;
@@ -883,7 +898,9 @@ h4 {
 		width: 91.66666666666667%
 	}
 	.column-xs-12 {
-		width: 100%
+		width: 100%;
+		margin-bottom: 0em;
+		padding-bottom: 0em;
 	}
 	.hide-xs {
 		display: none
