@@ -239,6 +239,14 @@
 	}
   }
 
+  @media (max-width: 1000px) {
+	.w3-content .w3-container .button_green {
+	 top:50vh;
+	 left:10vw;
+	 position:relative;
+	}
+  }
+
   /* Create a Parallax Effect */
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
 	background-attachment: fixed;
@@ -1040,6 +1048,9 @@ h4 {
 			display: block
 		}
 	}
+
+.svg {
+	top: 0vh;
 }
 
 .effect.effect-two h2 {
