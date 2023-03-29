@@ -380,7 +380,6 @@ min-width: 100vw;
 
 @media screen and (max-width: 767px){
 	#tab3 .AS-menu .row {
-	rotate:90deg;
 	margin-top:70vh;
 	margin-left:-53vw;
 	min-width: 100vw;
@@ -390,7 +389,7 @@ min-width: 100vw;
 @media screen and (max-width: 767px){
 	#tab3 .AS-menu .AS-row {
 	min-width: 95vw;
-	top: 0vw;
+	top: 10vw;
 	z-index: 5;
 	position: relative;
 	max-height: 85vh;
@@ -451,7 +450,7 @@ min-width: 100vw;
 	  #tab2 {
    min-width: 100vw;
    max-height: 90vh;
-   top: 20vh;
+   top: 30vh;
 	  }
 	  }
   
