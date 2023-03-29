@@ -46,7 +46,7 @@
 	}
   }
   
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) and (min-width: 768px) {
 	h1 {
 	  top: -5vh;
 	  font-size: 5rem;
