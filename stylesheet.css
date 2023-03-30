@@ -87,7 +87,7 @@
   @media only screen and (max-device-width: 767px) {
 	#tab1 .AS-row {
 		min-width: 100vw;
-		top: 1vw;
+		top: -39vw;
 		z-index:5;
 		position:relative;
 		min-height: 70vh;
@@ -109,8 +109,8 @@
   @media only screen and (max-device-width: 767px) {
 	#tab1 .AS-menu .recording {
 	  rotate: 90deg;
-	  margin-top: 40vh;
-	  margin-left: -95vw;
+	  margin-top: 26vh;
+	  margin-left: -80vw;
 	  width: 100vw;
   }
   }
@@ -393,7 +393,7 @@ min-width: 100vw;
   @media screen and (max-width: 767px) {
 	#tab0 {
 	min-width: 100vw;
-	top:35vh;
+	top:45vh;
 	max-height:95vh;
 	  }
 	  }
@@ -406,7 +406,16 @@ min-width: 100vw;
 	min-width: 100vw;
 	}
 	}
-	  
+
+@media screen and (max-width: 767px) {
+#tab0 .AS-menu {
+	rotate:90deg;
+	margin-top:-15vh;
+	margin-left:-53vw;
+	min-width: 100vw;
+	}
+	}
+
   @media screen and (max-width: 767px) {
 	  #tab0::after {
 	content: '';
