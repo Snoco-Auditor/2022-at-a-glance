@@ -282,7 +282,6 @@
   @media (max-width: 1000px) {
 	.w3-container {
 	  min-height:250vh;
-	  top: 40vh;
 	  position:relative;
 	}
   }
