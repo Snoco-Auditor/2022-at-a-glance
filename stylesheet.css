@@ -143,14 +143,6 @@
   }
   
   @media only screen and (max-device-width: 767px) {
-	.AS-menu {
-		min-height: 55vw;
-		top:0vh;
-		position:relative;
-  }
-  }
-  
-  @media only screen and (max-device-width: 767px) {
 	.E-row {
 	  -webkit-flex-direction: column;
 	  flex-direction: column;
@@ -240,10 +232,10 @@
   }
 
   @media (max-width: 767px) {
-	.w3-content .w3-container .button_green {
-	 top:50vh;
-	 left:10vw;
-	 position:relative;
+	.w3-content .w3-container button {
+	 top: 50vh;
+	 left: 10vw;
+	 position: relative;
 	}
   }
 
@@ -385,22 +377,22 @@ min-width: 100vw;
 }
 
 @media screen and (max-width: 767px){
-	#tab3 .AS-menu .row {
-	margin-top:70vh;
-	margin-left:-53vw;
-	min-width: 100vw;
-		}
+#tab3 .AS-menu .row {
+margin-top:70vh;
+margin-left:-53vw;
+min-width: 100vw;
 	}
+}
 
 @media screen and (max-width: 767px){
-	#tab3 .AS-menu .AS-row {
-	min-width: 95vw;
-	top: 10vw;
-	z-index: 5;
-	position: relative;
-	max-height: 85vh;
-		}
+#tab3 .AS-menu .AS-row {
+min-width: 95vw;
+top: 10vw;
+z-index: 5;
+position: relative;
+max-height: 85vh;
 	}
+}
 	  
 	  
   @media screen and (max-width: 767px) {
@@ -441,7 +433,7 @@ min-width: 100vw;
 	  #tab1 {
    min-width: 100vw;
    max-height: 85vh;
-   top: 35vh;
+   top: 45vh;
 	  }
 	  }
   
