@@ -471,8 +471,22 @@ left: 0;
     window.onload = preloadImages;
   </script>
 
+<script>
+	// JavaScript code
+	const popupMessage = document.getElementById("popup-message");
+  
+	// Check screen width and display popup message if it's less than 767 pixels
+	if (window.innerWidth < 767) {
+	  popupMessage.innerHTML = "This report is not currently optimized to fit your screen. Please view this report on a desktop or tablet device.";
+	  popupMessage.style.display = "block";
+	} else {
+	  popupMessage.style.display = "none";
+	}
+  </script>
+
 </head>
 <body>
+<div id="popup-message"></div>
 <div class="bgimg-1 w3-display-container">
 <div id="tab0" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])">
 <div class ="AS-menu">
