@@ -449,7 +449,6 @@ left: 0;
 <script>
     // Create an array of image URLs to preload
     const imageUrls = [
-      "https://snoco-auditor.github.io/2022_Auditor_Report/Photos/Home/Admin_east.jpg",
       "https://snoco-auditor.github.io/2022_Auditor_Report/graphics/Animals/Animal%20Control%20Officers-01.png",
       "https://snoco-auditor.github.io/2022_Auditor_Report/graphics/Animals/Animal%20Services%20Cases_alt-03.png",
 	  "https://snoco-auditor.github.io/2022_Auditor_Report/graphics/Animals/Animal%20Services%20Cases-04.png"
@@ -557,7 +556,7 @@ left: 0;
     </div>
 	<div class="recording" style="top:50%; left: 72%; right: 0%;color:white">LICENSING</div>
 	</div></div>
-<div id="tab2" onclick="slideTab('tab2', ['tab3', 'tab4'])" style="cursor:pointer;">
+<div id="tab2" style="cursor:pointer;">
 	<div class ="E-menu tab">
 			<div class="E-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
@@ -602,7 +601,7 @@ left: 0;
 	<button class="button_purple" style="margin-left:0vw; margin-top:30vh; position:relative; z-index: 5;"><a href="#Elections_more">Read More</a></button>
   	</div>
     </div>
-<div class="recording" style="top: 50%; right: 0%">ELECTIONS</div>
+<div class="recording" style="top: 50%; right: 0%" onclick="slideTab('tab2', ['tab3', 'tab4'])">ELECTIONS</div>
 	</div></div>
 <div id="tab3">
 	<div class="AS-menu" onclick="slideTab('tab3', ['tab4'])">
