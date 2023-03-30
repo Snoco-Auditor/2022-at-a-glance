@@ -233,6 +233,19 @@
   @media (max-width: 1000px) {
 	.flex-container {
 	  flex-direction: column;
+	  margin: 1vw 0vw 1vw 0vw;
+	}
+  }
+  @media (min-width: 1001px) {
+	.flex-container {
+	  flex-direction: column;
+	  margin: 0vw 20vw 5vw 20vw;
+	}
+  }
+
+  @media (max-width: 1000px) {
+	.flex-container {
+	  flex-direction: column;
 	}
   }
 
@@ -252,7 +265,7 @@
   }
 
   @media (max-width: 767px) {
-	.w3-content .w3-container button {
+	.w3-content button {
 	 top: 50vh;
 	 left: 10vw;
 	 position: relative;
