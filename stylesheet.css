@@ -259,6 +259,7 @@
 	flex-direction: row;
 	text-align: left;
 	font-size: 1.075em;
+	margin-top: 20vh;
   }
   
   .flex-item-left {
