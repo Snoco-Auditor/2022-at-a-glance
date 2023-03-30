@@ -231,6 +231,8 @@
   @media (max-width: 1000px) {
 	.w3-container {
 	  min-height:250vh;
+	  top: 40vh;
+	  position:relative;
 	}
   }
 
@@ -381,7 +383,7 @@ top: 50vh;
 #tab3 .AS-menu .recording {
 rotate:90deg;
 margin-top:44vh;
-margin-left:-109vw;
+margin-left:-49vw;
 min-width: 100vw;
 font-size:2em;
 	}
@@ -390,6 +392,9 @@ font-size:2em;
 @media screen and (max-width: 767px){
 #tab3 .AS-row {
 min-width: 95vw;
+top: 1vh;
+position:relative;
+max-height:85vh;
 	}
 }
 	
@@ -400,6 +405,12 @@ margin-left:-53vw;
 min-width: 100vw;
 	}
 }
+
+@media screen and (max-width: 767px){
+	#tab3 button .button_red {
+	top: 20vh;
+		}
+	}
 	  
   @media screen and (max-width: 767px) {
 	  .tab, #tab0, #tab1, #tab2, #tab3{
