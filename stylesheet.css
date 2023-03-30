@@ -53,6 +53,13 @@
 	}
   }
 
+  @media (max-width: 1000px) and (min-width: 768px) {
+	h1 {
+	  top: -5vh;
+	  font-size: 5rem;
+	}
+  }
+
   @media (max-width: 767px) {
 	h3 {
 	  top: -5vh;
@@ -135,12 +142,6 @@
   }
   }
   
-  @media only screen and (max-device-width: 767px) {
-	.button_red {
-		top: 80vh;
-		left: 10vw;
-  }
-  }
   
   @media only screen and (max-device-width: 767px) {
 	.E-row {
@@ -159,14 +160,23 @@
 	  margin-top: 37vh;
 	  margin-left: -67vw;
 	  width: 100vw;
+	  font-size: 2em;
+  }
+  }
+
+  @media (max-width: 1000px) and (min-width: 768px) {
+	.E-menu .recording {
+	  rotate: 90deg;
+	  margin-top: 37vh;
+	  margin-left: -67vw;
+	  width: 100vw;
+	  font-size: 3em;
   }
   }
 
   @media only screen and (max-device-width: 767px) {
 	.E-left-about {
-	  margin-top: 20em;
-	  min-width: 100vw;
-	  position:relative;
+	  min-width: 125vw;
 	  left: 1vw;
   }
   }
@@ -370,12 +380,19 @@ top: 50vh;
 @media screen and (max-width: 767px){
 #tab3 .AS-menu .recording {
 rotate:90deg;
-margin-top:70vh;
-margin-left:-53vw;
+margin-top:44vh;
+margin-left:-109vw;
 min-width: 100vw;
+font-size:2em;
 	}
 }
 
+@media screen and (max-width: 767px){
+#tab3 .AS-row {
+min-width: 95vw;
+	}
+}
+	
 @media screen and (max-width: 767px){
 #tab3 .AS-menu .row {
 margin-top:70vh;
@@ -515,7 +532,6 @@ font-size: 0.75rem;
 	  transform: translateY(-50%);
 	  transform: rotate(270deg);
 	  font-weight: 800;
-	  font-size: 50px;
 	  }
   
   #tab0, #tab1, #tab2, #tab3, #tab4 {
