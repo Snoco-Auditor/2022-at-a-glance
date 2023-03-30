@@ -383,17 +383,6 @@ margin-left:-53vw;
 min-width: 100vw;
 	}
 }
-
-@media screen and (max-width: 767px){
-#tab3 .AS-menu .AS-row {
-min-width: 95vw;
-top: 10vw;
-z-index: 5;
-position: relative;
-max-height: 85vh;
-	}
-}
-	  
 	  
   @media screen and (max-width: 767px) {
 	  .tab, #tab0, #tab1, #tab2, #tab3{
@@ -474,11 +463,12 @@ max-height: 85vh;
 	  max-height: 100vh;
 	  }
 	  }
+
 @media screen and (max-width: 767px) {
 #tab4 .button_green {
-min-width: 100vw;	
-margin-top: 0vh;
-max-height: 95vh;
+min-width: 50vw;	
+top: -5vh;
+max-height: 50vh;
 font-size: 0.75rem;
 }
 }
