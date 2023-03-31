@@ -1960,6 +1960,27 @@ margin: 2px;
     }
 }
 
+@media only screen and (max-width: 768px) {
+	.flex-container {
+	  flex-direction: column;
+	}
+	
+	.flex-item-left {
+	  align-items: center;
+	  text-align: center;
+	}
+	
+	.w3-display-topmiddle {
+	  width: 100%;
+	  margin: 0;
+	}
+	
+	.w3-display-topmiddle > div {
+	  margin: 0;
+	}
+  }
+
+  
 .w3-cell-top{vertical-align:top}.w3-cell-middle{vertical-align:middle}.w3-cell-bottom{vertical-align:bottom}
 .w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
 @media (max-width:1205px){.w3-auto{max-width:95%}}
