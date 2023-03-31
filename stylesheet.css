@@ -189,16 +189,6 @@
   }
 
   @media (max-width: 1000px) and (min-width: 768px) {
-	.E-menu .recording {
-	  rotate: 90deg;
-	  margin-top: 37vh;
-	  margin-left: -67vw;
-	  width: 100vw;
-	  font-size: 3em;
-  }
-  }
-
-  @media (max-width: 1000px) and (min-width: 768px) {
 	.E-menu .tab {
 	  margin-top: 37vh;
 	  margin-left: -67vw;
