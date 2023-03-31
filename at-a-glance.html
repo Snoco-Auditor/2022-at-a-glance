@@ -396,28 +396,79 @@ left: 0;
 </style>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
 
-<script>
-	function slideTab(selectedTabId, tabsToTransformIds) {
-	  const selectedTab = document.getElementById(selectedTabId);
-	  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
-	  
-	  const mq = window.matchMedia("(max-width: 767px)");
+ <script>
+	function slideTabs() {
+  const tab0 = document.getElementById("tab0");
+  const tab1 = document.getElementById("tab1");
+  const tab2 = document.getElementById("tab2");
+  const tab3 = document.getElementById("tab3");
+  const tab4 = document.getElementById("tab4");
   
-	  // Check if any of the tabs are already translated, and move them back if they are
-	  tabsToTransform.forEach(tab => {
-		if (tab.style.transform === "translateX(-55vw)" || tab.style.transform === "") {
-		  tab.style.transform = mq.matches ? "translate(-55vw, 0)" : "translate(0, 80vw)";
-		}
-	  });
-	  
-	  // Translate the selected tab and the other tabs together
-	  tabsToTransform.forEach(tab => {
-		tab.style.transform = mq.matches ? "translate(0, 80vw)" : "translate(-55vw, 0)";
-		tab.style.transition = "all .5s";
-	  });
-	  selectedTab.style.transform = "translateX(0)";
-	}
-  </script>
+  if (window.innerWidth > 787) {
+    tab3.addEventListener("click", function() {
+      tab3.style.transform = "translateX(-55vw)";
+      tab4.style.transform = "translateX(-55vw)";
+    });
+    tab2.addEventListener("click", function() {
+      tab2.style.transform = "translateX(-55vw)";
+      tab3.style.transform = "translateX(-55vw)";
+      tab4.style.transform = "translateX(-55vw)";
+    });
+    tab1.addEventListener("click", function() {
+      tab1.style.transform = "translateX(-55vw)";
+      tab2.style.transform = "translateX(-55vw)";
+      tab3.style.transform = "translateX(-55vw)";
+      tab4.style.transform = "translateX(-55vw)";
+    });
+    tab0.addEventListener("click", function() {
+      tab0.style.transform = "translateX(-55vw)";
+      tab1.style.transform = "translateX(-55vw)";
+      tab2.style.transform = "translateX(-55vw)";
+      tab3.style.transform = "translateX(-55vw)";
+      tab4.style.transform = "translateX(-55vw)";
+    });
+  } else {
+    tab3.addEventListener("click", function() {
+      tab0.style.transform = "translateY(80vw)";
+      tab1.style.transform = "translateY(80vw)";
+      tab2.style.transform = "translateY(80vw)";
+      tab3.style.transform = "translateY(0)";
+      tab4.style.transform = "translateY(0)";
+    });
+    tab2.addEventListener("click", function() {
+      tab0.style.transform = "translateY(80vw)";
+      tab1.style.transform = "translateY(80vw)";
+      tab2.style.transform = "translateY(0)";
+      tab3.style.transform = "translateY(80vw)";
+      tab4.style.transform = "translateY(80vw)";
+    });
+    tab1.addEventListener("click", function() {
+      tab0.style.transform = "translateY(80vw)";
+      tab1.style.transform = "translateY(0)";
+      tab2.style.transform = "translateY(80vw)";
+      tab3.style.transform = "translateY(80vw)";
+      tab4.style.transform = "translateY(80vw)";
+    });
+    tab0.addEventListener("click", function() {
+      tab0.style.transform = "translateY(0)";
+      tab1.style.transform = "translateY(80vw)";
+      tab2.style.transform = "translateY(80vw)";
+      tab3.style.transform = "translateY(80vw)";
+      tab4.style.transform = "translateY(80vw)";
+    });
+  }
+  
+  // Reset all tabs to original position when clicked again
+  [tab0, tab1, tab2, tab3, tab4].forEach(tab => {
+    tab.addEventListener("click", function() {
+      [tab0, tab1, tab2, tab3, tab4].forEach(tab => {
+        tab.style.transform = "translateX(0) translateY(0)";
+      });
+    });
+  });
+}
+ </script>
+  
 
 <script>
     // Create an array of image URLs to preload
@@ -455,10 +506,10 @@ left: 0;
 </script>
 
 </head>
-<body>
+<body onload="slideTabs()">	
 <div class="popup" id="popup">This report is not currently optimized to fit your screen. Please view this report on a desktop or tablet device.</div>
 <div class="bgimg-1 w3-display-container">
-<div id="tab0" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])">
+<div id="tab0" onclick="slideTabs()">
 <div class ="AS-menu">
 		  <div class="AS-row" style="margin-left: 32vw; position:relative">
 			 <div class="row" style="width: 100vw; height: 100px;">
@@ -496,7 +547,7 @@ left: 0;
     </div>
 	<div class="recording" style="top:50%; left: 72%; right: 0%; color: white">RECORDING</div>
 	</div></div>
-<div id="tab1" onclick="slideTab('tab1', ['tab2', 'tab3', 'tab4'])">
+<div id="tab1" onclick="slideTabs()">
 <div class="AS-menu tab">
 	  <div class="AS-row" style="margin-left: 23vw;">
 			  <div class="row" style="width: 100vw; height: 100px;">
@@ -541,7 +592,7 @@ left: 0;
     </div>
 	<div class="recording" style="top:50%; left: 72%; right: 0%;color:white">LICENSING</div>
 	</div></div>
-<div id="tab2" onclick="slideTab('tab2', ['tab3', 'tab4'])" >
+<div id="tab2" onclick="slideTabs()" >
 	<div class ="E-menu tab">
 			<div class="E-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
@@ -588,7 +639,7 @@ left: 0;
     </div>
 <div class="recording" style="top: 50%; right: 0%; cursor:pointer">ELECTIONS</div>
 	</div></div>
-<div id="tab3" onclick="slideTab('tab3', ['tab4'])">
+<div id="tab3" onclick="slideTabs()">
 	<div class="AS-menu">
 		<div class="AS-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
@@ -632,7 +683,7 @@ left: 0;
 		<div class="top-logo" style="padding: 1%; margin-left:2vw;"><a id ="home"></a><img src="Logos/Auditor.png" width="250px" alt="white logo of three triangular trees"/></div>
     <div class="column" style="position:relative">
 		<div class="svg">
-		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" onclick="slideTab('tab4', ['tab4'])" style="top: 35vh; display: inline; position: relative; cursor:pointer; left: 50vw;">
+		<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" onclick="slideTabs" style="top: 35vh; display: inline; position: relative; cursor:pointer; left: 50vw;">
 			<path d="M5.5 17.5l8-8-8-8" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 		  </svg></div>
 		<div class="column-4 column-sm-6 column-md-6 column-xs-12 box-tab" style="width:40%; padding-right:1%; flex-basis:fit-content;">
