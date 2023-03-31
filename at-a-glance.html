@@ -447,18 +447,20 @@ left: 0;
     window.onload = preloadImages;
   </script>
 
-<script>
-	// check if screen width is less than 767px
-	if (window.innerWidth < 767) {
-	  // show the popup
-	  const popup = document.getElementById("popup");
-	  popup.style.display = "block";
+<script type="text/javascript">
+	function showPopup() {
+		var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+		if (screenWidth < 800) {
+			document.getElementById("popup").style.display = "block";
+		}
 	}
-  </script>
+
+	window.onload = showPopup;
+</script>
 
 </head>
 <body>
-<div id="popup">This report is not currently optimized to fit your screen. Please view this report on a desktop or tablet device.</div>
+<div class="popup" id="popup">This report is not currently optimized to fit your screen. Please view this report on a desktop or tablet device.</div>
 <div class="bgimg-1 w3-display-container">
 <div id="tab0" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])">
 <div class ="AS-menu">
