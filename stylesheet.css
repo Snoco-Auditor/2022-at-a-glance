@@ -292,11 +292,21 @@
   }
 
   @media (max-width: 767px) {
-	.flex-item-left {
+	.animal-content .flex-item-left {
 	 left:0vw;
 	 right:0vw;
+	 margin: 10vw 0vw 1vw 0vw;
 	}
-  }
+	}
+
+@media (min-width: 768px) and (max-width: 2000px) {
+	.animal-content .flex-item-left {
+		left:0vw;
+		right:0vw;
+		margin: 10vw 10vw 1vw 10vw;
+	}
+	}
+
   /* Create a Parallax Effect */
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
 	background-attachment: fixed;
@@ -1980,7 +1990,7 @@ margin: 2px;
 	}
   }
 
-  
+
 .w3-cell-top{vertical-align:top}.w3-cell-middle{vertical-align:middle}.w3-cell-bottom{vertical-align:bottom}
 .w3-hide{display:none!important}.w3-show-block,.w3-show{display:block!important}.w3-show-inline-block{display:inline-block!important}
 @media (max-width:1205px){.w3-auto{max-width:95%}}
