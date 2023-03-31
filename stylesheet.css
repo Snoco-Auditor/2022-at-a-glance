@@ -1912,7 +1912,33 @@ a:-webkit-any-link {
   }
 
 
-.w3-display-topleft{position:absolute;left:0;top:0}.w3-display-topright{position:absolute;right:0;top:0}
+.w3-display-topleft{
+	position:absolute;
+	left:0;
+	top:0
+}
+
+@media only screen and (max-width: 768px) {
+	.w3-display-topright{
+		width: 100%;
+		margin-bottom: 5vw;
+	}
+} 
+
+.w3-display-topright
+{
+	position:absolute;
+	right:0;
+	top:0
+}
+
+@media only screen and (max-width: 768px) {
+	.w3-display-topleft{
+		width: 100%;
+		margin-top: 5vw;
+	}
+} 
+
 .w3-display-bottomleft{
 	position:absolute;
 	left:0;
