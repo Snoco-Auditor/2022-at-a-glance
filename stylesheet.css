@@ -445,7 +445,7 @@ min-width: 100vw;
 }
 
 @media screen and (max-width: 767px){
-	#tab3 .AS-menu .button_red {
+	#tab3 div.AS-menu button.button_red {
 	top: 20vh;
 		}
 	}
@@ -475,12 +475,19 @@ min-width: 100vw;
 
 @media screen and (max-width: 767px) {
 #tab0 .AS-menu {
-	rotate:90deg;
 	margin-top:-15vh;
 	margin-left:-53vw;
 	min-width: 100vw;
 	}
 	}
+
+@media screen and (max-width: 767px) {
+#tab0 .AS-menu .AS-row{
+	max-width: 95vw;
+	left: -10vw;
+	}
+	}
+		
 
   @media screen and (max-width: 767px) {
 	  #tab0::after {
