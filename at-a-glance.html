@@ -395,41 +395,82 @@ left: 0;
 
 </style>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
-
 <script>
-	function slideTabs(tabId, tabsToTransformIds) {
-	  const selectedTab = document.getElementById(tabId);
-	  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
-	  
-	  const mq = window.matchMedia("(max-width: 787px)");
-	
-	  if (selectedTab.style.transform === "translateX(-55vw)" || selectedTab.style.transform === "") {
-		tabsToTransform.forEach(tab => {
-		  tab.style.transform = mq.matches ? "translate(0, 80vw)" : "translateX(-55vw)";
-		  tab.style.transition = "all .5s";
-		});
-		selectedTab.style.transform = "translateX(0)";
-	  } else {
-		tabsToTransform.forEach(tab => {
-		  tab.style.transform = mq.matches ? "translate(0, 80vw)" : "translateX(0)";
-		  tab.style.transition = "all .5s";
-		});
-		selectedTab.style.transform = "translateX(-55vw)";
-	  }
-	}
-	
-	document.getElementById("tab3").onclick = () => slideTabs("tab3", ["tab0", "tab1", "tab2", "tab4"]);
-	
-	if (window.matchMedia("(min-width: 787px)").matches) {
-	  document.getElementById("tab2").onclick = () => slideTabs("tab2", ["tab3", "tab4"]);
-	  document.getElementById("tab1").onclick = () => slideTabs("tab1", ["tab2", "tab3", "tab4"]);
-	  document.getElementById("tab0").onclick = () => slideTabs("tab0", ["tab1", "tab2", "tab3", "tab4"]);
-	} else {
-	  document.getElementById("tab2").onclick = () => slideTabs("tab2", ["tab0", "tab1", "tab2"]);
-	  document.getElementById("tab1").onclick = () => slideTabs("tab1", ["tab0", "tab1"]);
-	  document.getElementById("tab0").onclick = () => slideTabs("tab0", ["tab0"]);
-	}
-	</script>
+    function slideTab(selectedTabId, tabsToTransformIds) {
+      // function code here
+    }
+
+    // Wait for the page to finish loading
+    window.addEventListener('load', function () {
+      // Attach click event to the element
+      const tab0 = document.getElementById('tab0');
+      tab0.addEventListener('click', function () {
+        slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4']);
+      });
+    });
+  </script>
+    <script>
+		function slideTab(selectedTabId, tabsToTransformIds) {
+  const selectedTab = document.getElementById(selectedTabId);
+  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
+  const menu = document.getElementById("menu");
+
+  const isMenuRotated = menu.style.transform === "rotate(90deg)";
+  const isSmallScreen = window.innerWidth <= 767;
+  const isTab0 = selectedTabId === "tab0";
+  const isTab1 = selectedTabId === "tab1";
+  const isTab2 = selectedTabId === "tab2";
+  const isTab3 = selectedTabId === "tab3";
+  const isTab4 = selectedTabId === "tab4";
+
+  // Check if any of the tabs are already translated, and move them back if they are
+  tabsToTransform.forEach(tab => {
+    if (tab.style.transform === "translateX(-100vw)" || tab.style.transform === "") {
+      tab.style.transform = isMenuRotated && isSmallScreen ? "translateY(0)" : "translateX(0)";
+    }
+  });
+
+  // Translate the selected tab and the other tabs together
+  if (isSmallScreen) {
+    slideTabVertical(selectedTab, tabsToTransform, isMenuRotated, isTab0, isTab1, isTab2, isTab3, isTab4);
+  } else {
+    tabsToTransform.forEach(tab => {
+      if (tab.style.transform === "translateX(-100vw)" || tab.style.transform === "") {
+        tab.style.transform = "translateX(0)";
+      }
+      tab.style.transition = "all .5s";
+    });
+    selectedTab.style.transform = "translateX(0)";
+  }
+}
+
+function slideTabVertical(selectedTab, tabsToTransform, isMenuRotated, isTab0, isTab1, isTab2, isTab3, isTab4) {
+  const tabPositions = {
+    tab0: 0,
+    tab1: 1,
+    tab2: 2,
+    tab3: 3,
+    tab4: 4
+  };
+
+  const selectedTabPosition = tabPositions[selectedTab.id];
+
+  tabsToTransform.forEach(tab => {
+    const tabPosition = tabPositions[tab.id];
+
+    if (tabPosition >= selectedTabPosition) {
+      const translateAmount = isMenuRotated ? "80vh" : "100vw";
+      tab.style.transform = `translateY(${translateAmount})`;
+    } else {
+      tab.style.transform = "translateY(0)";
+    }
+
+    tab.style.transition = "all .5s";
+  });
+  selectedTab.style.transform = "translateY(0)";
+}
+	  </script>
+
 	<script>
   
     // Create an array of image URLs to preload
@@ -465,12 +506,18 @@ left: 0;
 
 	window.onload = showPopup;
 </script>
+<script>
+	const tab = document.getElementById("tab1");
+tab.addEventListener("click", function() {
+  slideTab("tab1", ["tab0", "tab2", "tab3", "tab4"]);
+});
+</script>
 
 </head>
-<body onload="slideTabs()" onresize="slideTabs()">
+<body>
 <div class="popup" id="popup">This report is not currently optimized to fit your screen. Please view this report on a desktop or tablet device.</div>
 <div class="bgimg-1 w3-display-container">
-<div id="tab0" onclick="slideTabs()">
+<div id="tab0" onclick="slideTab('tab0', ['tab0', 'tab1', 'tab2', 'tab3', 'tab4'])">
 <div class ="AS-menu">
 		  <div class="AS-row" style="margin-left: 32vw; position:relative">
 			 <div class="row" style="width: 100vw; height: 100px;">
@@ -506,9 +553,9 @@ left: 0;
     </section>
       </div>
     </div>
-	<div class="recording" style="top:50%; left: 72%; right: 0%; color: white">RECORDING</div>
+	<div class="recording" style="top:50%; left: 72%; right: 0%; color: white" id="menu">RECORDING</div>
 	</div></div>
-<div id="tab1" onclick="slideTabs()">
+<div id="tab1" onclick="slideTab('tab1', ['tab0', 'tab1', 'tab2', 'tab3', 'tab4'])">
 <div class="AS-menu tab">
 	  <div class="AS-row" style="margin-left: 23vw;">
 			  <div class="row" style="width: 100vw; height: 100px;">
