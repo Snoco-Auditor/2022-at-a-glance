@@ -1820,13 +1820,13 @@ a:-webkit-any-link {
 
 @media (max-width: 767px) {
 	.elections-content {
-	  max-height: 250vh;
+	  min-height: 380vh;
 	}
   }
 
   @media (min-width: 1000px) {
 	.elections-content {
-	  max-height: 150vh;
+	max-height: 225vh;
 	}
   }
 
@@ -1900,6 +1900,7 @@ a:-webkit-any-link {
 @media only screen and (max-width: 768px) {
 	.flex-container {
 	  flex-direction: column;
+	  min-width: 100%;
 	}
 	
 	.flex-item-left {
@@ -1920,14 +1921,15 @@ a:-webkit-any-link {
 
 @media only screen and (max-width: 768px) {
 	.w3-display-topright{
-		width: 100%;
-		margin: 1%;
+		min-width: 100%;
+		margin-top: 205vh;
 	}
 } 
 
 @media (min-width: 769px) and (max-width: 2000px) {
 	.w3-display-topright{
-		margin: 0% 15% 0% 55%; 
+		margin: 10vw;
+		width: 40%;
 	}
 } 
 
@@ -1940,14 +1942,14 @@ a:-webkit-any-link {
 
 @media only screen and (max-width: 768px) {
 	.w3-display-topleft{
-		width: 100%;
-		margin: 1%;
+		min-width: 100%;
+		margin-top: 5vh;
 	}
 } 
 
 @media (min-width: 769px) and (max-width: 2000px) {
 	.w3-display-topleft{
-		margin:0 15%; 
+		margin: 10vh 0vh 1vh 10vh; 
 	}
 } 
 
