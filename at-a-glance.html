@@ -396,35 +396,42 @@ left: 0;
 </style>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
 
- <script>
-function slideTabs() {
-  const selectedTab = event.target;
-  const tabsToTransform = Array.from(document.querySelectorAll(".tab")).filter(tab => tab !== selectedTab);
-
-  if (window.innerWidth > 787) {
-    tabsToTransform.forEach(tab => {
-      if (tab.style.transform === "translateX(-55vw)" || tab.style.transform === "") {
-        tab.style.transform = "translateX(0)";
-      } else {
-        tab.style.transform = "translateX(-55vw)";
-      }
-      tab.style.transition = "all .5s";
-    });
-  } else {
-    tabsToTransform.forEach(tab => {
-      if (tab.style.transform === "translateY(80vw)" || tab.style.transform === "") {
-        tab.style.transform = "translateY(0)";
-      } else {
-        tab.style.transform = "translateY(80vw)";
-      }
-      tab.style.transition = "all .5s";
-    });
-  }
-}
- </script>
-  
-
 <script>
+	function slideTabs(tabId, tabsToTransformIds) {
+	  const selectedTab = document.getElementById(tabId);
+	  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
+	  
+	  const mq = window.matchMedia("(max-width: 787px)");
+	
+	  if (selectedTab.style.transform === "translateX(-55vw)" || selectedTab.style.transform === "") {
+		tabsToTransform.forEach(tab => {
+		  tab.style.transform = mq.matches ? "translate(0, 80vw)" : "translateX(-55vw)";
+		  tab.style.transition = "all .5s";
+		});
+		selectedTab.style.transform = "translateX(0)";
+	  } else {
+		tabsToTransform.forEach(tab => {
+		  tab.style.transform = mq.matches ? "translate(0, 80vw)" : "translateX(0)";
+		  tab.style.transition = "all .5s";
+		});
+		selectedTab.style.transform = "translateX(-55vw)";
+	  }
+	}
+	
+	document.getElementById("tab3").onclick = () => slideTabs("tab3", ["tab0", "tab1", "tab2", "tab4"]);
+	
+	if (window.matchMedia("(min-width: 787px)").matches) {
+	  document.getElementById("tab2").onclick = () => slideTabs("tab2", ["tab3", "tab4"]);
+	  document.getElementById("tab1").onclick = () => slideTabs("tab1", ["tab2", "tab3", "tab4"]);
+	  document.getElementById("tab0").onclick = () => slideTabs("tab0", ["tab1", "tab2", "tab3", "tab4"]);
+	} else {
+	  document.getElementById("tab2").onclick = () => slideTabs("tab2", ["tab0", "tab1", "tab2"]);
+	  document.getElementById("tab1").onclick = () => slideTabs("tab1", ["tab0", "tab1"]);
+	  document.getElementById("tab0").onclick = () => slideTabs("tab0", ["tab0"]);
+	}
+	</script>
+	<script>
+  
     // Create an array of image URLs to preload
     const imageUrls = [
       "https://snoco-auditor.github.io/2022_Auditor_Report/graphics/Animals/Animal%20Control%20Officers-01.png",
@@ -460,7 +467,6 @@ function slideTabs() {
 </script>
 
 </head>
-<body onload="slideTabs()">	
 <div class="popup" id="popup">This report is not currently optimized to fit your screen. Please view this report on a desktop or tablet device.</div>
 <div class="bgimg-1 w3-display-container">
 <div id="tab0" class="tab" onclick="slideTabs()">
@@ -546,7 +552,7 @@ function slideTabs() {
     </div>
 	<div class="recording" style="top:50%; left: 72%; right: 0%;color:white">LICENSING</div>
 	</div></div>
-<div id="tab2" class="tab" onclick="slideTabs('tab2', ['tab3', 'tab4'])"" >
+<div id="tab2" class="tab" onclick="slideTabs()" >
 	<div class ="E-menu tab">
 			<div class="E-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
@@ -593,7 +599,7 @@ function slideTabs() {
     </div>
 <div class="recording" style="top: 50%; right: 0%; cursor:pointer">ELECTIONS</div>
 	</div></div>
-<div id="tab3" class="tab" onclick="slideTabs('tab3', ['tab4'])">
+<div id="tab3" class="tab" onclick="slideTabs()">
 	<div class="AS-menu">
 		<div class="AS-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
