@@ -165,6 +165,7 @@ html, body {
 }
 
 .w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 767px) {
@@ -177,7 +178,7 @@ html, body {
 @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
 @media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
 @media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
-@media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-auto{max-width:100%}}
+@media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
 	
 	.content {
 		display: flex;
@@ -541,7 +542,7 @@ left: 0;
     </div>
 	<div class="recording" style="top:50%; left: 72%; right: 0%;color:white">LICENSING</div>
 	</div></div>
-<div id="tab2" onclick="slideTab('tab2', ['tab3', 'tab4'])">
+<div id="tab2">
 	<div class ="E-menu tab">
 			<div class="E-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
@@ -586,7 +587,7 @@ left: 0;
 	<button class="button_purple" style="margin-left:0vw; margin-top:30vh; position:relative; z-index: 5;"><a href="#Elections_more">Read More</a></button>
   	</div>
     </div>
-<div class="recording" style="top: 50%; right: 0%; cursor:pointer">ELECTIONS</div>
+<div class="recording" style="top: 50%; right: 0%" onclick="slideTab('tab2', ['tab3', 'tab4'])" style="cursor:pointer;">ELECTIONS</div>
 	</div></div>
 <div id="tab3">
 	<div class="AS-menu" onclick="slideTab('tab3', ['tab4'])">
@@ -644,7 +645,7 @@ left: 0;
   </div>
 </div>
 </div>
-	<div class="admin-content w3-container" style="padding:0; height:auto;position:relative;display:block"><a id="admin">
+	<div class="w3-content w3-container" style="padding:0; height:auto;position:relative;display:block"><a id="admin">
 	<h3 style="background-color: #55A595; float:left">A word from County Auditor Garth Fell</h3>
   <div class="w3-center" style="margin:0% 10%; float:left;position:relative;">
   <div class="column-xs-6" style="margin:0 5%;">
@@ -666,7 +667,7 @@ left: 0;
 	<div class="bgimg-2 w3-display-container"><a id="animal_services_more"></a>
 		<h3 style="background-color:#e94f37; float:left; padding-left: 15%;text-align: right;">Animal Services</h3>
 		<div class="w3-display-topmiddle">
-			<div class="flex-container">
+			<div class="flex-container" style="margin: 10vw 20vw 5vw 20vw">
 				<div class="flex-item-left">
 				<img src="graphics/Animals/Animal Control Officers-01.png" alt="chart" width="100%"/><p style="font-size:1.075em;">Animal Control Officers are highly trained in animal care and handling and must graduate from the Washington Animal Control Academy.</p>
 				</div>
