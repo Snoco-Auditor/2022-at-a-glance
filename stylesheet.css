@@ -250,7 +250,6 @@
 	flex-direction: row;
 	text-align: left;
 	font-size: 1.075em;
-	margin-top: 20vh;
   }
   
   .flex-item-left {
@@ -302,9 +301,7 @@
 
 @media (min-width: 768px) and (max-width: 2000px) {
 	.animal-content .flex-item-left {
-		left:0vw;
-		right:0vw;
-		margin: 10vw 10vw 1vw 10vw;
+		margin: 11vw 25vw 1vw 25vw;
 	}
 	}
 
@@ -494,8 +491,8 @@ min-width: 100vw;
 
 @media screen and (max-width: 767px) {
 #tab0 .AS-menu .AS-row{
-	max-width: 95vw;
-	left: -10vw;
+	min-width: 95vw;
+	left: 23vw;
 	}
 	}
 		
