@@ -1643,7 +1643,7 @@ a:-webkit-any-link {
 	border-color: #1B2227;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 2500px) {
 	.elections-content {
 	  min-height: 380vh;
 	}
