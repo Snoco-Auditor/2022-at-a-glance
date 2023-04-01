@@ -453,8 +453,26 @@ min-width: 100vw;
 }
 
 @media screen and (max-width: 767px){
+	#tab0 div.AS-menu button.button_yellow {
+	top: -40vh;
+		}
+	}
+
+@media screen and (max-width: 767px){
+	#tab1 div.AS-menu button.button_blue {
+	top: -40vh;
+		}
+	}
+
+@media screen and (max-width: 767px){
+	#tab2 div.AS-menu button.button_purple {
+	top: -40vh;
+		}
+	}
+
+@media screen and (max-width: 767px){
 	#tab3 div.AS-menu button.button_red {
-	top: 20vh;
+	top: -40vh;
 		}
 	}
 	  
