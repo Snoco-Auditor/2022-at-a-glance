@@ -1633,12 +1633,6 @@ margin: 2px;
 	border-color: #1B2227;
 }
 
-@media (max-width: 767px) {
-	.animal-content {
-	  max-height: 250vh;
-	}
-  }
-
   @media (min-width: 1000px) {
 	.animal-content {
 	  max-height: 150vh;
