@@ -493,8 +493,8 @@ min-width: 100vw;
 @media screen and (max-width: 767px) {
 #tab0 .AS-menu .recording {
 	rotate:90deg;
-	margin-top:70vh;
-	margin-left:-53vw;
+	margin-top:52vh;
+	margin-left:-62vw;
 	min-width: 100vw;
 	}
 	}
@@ -1655,7 +1655,7 @@ a:-webkit-any-link {
 	border-color: #1B2227;
 }
 
-@media (max-width: 2500px) {
+@media (min-width: 768px) and (max-width: 2500px) {
 	.elections-content {
 	  min-height: 380vh;
 	}

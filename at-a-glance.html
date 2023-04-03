@@ -38,6 +38,13 @@ html, body {
       width: 8px;
     }
 
+
+@media (max-width: 767px){
+.elections-content {
+    max-height: 0vh;
+}
+}
+
 @media (max-width: 767px){
 .elections-content {
     max-height: 0vh;
@@ -72,7 +79,7 @@ html, body {
 
 @media (max-width: 767px) {
   .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
-    min-height: 105vh;
+    min-height: 0vh;
   }
 }
 
@@ -178,14 +185,6 @@ html, body {
     flex-direction: column;
 }
 }
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 767px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-	min-width: 100vw;	  
-  }
-}	
 	
 	.content {
 		display: flex;
@@ -223,6 +222,7 @@ text-shadow: 2px 2px 400px #1b1a1936;
 @media screen and (max-width: 767px) {
 	.w3-container {
 visibility: hidden;
+max-height: 0vh;
 	}
 	}
 
@@ -488,9 +488,9 @@ tab.addEventListener("click", function() {
 		  <div class="AS-row" style="margin-left: 32vw; position:relative">
 			 <div class="row" style="width: 100vw; height: 100px;">
 			  <div class="top-logo"><img src="Logos/Recording.jpg" alt="black and white image of three triangular trees" height="67px"/></div></div>
-				<div class="AS-left-about" style="color:black; width: 65vw;"><a id="Recording_top"></a>
+				<div class="AS-left-about" style="color:black; width: 60vw;"><a id="Recording_top"></a>
 				<h2 style="color:black; margin: 0em; max-width:75%;">Preserving Documents, Issuing Marriage Licenses</h2>
-					<p style="position: relative; margin: 1em 5em 0em 0em;font-size:2.025vh">Snohomish County Recording, a division of the Auditor’s Office, provides Snohomish County residents with document recording services and issues marriage licenses for couples in Washington State.<br><br>The Recording division plays a central role in all real estate transactions in the county. The division memorializes property transfers and financial interests by recording deeds, deeds of trust, reconveyances and liens. Title companies, lawyers, realtors, and lending institutions depend on the public availability of these property records. Recorded documents also provide an important link to the history of our county, our communities, and our families.<br>
+					<p style="position: relative; margin: 1em 0em 0em 0em;font-size:2.025vh">Snohomish County Recording, a division of the Auditor’s Office, provides Snohomish County residents with document recording services and issues marriage licenses for couples in Washington State.<br><br>The Recording division plays a central role in all real estate transactions in the county. The division memorializes property transfers and financial interests by recording deeds, deeds of trust, reconveyances and liens. Title companies, lawyers, realtors, and lending institutions depend on the public availability of these property records. Recorded documents also provide an important link to the history of our county, our communities, and our families.<br>
 </p>
  <section class="wrapper-full tab-container effectTab-header" id="style_2">
       <div class="wrapper tab-item">
