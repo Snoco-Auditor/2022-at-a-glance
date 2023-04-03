@@ -354,8 +354,7 @@
   @media only screen and (max-device-width: 767px) {
 	.bgimg-1, .bgimg-2, .bgimg-3 {
 	  background-attachment: scroll;
-	  min-width: 100vw;	  
-	  height: 50vh;
+	  min-width: 100vw;
 	}
   }	
   
