@@ -396,81 +396,27 @@ left: 0;
 </style>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
 <script>
-    function slideTab(selectedTabId, tabsToTransformIds) {
-      // function code here
-    }
-
-    // Wait for the page to finish loading
-    window.addEventListener('load', function () {
-      // Attach click event to the element
-      const tab0 = document.getElementById('tab0');
-      tab0.addEventListener('click', function () {
-        slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4']);
-      });
-    });
+	function slideTab(selectedTabId, tabsToTransformIds) {
+	  const selectedTab = document.getElementById(selectedTabId);
+	  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
+	  
+	  const mq = window.matchMedia("(max-width: 767px)");
+  
+	  // Check if any of the tabs are already translated, and move them back if they are
+	  tabsToTransform.forEach(tab => {
+		if (tab.style.transform === "translateX(-55vw)" || tab.style.transform === "") {
+		  tab.style.transform = mq.matches ? "translate(-55vw, 0)" : "translate(0, -55vw)";
+		}
+	  });
+	  
+	  // Translate the selected tab and the other tabs together
+	  tabsToTransform.forEach(tab => {
+		tab.style.transform = mq.matches ? "translate(0, -55vw)" : "translate(-55vw, 0)";
+		tab.style.transition = "all .5s";
+	  });
+	  selectedTab.style.transform = "translateX(0)";
+	}
   </script>
-    <script>
-		function slideTab(selectedTabId, tabsToTransformIds) {
-  const selectedTab = document.getElementById(selectedTabId);
-  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
-  const menu = document.getElementById("menu");
-
-  const isMenuRotated = menu.style.transform === "rotate(90deg)";
-  const isSmallScreen = window.innerWidth <= 767;
-  const isTab0 = selectedTabId === "tab0";
-  const isTab1 = selectedTabId === "tab1";
-  const isTab2 = selectedTabId === "tab2";
-  const isTab3 = selectedTabId === "tab3";
-  const isTab4 = selectedTabId === "tab4";
-
-  // Check if any of the tabs are already translated, and move them back if they are
-  tabsToTransform.forEach(tab => {
-    if (tab.style.transform === "translateX(-100vw)" || tab.style.transform === "") {
-      tab.style.transform = isMenuRotated && isSmallScreen ? "translateY(0)" : "translateX(0)";
-    }
-  });
-
-  // Translate the selected tab and the other tabs together
-  if (isSmallScreen) {
-    slideTabVertical(selectedTab, tabsToTransform, isMenuRotated, isTab0, isTab1, isTab2, isTab3, isTab4);
-  } else {
-    tabsToTransform.forEach(tab => {
-      if (tab.style.transform === "translateX(-100vw)" || tab.style.transform === "") {
-        tab.style.transform = "translateX(0)";
-      }
-      tab.style.transition = "all .5s";
-    });
-    selectedTab.style.transform = "translateX(0)";
-  }
-}
-
-function slideTabVertical(selectedTab, tabsToTransform, isMenuRotated, isTab0, isTab1, isTab2, isTab3, isTab4) {
-  const tabPositions = {
-    tab0: 0,
-    tab1: 1,
-    tab2: 2,
-    tab3: 3,
-    tab4: 4
-  };
-
-  const selectedTabPosition = tabPositions[selectedTab.id];
-
-  tabsToTransform.forEach(tab => {
-    const tabPosition = tabPositions[tab.id];
-
-    if (tabPosition >= selectedTabPosition) {
-      const translateAmount = isMenuRotated ? "80vh" : "100vw";
-      tab.style.transform = `translateY(${translateAmount})`;
-    } else {
-      tab.style.transform = "translateY(0)";
-    }
-
-    tab.style.transition = "all .5s";
-  });
-  selectedTab.style.transform = "translateY(0)";
-}
-	  </script>
-
 	<script>
   
     // Create an array of image URLs to preload
@@ -516,7 +462,7 @@ tab.addEventListener("click", function() {
 <body>
 <div class="popup" id="popup">This report is not currently optimized to fit your screen. Please view this report on a desktop or tablet device.</div>
 <div class="bgimg-1 w3-display-container">
-<div id="tab0" onclick="slideTab('tab0', ['tab0', 'tab1', 'tab2', 'tab3', 'tab4'])">
+<div id="tab0" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])">
 <div class ="AS-menu">
 		  <div class="AS-row" style="margin-left: 32vw; position:relative">
 			 <div class="row" style="width: 100vw; height: 100px;">
@@ -554,7 +500,7 @@ tab.addEventListener("click", function() {
     </div>
 	<div class="recording" style="top:50%; left: 72%; right: 0%; color: white" id="menu">RECORDING</div>
 	</div></div>
-<div id="tab1" onclick="slideTab('tab1', ['tab0', 'tab1', 'tab2', 'tab3', 'tab4'])">
+<div id="tab1" onclick="slideTab('tab1', ['tab2', 'tab3', 'tab4'])">
 <div class="AS-menu tab">
 	  <div class="AS-row" style="margin-left: 23vw;">
 			  <div class="row" style="width: 100vw; height: 100px;">
@@ -599,7 +545,7 @@ tab.addEventListener("click", function() {
     </div>
 	<div class="recording" style="top:50%; left: 72%; right: 0%;color:white">LICENSING</div>
 	</div></div>
-<div id="tab2" onclick="slideTabs()" >
+<div id="tab2" onclick="slideTab('tab2', ['tab3', 'tab4'])">
 	<div class ="E-menu tab">
 			<div class="E-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
@@ -646,7 +592,7 @@ tab.addEventListener("click", function() {
     </div>
 <div class="recording" style="top: 50%; right: 0%; cursor:pointer">ELECTIONS</div>
 	</div></div>
-<div id="tab3" onclick="slideTabs()">
+<div id="tab3" onclick="slideTab('tab3', ['tab4'])">
 	<div class="AS-menu">
 		<div class="AS-row">
 			  <div class="row" style="width: 100vw; height: 100px;">
