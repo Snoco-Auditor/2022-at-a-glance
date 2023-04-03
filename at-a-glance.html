@@ -399,44 +399,40 @@ left: 0;
 	function slideTab(selectedTabId, tabsToTransformIds) {
 	  const selectedTab = document.getElementById(selectedTabId);
 	  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
-	  const isSmallScreen = window.innerWidth <= 767;
   
-	  // Check if the screen is small, and redirect to the appropriate URL if it is
-	  if (isSmallScreen) {
-		let url;
-		switch (selectedTabId) {
-		  case 'tab0':
-			url = 'https://snoco-auditor.github.io/2022_Auditor_Report/Recording.html';
+	  if (window.innerWidth >= 768) {
+		// Check if any of the tabs are already translated, and move them back if they are
+		tabsToTransform.forEach(tab => {
+		  if (tab.style.transform === "translateX(-55vw)" || tab.style.transform === "") {
+			tab.style.transform = "translateX(0)";
+		  }
+		});
+  
+		// Translate the selected tab and the other tabs together
+		tabsToTransform.forEach(tab => {
+		  tab.style.transform = "translateX(-55vw)";
+		  tab.style.transition = "all .5s";
+		});
+		selectedTab.style.transform = "translateX(0)";
+	  } else {
+		// Open the respective URL in a new window
+		switch(selectedTabId) {
+		  case "tab0":
+			window.open("https://snoco-auditor.github.io/2022_Auditor_Report/Recording.html", "_blank");
 			break;
-		  case 'tab1':
-			url = 'https://snoco-auditor.github.io/2022_Auditor_Report/Licensing.html';
+		  case "tab1":
+			window.open("https://snoco-auditor.github.io/2022_Auditor_Report/Licensing.html", "_blank");
 			break;
-		  case 'tab2':
-			url = 'https://snoco-auditor.github.io/2022_Auditor_Report/Elections.html';
+		  case "tab2":
+			window.open("https://snoco-auditor.github.io/2022_Auditor_Report/Elections.html", "_blank");
 			break;
-		  case 'tab3':
-			url = 'https://snoco-auditor.github.io/2022_Auditor_Report/Animal_Services.html';
+		  case "tab3":
+			window.open("https://snoco-auditor.github.io/2022_Auditor_Report/Animal_Services.html", "_blank");
 			break;
 		  default:
-			url = 'https://snoco-auditor.github.io/2022_Auditor_Report/'; // default URL
+			break;
 		}
-		window.open(url, '_blank');
-		return;
 	  }
-  
-	  // Check if any of the tabs are already translated, and move them back if they are
-	  tabsToTransform.forEach(tab => {
-		if (tab.style.transform === "translateX(-55vw)" || tab.style.transform === "") {
-		  tab.style.transform = "translateX(0)";
-		}
-	  });
-  
-	  // Translate the selected tab and the other tabs together
-	  tabsToTransform.forEach(tab => {
-		tab.style.transform = "translateX(-55vw)";
-		tab.style.transition = "all .5s";
-	  });
-	  selectedTab.style.transform = "translateX(0)";
 	}
   </script>
 	<script>
