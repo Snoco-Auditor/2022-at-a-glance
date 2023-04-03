@@ -41,8 +41,9 @@
   
   @media (max-width: 767px) {
 	h1 {
-	  top: -5vh;
-	  font-size: 4rem;
+		top: -2vh;
+		font-size: 4rem;
+		left: 5vw;
 	}
   }
   
@@ -78,6 +79,7 @@
 	.column p {
 	  width: 90vw;
 	  top: -6vh;
+	  left: 3vw;
 	}
   }
   
@@ -582,7 +584,7 @@ min-width: 100vw;
 @media screen and (max-width: 767px) {
 #tab4 .button_green {
 min-width: 50vw;	
-top: -5vh;
+top: 0vh;
 max-height: 50vh;
 font-size: 0.75rem;
 }
