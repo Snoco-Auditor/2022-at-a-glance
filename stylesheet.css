@@ -1678,12 +1678,6 @@ a:-webkit-any-link {
 	border-color: #1B2227;
 }
 
-@media (max-width: 767px) {
-	.licensing-content {
-	  max-height: 250vh;
-	}
-  }
-
   @media (min-width: 1000px) {
 	.licensing-content {
 	  max-height: 150vh;
@@ -1700,12 +1694,6 @@ a:-webkit-any-link {
 	border-width: 16px;
 	border-color: #1B2227;
 }
-
-@media (max-width: 767px) {
-	.recording-content {
-	  max-height: 250vh;
-	}
-  }
 
   @media (min-width: 1000px) {
 	.recording-content {
