@@ -307,9 +307,10 @@
 	}
 	}
 
-@media (min-width: 768px) and (max-width: 2000px) {
+@media (min-width: 768px) and (max-width: 2500px) {
 	.animal-content .flex-item-left {
-		margin: 11vw 25vw 1vw 25vw;
+	margin: 11vw 5vw 1vw 5vw;
+    padding: 5vh 5vw 0vh 5vw;
 	}
 	}
 
@@ -393,9 +394,9 @@
 		  position: relative;
 		  margin-top: .7vw;
 		  margin-bottom: 0vw;
-		  margin-left: 3vw;
+		  margin-left: 2vw;
 		  min-width: 130px;
-		  padding: 10px 10px 10px 0px;
+		  padding: 10px 10px 10px 5px;
 	  }
   
   .AS-menu .recording {
@@ -784,7 +785,7 @@ ul {
 .column-4,
 .column-8 {
 	float: left;
-	padding: 2% 2% 2% 0%;
+	padding: % 2% 2% 0%;
 }
 
 .effectTab-header .title::after,
@@ -1680,9 +1681,17 @@ a:-webkit-any-link {
 	}
   }
 
+  @media (min-width: 768px) and (max-width: 2500px) {
+	.animal-content .flex-item-left {
+	min-width: 100%;
+    margin: 15vh 15vw 15vh 5vw;
+    padding: 0vh 10vw 0vh 10vw;
+}
+	}
+
   @media (min-width: 1000px) {
 	.elections-content {
-	min-height: 145vh;
+	min-height: 200vh;
 	}
   }
 
