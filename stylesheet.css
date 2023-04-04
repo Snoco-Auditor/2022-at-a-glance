@@ -1069,7 +1069,7 @@ ul {
 
 .effect.effect-six p {
 	max-width: 130px;
-	padding: 0 10px;
+	padding: 0 10px 5px 10px;
 	margin: 30px;
 	text-align: left;
 	font-size: 1.25rem;
