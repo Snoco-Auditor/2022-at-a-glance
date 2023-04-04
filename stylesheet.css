@@ -304,16 +304,18 @@
 	 left:0vw;
 	 right:0vw;
 	 margin: 10vw 0vw 1vw 0vw;
+	 padding: 0vh 10vw;
+	 min-width: 60%;
 	}
 	}
 
 	@media (min-width: 1000px) {
 		.animal-content .flex-container {
-		margin: 15vh 10vw 0vh 10vw;
+		margin: 15vh 0vw 0vh 0vw;
 		}
 		}
 
-@media (min-width: 768px) and (max-width: 2500px) {
+@media (min-width: 1000px) and (max-width: 2500px) {
 	.animal-content .flex-item-left {
 	padding:10px;
 	flex: 50%;
@@ -1688,13 +1690,6 @@ a:-webkit-any-link {
 	}
   }
 
-  @media (min-width: 768px) and (max-width: 2500px) {
-	.animal-content .flex-item-left {
-	min-width: 100%;
-    margin: 15vh 15vw 15vh 5vw;
-    padding: 0vh 10vw 0vh 10vw;
-}
-	}
 
   @media (min-width: 1000px) {
 	.elections-content {
