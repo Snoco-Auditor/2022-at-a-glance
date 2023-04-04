@@ -501,25 +501,8 @@ left: 0;
 
 	window.onload = showPopup;
 </script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const loader = document.querySelector(".loader-container");
-  loader.classList.add("hide");
-});
-</script>
-<script>
-	function hideLoader() {
-	  const loader = document.getElementById("loader");
-	  const content = document.getElementById("content");
-	  loader.style.display = "none";
-	  content.style.display = "block";
-	}
-  </script>
 </head>
-<body onload="hideLoader()">
-	<div id="loader"></div>
-    <div id="loader_content">
-	<script src="script.js"></script>
+<body>
 <div class="popup" id="popup">This report is not currently optimized to fit your screen. Please view this report on a desktop or tablet device.</div>
 <div class="bgimg-1 w3-display-container">
 <div id="tab0" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])">
