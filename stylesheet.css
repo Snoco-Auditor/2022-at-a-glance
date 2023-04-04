@@ -484,7 +484,7 @@ min-width: 100vw;
 
 @media screen and (min-width: 768px) and (max-width: 1000px){
 	#tab2 div.E-menu button.button_purple {
-	top: -40vh;
+	top: -25vh;
 		}
 	}
 
@@ -1737,6 +1737,22 @@ a:-webkit-any-link {
 	}
   }
 
+  .beyond-content{
+	position:relative;
+}
+
+@media (min-width:768px) and (max-width: 1000px) {
+	.beyond-content .flex-container{
+		flex-direction:column;
+		min-width: 150vw;
+		left: 0vw;
+	}
+}
+
+.admin-content{
+	position:relative;
+}
+
 .w3-container{
 	max-width:100vw;
 	background: white;
@@ -1895,56 +1911,6 @@ a:-webkit-any-link {
 	vertical-align:middle; 
 	padding: 1em 0 2em 0;
 }
-
-.beyond_container {
-  position: relative;
-}
-
-.beyond_overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #1B2227;
-}
-
-.beyond_overlay2 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #1B2227;
-}
-
-.beyond_container:hover .beyond_overlay {
-  opacity: .85;
-  cursor:pointer;
-}
-
-.beyond_container:hover .beyond_overlay2 {
-  opacity: 1;
-  cursor:pointer;
-}
-
-.beyond_text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  text-align: left;
-}
-
 
 .text-block {
   position: absolute;
