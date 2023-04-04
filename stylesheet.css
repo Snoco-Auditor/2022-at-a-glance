@@ -307,10 +307,17 @@
 	}
 	}
 
+	@media (min-width: 1000px) {
+		.animal-content .flex-container {
+		margin: 15vh 10vw 0vh 10vw;
+		}
+		}
+
 @media (min-width: 768px) and (max-width: 2500px) {
 	.animal-content .flex-item-left {
-	margin: 11vw 5vw 1vw 5vw;
-    padding: 5vh 5vw 0vh 5vw;
+	padding:10px;
+	flex: 50%;
+	margin:0;
 	}
 	}
 
@@ -1655,7 +1662,7 @@ margin: 2px;
 
   @media (min-width: 1000px) {
 	.animal-content {
-	  max-height: 150vh;
+	  min-height: 100vh;
 	}
   }
 
@@ -1708,6 +1715,12 @@ a:-webkit-any-link {
 
   @media (min-width: 1000px) {
 	.licensing-content {
+	  max-height: 150vh;
+	}
+  }
+
+  @media (min-width: 1000px) {
+	.licensing-content .flex-item.left {
 	  max-height: 150vh;
 	}
   }
@@ -1848,7 +1861,7 @@ a:-webkit-any-link {
 }
 
 .w3-display-bottommiddle{
-	position:absolute;
+	position:relative;
 	left:0;
 	bottom:0;
 	top: 50%;
