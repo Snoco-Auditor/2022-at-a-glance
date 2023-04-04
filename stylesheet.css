@@ -351,7 +351,6 @@
 	  /* Third image (Contact) */
   .bgimg-4 {
 	background-size: 400% 400%;
-	height: 80vw;
   }
 	  
   .bgimg-5 {
@@ -369,11 +368,7 @@
 	  min-width: 100vw;
 	}
   }	
-  
-  @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
-  @media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
-  @media (max-width:992px) and (min-width:601px){.w3-hide-medium{display:none!important}}
-  @media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}.w3-auto{max-width:100%}}
+
 	  
 	  .content {
 		  display: flex;
@@ -1682,6 +1677,9 @@ a:-webkit-any-link {
     border-style:solid none;
 	border-width: 16px;
 	border-color: #1B2227;
+	padding: 5em;
+	display:flex;
+	overflow:hidden;
 }
 
 @media (min-width: 768px) and (max-width: 2500px) {
@@ -1729,6 +1727,10 @@ a:-webkit-any-link {
     border-style:solid none;
 	border-width: 16px;
 	border-color: #1B2227;
+	padding: 5em;
+	height: 300vh;
+	display:flex;
+	overflow:hidden;
 }
 
   @media (min-width: 1000px) {
