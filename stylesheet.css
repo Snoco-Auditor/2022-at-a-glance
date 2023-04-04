@@ -1709,7 +1709,7 @@ a:-webkit-any-link {
 
   @media (min-width: 1000px) {
 	.licensing-content {
-	  max-height: 150vh;
+	  max-height: 200vh;
 	}
   }
 
