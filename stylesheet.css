@@ -472,25 +472,25 @@ min-width: 100vw;
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
 	#tab0 div.AS-menu button.button_yellow {
-	top: -40vh;
+	top: -15vh;
 		}
 	}
 
 @media screen and (min-width: 768px) and (max-width: 1000px){
 	#tab1 div.AS-menu button.button_blue {
-	top: -40vh;
+	top: -15vh;
 		}
 	}
 
 @media screen and (min-width: 768px) and (max-width: 1000px){
-	#tab2 div.AS-menu button.button_purple {
+	#tab2 div.E-menu button.button_purple {
 	top: -40vh;
 		}
 	}
 
 @media screen and (min-width: 768px) and (max-width: 1000px){
 	#tab3 div.AS-menu button.button_red {
-	top: -40vh;
+	top: -30vh;
 		}
 	}
 	  
@@ -762,7 +762,7 @@ ul {
 	display: list-item;
 	top:8vh;
 	list-style-type:none;
-	margin-left: 5vw;
+	margin-left: 0vw;
 	background-color: #1B2227!important;
 
 }
