@@ -470,25 +470,25 @@ min-width: 100vw;
 	}
 }
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 768px) and (max-width: 1000px) {
 	#tab0 div.AS-menu button.button_yellow {
 	top: -40vh;
 		}
 	}
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 768px) and (max-width: 1000px){
 	#tab1 div.AS-menu button.button_blue {
 	top: -40vh;
 		}
 	}
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 768px) and (max-width: 1000px){
 	#tab2 div.AS-menu button.button_purple {
 	top: -40vh;
 		}
 	}
 
-@media screen and (max-width: 767px){
+@media screen and (min-width: 768px) and (max-width: 1000px){
 	#tab3 div.AS-menu button.button_red {
 	top: -40vh;
 		}
