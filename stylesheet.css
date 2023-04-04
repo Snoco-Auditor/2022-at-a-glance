@@ -1773,7 +1773,6 @@ a:-webkit-any-link {
 	border-width: 16px;
 	border-color: #1B2227;
 	padding: 5em;
-	height: 65vw;
 	display:flex;
 	overflow:hidden;
 }
