@@ -1697,6 +1697,7 @@ a:-webkit-any-link {
 
 .licensing-content{
 	max-width:100vw;
+	height: 200vh;
 	margin-left:auto;
 	margin-right:auto;
 	background: white;
@@ -1749,7 +1750,6 @@ a:-webkit-any-link {
     border-color: #1B2227;
     padding: 5em;
     height: 100vw;
-    display: flex;
     overflow: hidden;
 }
 
