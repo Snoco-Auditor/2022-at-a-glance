@@ -501,6 +501,17 @@ left: 0;
 
 	window.onload = showPopup;
 </script>
+<script>
+	function redirectToURL() {
+		if (window.innerWidth > 767) {
+			// Redirect to URL for larger screens
+			window.location.href = "#admin";
+		} else {
+			// Redirect to URL for smaller screens
+			window.location.href = "https://snoco-auditor.github.io/2022_Auditor_Report/County_Auditor_letter.html";
+		}
+	}
+</script>
 </head>
 <body>
 <div class="popup" id="popup">This report is not currently optimized to fit your screen. Please view this report on a desktop or tablet device.</div>
