@@ -1741,6 +1741,16 @@ a:-webkit-any-link {
 
   .beyond-content{
 	position:relative;
+	max-width: 100vw;
+    background: white;
+    background-size: 400% 400%;
+    border-style: solid none;
+    border-width: 16px;
+    border-color: #1B2227;
+    padding: 5em;
+    height: 100vw;
+    display: flex;
+    overflow: hidden;
 }
 
 @media (min-width:768px) and (max-width: 1000px) {
