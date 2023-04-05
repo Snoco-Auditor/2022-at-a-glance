@@ -1663,6 +1663,37 @@ margin: 2px;
 	}
   }
 
+  
+@media (max-width: 1000px){
+	.elections-content .flex-container {
+	left: 5vw;
+	right: 5vw;
+	min-width: 95vw;
+	margin-top: 10vh;
+	}
+	}
+	
+	@media (max-width: 1000px){
+	.elections-content .flex-item-left {
+	min-width: 100vw;
+	top: 5vw;
+	}
+	}
+	
+	@media (max-width: 1000px){
+	.animal-content .flex-container {
+	left: 5vw;
+	right: 5vw;
+	}
+	}
+	
+	@media (max-width: 1000px){
+	.animal-content .flex-item-left {
+	min-width: 100vw;
+	top: 5vw;
+	}
+	}
+	
 a:-webkit-any-link {
 	color:white;
 	text-decoration: none;

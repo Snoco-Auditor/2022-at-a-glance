@@ -38,87 +38,29 @@ html, body {
       width: 8px;
     }
 
-
-@media (max-width: 767px){
-.elections-content {
-max-height: 0vh;
-}
-}
-
-@media (max-width: 1000px){
-.elections-content .flex-container {
-left: 5vw;
-right: 5vw;
-min-width: 95vw;
-margin-top: 10vh;
-}
-}
-
-@media (max-width: 1000px){
-.elections-content .flex-item-left {
-min-width: 100vw;
-top: 5vw;
-}
-}
-
-@media (max-width: 767px){
-.animal-content {
-max-height: 0vh;
-}
-}
-
-@media (max-width: 1000px){
-.animal-content .flex-container {
-left: 5vw;
-right: 5vw;
-}
-}
-
-@media (max-width: 1000px){
-.animal-content .flex-item-left {
-min-width: 100vw;
-top: 5vw;
-}
-}
-
-@media (max-width: 767px){
-.licensing-content {
-max-height: 0vh;
-visibility: hidden;
-}
-}
-
-@media (max-width: 767px){
-.licensing-content {
-max-height: 0vh;
-visibility: hidden;
-}
-}
+@media screen and (max-width: 767px) {
+	.w3-container {
+	visibility: hidden;
+	max-height: 6vh;
+	}
+	}
 
 @media (max-width: 767px) {
-.admin-content {
+.admin-content, .animal-content, .licensing-content, .recording-content, .elections-content, .beyond-content {
 visibility:hidden;
 max-height: 0vh;
 	}
 }
 
 @media (max-width: 767px) {
-.w3-display-topright {
+.w3-display-topright, .w3-display-topmiddle, .w3-display-topleft {
 visibility:hidden;
 max-height: 0vh;
 	}
 }
 
 @media (max-width: 767px) {
-.w3-display-topmiddle {
-visibility:hidden;
-max-height: 0vh;
-	}
-}
-
-
-@media (max-width: 767px) {
-.w3-display-topleft {
+.button_red, .button_blue, .button_purple, .button_yellow {
 visibility:hidden;
 max-height: 0vh;
 	}
@@ -126,13 +68,6 @@ max-height: 0vh;
 
 @media (max-width: 767px) {
 .flexcontainer {
-visibility:hidden;
-max-height: 0vh;
-	}
-}
-
-@media (max-width: 767px) {
-.beyond-content {
 visibility:hidden;
 max-height: 0vh;
 	}
@@ -149,15 +84,7 @@ max-width: 30vw;
 @media (max-width: 767px) {
 .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
 min-height: 0vh;
-  }
-}
-
-@media (max-width: 767px) {
-img {
-display: block;
-margin: 0 auto;
-max-width: 100%;
-height: auto;
+visibility: hidden;
   }
 }
 
@@ -168,7 +95,7 @@ top: -5vh;
 }
 
 @media (max-width: 767px) {
-p {
+p, h2, img {
 display: block;
 margin: 0 auto;
 max-width: 100%;
@@ -176,14 +103,6 @@ height: auto;
   }
 }
 
-@media (max-width: 767px) {
-h2 {
-display: block;
-margin: 0 auto;
-max-width: 100%;
-height: auto;
-  }
-}
 
 @media only screen and (max-device-width: 767px) {
 .AS-left-about {
@@ -288,12 +207,6 @@ flex-direction: column;
 	text-shadow: 2px 2px 400px #1b1a1936;
 }
 
-@media screen and (max-width: 767px) {
-	.w3-container {
-	visibility: hidden;
-	max-height: 6vh;
-	}
-	}
 
 @media screen and (max-width: 767px) {
 	#tab0 {
