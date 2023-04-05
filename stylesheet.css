@@ -1786,9 +1786,10 @@ a:-webkit-any-link {
 
 @media (min-width:768px) and (max-width: 1000px) {
 	.beyond-content .flex-item-right{
-	left: -5vw;
-	}
+	left: -7vw;
+    position: relative;
 }
+	}
 
 .admin-content{
 	position:relative;
@@ -1856,8 +1857,9 @@ a:-webkit-any-link {
 
 @media only screen and (max-width: 1000px) {
 	.w3-display-topmiddle{
-		min-width: 100%;
+		min-width: 75vw;
 		margin-top: 5vh;
+		left: -5vh;
 	}
 } 
 
