@@ -1664,7 +1664,8 @@ margin: 2px;
 
   @media (min-width: 768px) {
 	.recording-content .flex-item-left {
-	  min-width:75vw;
+	  min-width:45vw;
+	  flex: 0;
 	}
   }
 
@@ -1866,7 +1867,7 @@ a:-webkit-any-link {
 @media (min-width: 1001px) and (max-width: 2500px) {
 	.w3-display-topmiddle{
 		margin: 10vw;
-		width: 40%;
+		width: 75vw;
 	}
 } 
 .w3-display-topright
@@ -1922,7 +1923,7 @@ a:-webkit-any-link {
 
 .w3-display-topmiddle{
 	position:absolute;
-	top:15%;
+	top:25vh;
 	margin: 0 15%;
 }
 
