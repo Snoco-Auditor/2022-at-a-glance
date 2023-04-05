@@ -1663,7 +1663,7 @@ margin: 2px;
 	}
   }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 768px) {
 	.recording-content .flex-item-left {
 	  width:100vw;
 	}
@@ -1701,7 +1701,7 @@ a:-webkit-any-link {
 	}
   }
 
-  @media (min-width: 999px) {
+  @media (min-width: 768px) {
 	.elections-content {
 	min-height: 225vh;
 	}
@@ -1722,6 +1722,12 @@ a:-webkit-any-link {
   @media (min-width: 1000px) {
 	.licensing-content {
 	  max-height: 200vh;
+	}
+  }
+
+  @media (min-width: 768px) {
+	.licensing-content {
+	  max-height: 225vh;
 	}
   }
 
