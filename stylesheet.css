@@ -1663,6 +1663,12 @@ margin: 2px;
 	}
   }
 
+  @media (min-width: 1000px) {
+	.recording-content .flex-item-left {
+	  width:100vw;
+	}
+  }
+
 a:-webkit-any-link {
 	color:white;
 	text-decoration: none;
@@ -1684,7 +1690,7 @@ a:-webkit-any-link {
 
 @media (min-width: 1001px) and (max-width: 2500px) {
 	.elections-content {
-	  min-height: 380vh;
+	  min-height: 225vh;
 	}
   }
 
@@ -1820,7 +1826,7 @@ a:-webkit-any-link {
 @media only screen and (max-width: 1000px) {
 	.w3-display-topright{
 		min-width: 100%;
-		margin-top: 205vh;
+		margin-top: 115vh;
 	}
 } 
 
