@@ -1725,9 +1725,9 @@ a:-webkit-any-link {
 	}
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 1000px) {
 	.licensing-content {
-	  max-height: 225vh;
+	  max-height: 125vh;
 	}
   }
 
@@ -1755,6 +1755,12 @@ a:-webkit-any-link {
   @media (min-width: 1000px) {
 	.recording-content {
 	  max-height: 150vh;
+	}
+  }
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+	.recording-content {
+	  max-height: 200vh;
 	}
   }
 
