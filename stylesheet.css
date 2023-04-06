@@ -354,8 +354,10 @@
 		
 @media (max-width: 1000px){
 	.animal-content .flex-item-left {
-	min-width: 100vw;
+	max-width: 100vw;
 	top: 5vw;
+	position:relative;
+	left: 0vw;
 	}
 	}
 
@@ -369,7 +371,7 @@
 	
 @media (max-width: 1000px){
 	.animal-content .flex-container {
-	left: 5vw;
+	left: 0vw;
 	right: 5vw;
 	}
 	}
