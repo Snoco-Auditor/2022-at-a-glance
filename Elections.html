@@ -37,13 +37,19 @@ html, body {
       background-color: #1B1A19;
       width: 8px;
     }	
-
-    @media (max-width: 767px) {
-	.animal-content {
-	  max-height: 250vh;
+=
+  @media screen and (max-height: 600px) {
+	.elections-content {
+    height: 435vh;
 	}
-  }
+	}
   
+  @media screen and (min-height: 600px) {
+	.elections-content {
+    height: 325vh;
+	}
+	}
+
 	</style>
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
 	</head>
@@ -72,7 +78,7 @@ html, body {
             <img src="graphics/Elections/Elections_Inbound_Ballots-01.png" alt="chart" width="75%" style="margin-left:5vw;"/>
 					</div>
 				</div>
-				<button class="button_purple" style="margin: 10em 5em 5em 0em;font-family: 'Poppins', sans-serif;font-size:135%; float:right;"><a href="Licensing.html"><i class="fa-solid fa-circle-right"></i>&nbsp; Read about Licensing</a></button>
+				<button class="button_purple" style="font-family: 'Poppins', sans-serif;font-size:135%; float:right;"><a href="Licensing.html"><i class="fa-solid fa-circle-right"></i>&nbsp; Read about Licensing</a></button>
 				</div>
 			</div>
 		</div>
