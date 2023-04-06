@@ -329,14 +329,14 @@
   }
 
   @media (max-width: 1000px) {
-	.animal-content .w3-container .button_red {
+	.animal-content .button_red {
 	 top:150vh;
 	 left:10vw;
 	}
   }
 
   @media (max-width: 767px) {
-	.animal-content .w3-container button {
+	.animal-content button {
 	 top: 50vh;
 	 left: 10vw;
 	 position: relative;
@@ -352,12 +352,13 @@
 	 min-width: 60%;
 	}
 	}
-
-	@media (min-width: 1000px) {
-		.animal-content .flex-container {
-		margin: 15vh 0vw 0vh 0vw;
-		}
-		}
+		
+@media (max-width: 1000px){
+	.animal-content .flex-item-left {
+	min-width: 100vw;
+	top: 5vw;
+	}
+	}
 
 @media (min-width: 1000px) and (max-width: 3000px) {
 	.animal-content .flex-item-left {
@@ -366,6 +367,21 @@
 	margin:0;
 	}
 	}
+	
+@media (max-width: 1000px){
+	.animal-content .flex-container {
+	left: 5vw;
+	right: 5vw;
+	}
+	}
+	
+	
+@media (min-width: 1000px) {
+	.animal-content {
+		min-height: 100vh;
+	}
+	}
+
 
   /* Create a Parallax Effect */
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
@@ -1700,42 +1716,6 @@ margin: 2px;
 	border-color: #1B2227;
 }
 
-  @media (min-width: 1000px) {
-	.animal-content {
-	  min-height: 100vh;
-	}
-  }
-
-  
-@media (max-width: 1000px){
-	.elections-content .flex-container {
-	left: 5vw;
-	right: 5vw;
-	min-width: 95vw;
-	margin-top: 10vh;
-	}
-	}
-	
-	@media (max-width: 1000px){
-	.elections-content .flex-item-left {
-	min-width: 100vw;
-	top: 5vw;
-	}
-	}
-	
-	@media (max-width: 1000px){
-	.animal-content .flex-container {
-	left: 5vw;
-	right: 5vw;
-	}
-	}
-	
-	@media (max-width: 1000px){
-	.animal-content .flex-item-left {
-	min-width: 100vw;
-	top: 5vw;
-	}
-	}
 	
 a:-webkit-any-link {
 	color:white;
@@ -1755,6 +1735,22 @@ a:-webkit-any-link {
 	display:flex;
 	overflow:hidden;
 }
+  
+@media (max-width: 1000px){
+	.elections-content .flex-container {
+	left: 5vw;
+	right: 5vw;
+	min-width: 95vw;
+	margin-top: 10vh;
+	}
+	}
+	
+	@media (max-width: 1000px){
+	.elections-content .flex-item-left {
+	min-width: 100vw;
+	top: 5vw;
+	}
+	}
 
 @media (min-width: 1001px) and (max-width: 3000px) {
 	.elections-content {
