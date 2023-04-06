@@ -399,7 +399,7 @@
 
 @media (max-width: 1500px){
 	.top-logo img {
-	max-width: 45px;
+	max-height: 45px;
 	}
 	}
 
@@ -819,7 +819,7 @@ h1 {
 	}
 	
 h2 {
-	font-size: 1.75rem;
+	font-size: 1.75em;
 }
 
 h4 {
