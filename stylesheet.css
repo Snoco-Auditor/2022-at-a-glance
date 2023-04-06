@@ -39,6 +39,15 @@
 	}
   }
   
+  @media (min-width: 1000px) {
+	h1 {
+	  font-size: 7vw;
+	  top: -6vh;
+	  left: -3vw;
+	  
+	}
+  }
+
   @media (max-width: 767px) and (min-width:351px) {
 	h1 {
 		top: 0vh;
@@ -94,12 +103,6 @@
   @media (max-width: 767px) {
 	#tab0, #tab1, #tab2, #tab3, #tab4 p {
 	  font-size: 2.025vh; 
-	}
-  }
-
-  @media (min-width: 1000px) {
-	h1 {
-	  font-size: 6em;
 	}
   }
 
