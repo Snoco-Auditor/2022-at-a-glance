@@ -397,6 +397,11 @@
 	}
 	}
 
+@media (max-width: 1500px){
+	.top-logo img {
+	max-width: 45px;
+	}
+	}
 
   /* Create a Parallax Effect */
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
@@ -463,12 +468,11 @@
 		  padding-top: -5px;
 	  }
 	  
-	  
 	  .top-logo {
 		  display: flex;
 		  width: 5vw;
 		  position: relative;
-		  margin-top: .7vw;
+		  margin-top: -0.5vh;
 		  margin-bottom: 0vw;
 		  margin-left: 2vw;
 		  min-width: 130px;
