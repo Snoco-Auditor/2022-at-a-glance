@@ -44,7 +44,7 @@
 	  font-size: 7vw;
 	  top: -6vh;
 	  left: -3vw;
-	  
+
 	}
   }
 
@@ -501,13 +501,13 @@
   .AS-menu .recording:hover {
   cursor:pointer;
   color: #f0f0f0db;
-  text-shadow: 3px 2px 20px #ffffff;
+  text-shadow: 3px 2px 75px #181515ba;
   }
   
   .E-menu .recording:hover {
   cursor:pointer;
   color: #f0f0f0db;
-  text-shadow: 3px 2px 20px #ffffff;
+  text-shadow: 3px 2px 75px #181515ba;
   }
 
 @media screen and (max-width: 767px) {
