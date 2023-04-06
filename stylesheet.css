@@ -487,14 +487,14 @@
   
   .AS-menu .recording:hover {
   cursor:pointer;
-  color: #d4d4d4db;
-  text-shadow: 2px 2px 400px #1b1a1936;
+  color: #f0f0f0db;
+  text-shadow: 3px 2px 20px #1b1a19;
   }
   
   .E-menu .recording:hover {
   cursor:pointer;
   color: #f0f0f0db;
-  text-shadow: 2px 2px 400px #1b1a1936;
+  text-shadow: 3px 2px 20px #1b1a19;
   }
 
 @media screen and (max-width: 767px) {
