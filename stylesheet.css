@@ -427,9 +427,6 @@
 	height: 70vw;
   }
 	  
-  .w3-wide {letter-spacing: 10px;}
-  .w3-hover-opacity {cursor: pointer;}
-  
   /* Turn off parallax scrolling for tablets and phones */
   @media only screen and (max-device-width: 767px) {
 	.bgimg-1, .bgimg-2, .bgimg-3 {
@@ -1695,18 +1692,11 @@ margin: 2px;
 	position:relative
 }
 
-.w3-main,#main{transition:margin-left .4s}
-
 
 .w3-center .w3-bar{
 	display:inline-block;
 	width:auto;
 	position:relative;
-}
-
-.w3-block{
-	display:block;
-	width:100%;
 }
 
 .w3-container:after,.w3-container:before,.w3-row:after,.w3-row:before{
@@ -2059,18 +2049,11 @@ a:-webkit-any-link {
 	text-align:left;
 }
 
-.w3-section,.w3-code{
-	margin-top:16px!important;
-	margin-bottom:16px!important
-}
-
 .w3-dark-grey {
 	color:#fff!important;
 	background-color:#1B2227!important;
 	position:sticky;
 }
-
-.w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#1B2227!important}
 
 .footer {
 	position: fixed;
