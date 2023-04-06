@@ -226,6 +226,11 @@
 	  -webkit-flex-direction: column;
 	  flex-direction: column;
 	  margin-top: 15vh;
+	  margin-top: 15vh;
+	  position: sticky;
+	  color: white;
+	  background-color: #1B2227!important;
+	  padding-top: 5vh;
   }
   }
   
@@ -1991,7 +1996,7 @@ a:-webkit-any-link {
 	margin-bottom:16px!important
 }
 
-.w3-dark-grey,{
+.w3-dark-grey {
 	color:#fff!important;
 	background-color:#1B2227!important;
 	position:sticky;
