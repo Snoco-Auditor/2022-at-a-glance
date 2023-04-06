@@ -778,7 +778,6 @@ h1 {
 	}
 	
 	p {
-		font-size: 1.15em;
 		font-weight: 400;
 		padding-top: 0em;
 		display: flex;
@@ -1816,7 +1815,7 @@ a:-webkit-any-link {
 	border-width: 16px;
 	border-color: #1B2227;
 	padding: 5em;
-	height: 300vh;
+	height: 180vh;
 	display:flex;
 	overflow:hidden;
 }
