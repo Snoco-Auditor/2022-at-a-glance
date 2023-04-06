@@ -1766,9 +1766,9 @@ a:-webkit-any-link {
 	}
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
 	.elections-content {
-	min-height: 250vh;
+	max-height: 250vh;
 	}
   }
 
