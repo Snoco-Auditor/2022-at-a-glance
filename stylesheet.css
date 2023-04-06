@@ -233,6 +233,19 @@
 	  padding-top: 5vh;
   }
   }
+
+  @media only screen and (max-device-height: 750px) {
+	.w3-row, .w3-dark-grey {
+	  -webkit-flex-direction: column;
+	  flex-direction: column;
+	  margin-top: 15vh;
+	  margin-top: 15vh;
+	  position: sticky;
+	  color: white;
+	  background-color: #1B2227!important;
+	  padding-top: 5vh;
+  }
+  }
   
   @media only screen and (max-device-width: 767px) {
 	.custom-row {
