@@ -39,7 +39,7 @@
 	}
   }
   
-  @media (max-width: 1200px) {
+  @media (max-width: 3500px) {
 	h1 {
 	font-size: 7vw;
 	top: -13vh;
@@ -63,7 +63,7 @@
 	}
   }
   
-  @media (max-width: 1000px) and (min-width: 768px) {
+  @media (max-width: 1200px) and (min-width: 768px) {
 	h1 {
 	top: -3vh;
 	font-size: 5rem;
