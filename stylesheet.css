@@ -1809,12 +1809,6 @@ a:-webkit-any-link {
 	overflow:hidden;
 }
 
-  @media (min-width: 768px) {
-	.recording-content {
-	min-height: 250vh;
-	}
-  }
-
   @media (min-width: 1001px) and (max-width: 3000px) {
 	.recording-content {
 	  max-height: 215vh;
@@ -1837,7 +1831,7 @@ a:-webkit-any-link {
   @media (max-width: 1000px) {
 	.recording-content .w3-display-topmiddle {
 	  min-width:40vw;
-	  flex: 0;
+	  top:10vh;
 	}
   }
 
@@ -1881,6 +1875,13 @@ a:-webkit-any-link {
 }
 	}
 
+@media (max-width: 1000px) {
+	.beyond-content .w3-display-topmiddle {
+		min-width:40vw;
+		top:10vh;
+	}
+	}
+	
 .admin-content{
 	position:relative;
 }
