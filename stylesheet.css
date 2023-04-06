@@ -396,7 +396,7 @@
 	
 @media (min-width: 1000px) {
 	.animal-content {
-		min-height: 100vh;
+		height: 115vh;
 	}
 	}
 
@@ -1717,7 +1717,6 @@ margin: 2px;
 }
 
 .animal-content{
-	height: 200vh;
 	max-width:100vw;
 	margin-left:auto;
 	margin-right:auto;
@@ -1766,7 +1765,7 @@ a:-webkit-any-link {
 
 @media (min-width: 1001px) and (max-width: 3000px) {
 	.elections-content {
-	  min-height: 170vh;
+	  min-height: 250vh;
 	}
   }
 
