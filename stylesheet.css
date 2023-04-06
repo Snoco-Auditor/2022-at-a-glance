@@ -39,11 +39,19 @@
 	}
   }
   
-  @media (max-width: 767px) {
+  @media (max-width: 767px) and (min-width:351px) {
 	h1 {
 		top: 0vh;
 		font-size: 4rem;
 		left: 5vw;
+	}
+  }
+
+  @media (max-width: 350px) {
+	h1 {
+		top: -2vh;
+		font-size: 4rem;
+		left: 3vw;
 	}
   }
   
