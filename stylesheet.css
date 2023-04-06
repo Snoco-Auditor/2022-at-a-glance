@@ -1081,7 +1081,6 @@ ul {
 	font-size: 1.25rem;
 	line-height: 1.5;
 	position: absolute;
-	bottom: 0;
 	left: 0;
 	opacity: 0;
 	transition: all .35s;
@@ -1200,7 +1199,7 @@ ul {
 .effect.effect-eleven p {
 	text-align: left;
 	line-height: 1.2;
-	padding: 1em 1em 0 1em;
+	padding: 1em 4em 0 0em;
 	font-size: 1.25rem;
 	transform: translate3d(5px, 0, 0);
 	-webkit-transform: translate3d(5px, 0, 0);
