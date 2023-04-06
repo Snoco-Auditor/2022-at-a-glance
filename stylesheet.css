@@ -1743,7 +1743,7 @@ a:-webkit-any-link {
 
   @media (min-width: 768px) {
 	.elections-content {
-	min-height: 225vh;
+	min-height: 250vh;
 	}
   }
 
@@ -1765,9 +1765,9 @@ a:-webkit-any-link {
 	}
   }
 
-  @media (min-width: 768px) and (max-width: 1000px) {
+  @media (min-width: 768px) and (max-width: 1025px) {
 	.licensing-content {
-	  max-height: 125vh;
+	  max-height: 140vh;
 	}
   }
 
@@ -1792,7 +1792,13 @@ a:-webkit-any-link {
 	overflow:hidden;
 }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 768px) {
+	.recording-content {
+	min-height: 250vh;
+	}
+  }
+
+  @media (min-width: 1001px) and (max-width: 3000px) {
 	.recording-content {
 	  max-height: 215vh;
 	}
@@ -1806,6 +1812,13 @@ a:-webkit-any-link {
 
   @media (min-width: 768px) {
 	.recording-content .flex-item-left {
+	  min-width:40vw;
+	  flex: 0;
+	}
+  }
+
+  @media (max-width: 1000px) {
+	.recording-content .w3-display-topmiddle {
 	  min-width:40vw;
 	  flex: 0;
 	}
