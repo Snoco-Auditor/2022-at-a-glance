@@ -37,12 +37,42 @@ html, body {
       background-color: #1B1A19;
       width: 8px;
     }	
-
-	@media (max-width: 767px) {
+	@media screen and (max-height: 600px) {
 	.animal-content {
-	  min-height: 275vh;
+    height: 435vh;
 	}
+	}
+  
+  @media screen and (min-width: 345px) and (max-width: 420px) and (min-height: 760px){
+	.animal-content {
+    height: 380vh;
+	}
+	}
+
+  @media screen and (min-height: 600px) and (max-width: 420px) {
+    .animal-content {
+    height: 415vh;
   }
+}
+
+@media screen and (min-height: 700px) and (min-width: 390px) {
+    .animal-content {
+    height: 325vh;
+  }
+}
+
+@media screen and (max-width: 375px) and (min-height: 650px){
+    .animal-content {
+    height: 415vh;
+  }
+}
+
+
+@media screen and (min-height: 700px) and (max-width: 375px) {
+    .animal-content {
+    height: 400vh;
+  }
+}
 	</style>
 	<link href="stylesheet.css" rel="stylesheet" type="text/css">
 	</head>
