@@ -498,13 +498,13 @@
   .AS-menu .recording:hover {
   cursor:pointer;
   color: #f0f0f0db;
-  text-shadow: 3px 2px 20px #1b1a19;
+  text-shadow: 3px 2px 20px #ffffff;
   }
   
   .E-menu .recording:hover {
   cursor:pointer;
   color: #f0f0f0db;
-  text-shadow: 3px 2px 20px #1b1a19;
+  text-shadow: 3px 2px 20px #ffffff;
   }
 
 @media screen and (max-width: 767px) {
