@@ -71,6 +71,18 @@
 	}
   }
 
+  @media (min-width: 1201px) {
+	#tab0, #tab1, #tab2, #tab3, #tab4 p {
+	  font-size: 2.025vh; 
+	}
+  }
+
+  @media (max-width: 767px) {
+	#tab0, #tab1, #tab2, #tab3, #tab4 p {
+	  font-size: 2.025vh; 
+	}
+  }
+
   @media (min-width: 1000px) {
 	h1 {
 	  font-size: 6em;
