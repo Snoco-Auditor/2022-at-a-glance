@@ -395,7 +395,7 @@
 	
 @media (min-width: 1000px) {
 	.animal-content {
-		height: 225vh;
+		height: 250vh;
 	}
 	}
 
@@ -1770,7 +1770,7 @@ a:-webkit-any-link {
 
 @media (min-width: 1001px) and (max-width: 3000px) {
 	.elections-content {
-	  min-height: 250vh;
+	  min-height: 275vh;
 	}
   }
 
@@ -1781,7 +1781,7 @@ a:-webkit-any-link {
 	}
   }
 
-  @media (min-width: 1000px) {
+  @media (max-width: 1000px) {
 	.elections-content {
 	max-height: 250vh;
 	}
@@ -1789,7 +1789,6 @@ a:-webkit-any-link {
 
 .licensing-content{
 	max-width:100vw;
-	height: 200vh;
 	margin-left:auto;
 	margin-right:auto;
 	background: white;
@@ -1799,15 +1798,15 @@ a:-webkit-any-link {
 	border-color: #1B2227;
 }
 
-  @media (min-width: 1000px) {
+  @media (min-width: 1051px) {
 	.licensing-content {
-	  max-height: 200vh;
+	  height: 325vh;
 	}
   }
 
-  @media (min-width: 768px) and (max-width: 1025px) {
+  @media (min-width: 768px) and (max-width: 1050px) {
 	.licensing-content {
-	  max-height: 140vh;
+	  height: 140vh;
 	}
   }
 
