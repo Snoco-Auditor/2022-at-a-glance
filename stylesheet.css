@@ -78,7 +78,7 @@
   @media (max-width: 767px) {
 	.column p {
 	  width: 90vw;
-	  top: 5vh;
+	  top: 1vh;
 	  left: 3vw;
 	}
   }
