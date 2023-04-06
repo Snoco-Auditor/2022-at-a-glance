@@ -595,7 +595,7 @@ min-width: 100vw;
 @media screen and (max-width: 767px) {
 #tab4 .button_green {
 min-width: 50vw;	
-top: 10vh;
+top: 1vh;
 max-height: 50vh;
 font-size: 0.75rem;
 }
@@ -603,9 +603,10 @@ font-size: 0.75rem;
 
   @media screen and (max-width: 767px) {
 	  .column {
-	   min-width:90vw;
-	  height: 50vh;
-	  left: -4em;
+		min-width:90vw;
+		height: 50vh;
+		left: -4em;
+		top:-3vh;
 	  }
 	  }
 	  
@@ -794,7 +795,7 @@ ul {
 .column-4,
 .column-8 {
 	float: left;
-	padding: % 2% 2% 0%;
+	padding: 0% 2% 2% 0%;
 }
 
 .effectTab-header .title::after,
@@ -942,7 +943,7 @@ ul {
 	.column-xs-12
 	 {
 		float: left;
-		padding: 15px
+		padding: 15px;
 		width: 100%;
 		margin-bottom: 0em;
 		padding-bottom: 0em;
@@ -1831,7 +1832,7 @@ a:-webkit-any-link {
 
 @media (min-width: 1000px) {
 	.beyond-content {
-	  max-height: 200vh;
+		min-height: 200vh;
 	}
   }
 
