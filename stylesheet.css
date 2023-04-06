@@ -330,8 +330,7 @@
 
   @media (max-width: 1000px) {
 	.animal-content .button_red {
-	 top:150vh;
-	 left:10vw;
+	left:10vw;
 	}
   }
 
@@ -1865,7 +1864,7 @@ a:-webkit-any-link {
 
 @media (min-width:768px) and (max-width: 1000px) {
 	.beyond-content {
-	min-height: 250vh;
+	max-height: 200vh;
 	}
 }
 
