@@ -222,9 +222,10 @@
   }
   
   @media only screen and (max-device-width: 767px) {
-	.w3-row {
+	.w3-row, .w3-dark-grey {
 	  -webkit-flex-direction: column;
 	  flex-direction: column;
+	  margin-top: 15vh;
   }
   }
   
@@ -1990,10 +1991,10 @@ a:-webkit-any-link {
 	margin-bottom:16px!important
 }
 
-.w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{
+.w3-dark-grey,{
 	color:#fff!important;
 	background-color:#1B2227!important;
-	position:relative;
+	position:sticky;
 }
 
 .w3-border-dark-grey,.w3-hover-border-dark-grey:hover,.w3-border-dark-gray,.w3-hover-border-dark-gray:hover{border-color:#1B2227!important}
