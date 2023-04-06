@@ -441,31 +441,6 @@ left: 0;
 	  }
 	}
   </script>
-	<script>
-  
-    // Create an array of image URLs to preload
-    const imageUrls = [
-      "https://snoco-auditor.github.io/2022_Auditor_Report/graphics/Animals/Animal%20Control%20Officers-01.png",
-      "https://snoco-auditor.github.io/2022_Auditor_Report/graphics/Animals/Animal%20Services%20Cases_alt-03.png",
-	  "https://snoco-auditor.github.io/2022_Auditor_Report/graphics/Animals/Animal%20Services%20Cases-04.png"
-    ];
-
-    // Create an empty array to hold the image objects
-    const images = [];
-
-    // Preload the images
-    function preloadImages() {
-      for (let i = 0; i < imageUrls.length; i++) {
-        const image = new Image();
-        image.src = imageUrls[i];
-        images.push(image);
-      }
-    }
-
-    // Call the preloadImages function when the page loads
-    window.onload = preloadImages;
-  </script>
-
 <script type="text/javascript">
 	function showPopup() {
 		var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -618,7 +593,7 @@ left: 0;
 	<button class="button_purple" style="margin-left:0vw; margin-top:30vh; position:relative; z-index: 5;"><a href="#Elections_more">Read More</a></button>
   	</div>
     </div>
-<div class="recording" style="top: 50%; right: 0%; cursor:pointer" onclick="slideTab('tab2', ['tab3', 'tab4'])">ELECTIONS</div>
+<div class="recording" style="top: 50%; right: 0%; cursor:pointer">ELECTIONS</div>
 	</div></div>
 <div id="tab3" onclick="slideTab('tab3', ['tab4'])">
 	<div class="AS-menu">
