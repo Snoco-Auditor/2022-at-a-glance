@@ -38,13 +38,43 @@ html, body {
       width: 8px;
     }	
 
-	@media (max-width: 767px) {
+  @media screen and (max-height: 600px) {
 	.recording-content {
-	  max-height: 250vh;
+    max-height: 435vh;
 	}
-  }
+	}
+  
+  @media screen and (min-height: 600px) {
+	.recording-content {
+   max-height: 400vh;
+	}
+	}
 
-	</style>
+  @media screen and (min-height: 600px) and (max-width: 420px) {
+    .recording-content {
+    max-height: 415vh;
+  }
+}
+
+@media screen and (min-height: 700px) and (min-width: 390px) {
+    .recording-content {
+    max-height: 400vh;
+  }
+}
+
+@media screen and (min-height: 600px) and (max-width: 500px) {
+    .recording-content {
+    max-height: 315vh;
+  }
+}
+
+@media screen and (min-height: 700px) and (max-width: 375px) {
+    .recording-content {
+    max-height: 380vh;
+  }
+}
+  
+  </style>
 	 <link href="stylesheet.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
