@@ -225,7 +225,6 @@
 	.w3-row, .w3-dark-grey {
 	  -webkit-flex-direction: column;
 	  flex-direction: column;
-	  margin-top: 15vh;
 	  position: sticky;
 	  color: white;
 	  background-color: #1B2227!important;
@@ -237,7 +236,6 @@
 	.w3-row, .w3-dark-grey {
 	  -webkit-flex-direction: column;
 	  flex-direction: column;
-	  margin-top: 10vh;
 	  position: sticky;
 	  color: white;
 	  background-color: #1B2227!important;
