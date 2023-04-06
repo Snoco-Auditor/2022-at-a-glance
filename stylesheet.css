@@ -1872,7 +1872,7 @@ a:-webkit-any-link {
 
 @media (min-width: 1000px) {
 	.beyond-content {
-		max-height: 150vh;
+		max-height: 160vh;
 	}
   }
 
@@ -1985,6 +1985,12 @@ a:-webkit-any-link {
 	.w3-display-topleft{
 		min-width: 100%;
 		margin-top: 5vh;
+	}
+} 
+
+@media (min-width: 1001px) and (max-width: 3000px) {
+	.w3-display-topleft{
+		margin: 10% 1% 1% 10%; 
 	}
 } 
 
