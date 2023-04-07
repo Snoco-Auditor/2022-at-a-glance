@@ -1781,12 +1781,6 @@ a:-webkit-any-link {
 	}
   }
 
-  @media (max-width: 1000px) {
-	.elections-content {
-	max-height: 250vh;
-	}
-  }
-
 .licensing-content{
 	max-width:100vw;
 	margin-left:auto;
