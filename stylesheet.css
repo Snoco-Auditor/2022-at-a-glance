@@ -1878,13 +1878,20 @@ a:-webkit-any-link {
 
 @media (min-width:768px) and (max-width: 1050px) {
 	.beyond-content {
-	max-height: 200vh;
+	min-height: 400vh;
 	}
 }
 
-@media (min-width: 1051px) {
+@media (min-width: 1051px) and (max-width: 1600px){
 	.beyond-content {
-		max-height: 160vh;
+		min-height: 225vh;
+	}
+  }
+
+  
+@media (min-width: 1601px){
+	.beyond-content {
+		max-height: 200vh;
 	}
   }
 
