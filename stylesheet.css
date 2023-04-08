@@ -67,7 +67,7 @@
 	h1 {
 	top: -3vh;
 	font-size: 5rem;
-	top: -5vh;
+	top: -15vh;
 	width: 50vw;
 	left: -5vw;
 	}
@@ -392,13 +392,17 @@
 	}
 	}
 	
-	
-@media (min-width: 1000px) {
+@media (min-width: 1051px) {
 	.animal-content {
-		height: 250vh;
+		height: 325vh;
 	}
 	}
 
+	@media (min-width: 768px) and (max-width: 1050px) {
+	.animal-content {
+		height: 329vh;
+	}
+	}
 @media (max-width: 1500px){
 	.top-logo img {
 	max-height: 45px;
@@ -1800,7 +1804,7 @@ a:-webkit-any-link {
 
   @media (min-width: 768px) and (max-width: 1050px) {
 	.licensing-content {
-	  height: 140vh;
+	  height: 329vh;
 	}
   }
 
@@ -1825,13 +1829,13 @@ a:-webkit-any-link {
 	overflow:hidden;
 }
 
-  @media (min-width: 1001px) and (max-width: 3000px) {
+  @media (min-width: 1051px) and (max-width: 3000px) {
 	.recording-content {
 	  max-height: 215vh;
 	}
   }
 
-  @media (min-width: 768px) and (max-width: 1000px) {
+  @media (min-width: 768px) and (max-width: 1050px) {
 	.recording-content {
 	  max-height: 200vh;
 	}
@@ -1872,13 +1876,13 @@ a:-webkit-any-link {
 	}
 }
 
-@media (min-width:768px) and (max-width: 1000px) {
+@media (min-width:768px) and (max-width: 1050px) {
 	.beyond-content {
 	max-height: 200vh;
 	}
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1051px) {
 	.beyond-content {
 		max-height: 160vh;
 	}
