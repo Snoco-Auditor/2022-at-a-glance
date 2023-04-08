@@ -272,7 +272,7 @@
 	.w3-row, .w3-dark-grey {
 	  -webkit-flex-direction: column;
 	  flex-direction: column;
-	  position: sticky;
+	  position: relative;
 	  color: white;
 	  background-color: #1B2227!important;
 	  padding-top: 5vh;
@@ -283,7 +283,7 @@
 	.w3-row, .w3-dark-grey {
 	  -webkit-flex-direction: column;
 	  flex-direction: column;
-	  position: sticky;
+	  position: relative;
 	  color: white;
 	  background-color: #1B2227!important;
 	  padding-top: 5vh;
@@ -2081,7 +2081,7 @@ a:-webkit-any-link {
 .w3-dark-grey {
 	color:#fff!important;
 	background-color:#1B2227!important;
-	position:sticky;
+	position: relative;
 }
 
 .footer {
