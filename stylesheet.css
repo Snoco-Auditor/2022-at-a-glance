@@ -394,7 +394,13 @@
 	}
 	}
 	
-@media (min-width: 1051px) {
+@media (min-width: 1601px){
+	.animal-content {
+		max-height: 200vh;
+	}
+	}
+
+@media (min-width: 1051px) and (max-width:1600px){
 	.animal-content {
 		height: 325vh;
 	}
@@ -1774,14 +1780,14 @@ a:-webkit-any-link {
 	}
 	}
 
-@media (min-width: 1001px) and (max-width: 3000px) {
+@media (min-width: 1051px) and (max-width: 3000px) {
 	.elections-content {
 	  min-height: 275vh;
 	}
   }
 
 
-  @media (min-width: 768px) and (max-width: 1000px) {
+  @media (min-width: 768px) and (max-width: 1050px) {
 	.elections-content {
 	min-height: 200vh;
 	}
