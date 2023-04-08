@@ -2132,7 +2132,7 @@ a:-webkit-any-link {
   }
   .topnav {
 	overflow: hidden;
-	background-color: #333;
+	background-color: #1B2227;
 	position: relative;
   }
   
@@ -2157,7 +2157,7 @@ a:-webkit-any-link {
   }
   
   .topnav a:hover {
-	background-color: #ddd;
+	background-color: #363636;
 	color: black;
   }
   
