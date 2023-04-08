@@ -200,9 +200,11 @@
   
   @media only screen and (max-device-width: 1050px) {
 	.custom-row {
-		visibility:hidden;
-  }
-  }
+	visibility:hidden;
+	max-height:0vh;
+	margin-bottom: 2vh;
+	}
+	}
 
   @media only screen (max-device-width: 1250px) and (min-device-width: 1000px) {
 	.custom-row {
@@ -1837,7 +1839,7 @@ a:-webkit-any-link {
 
   @media (min-width: 768px) and (max-width: 1050px) {
 	.recording-content {
-	  max-height: 200vh;
+	  min-height: 230vh;
 	}
   }
 
