@@ -2131,17 +2131,17 @@ a:-webkit-any-link {
 	display: none;
   }
   
-  .topnav {
+  .topnav, .topnav2, .topnav3, .topnav4 {
 	overflow: hidden;
-	background-color: #333;
+	background-color: #1b2227;
 	position: relative;
   }
   
-  .topnav #myLinks {
+  .topnav, .topnav2, .topnav3, .topnav4 #myLinks {
 	display: none;
   }
   
-  .topnav a {
+  .topnav, .topnav2, .topnav3, .topnav4 a {
 	color: white;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -2149,7 +2149,7 @@ a:-webkit-any-link {
 	display: block;
   }
   
-  .topnav a.icon {
+  .topnav, .topnav2, .topnav3, .topnav4 a.icon {
 	background: black;
 	display: block;
 	position: absolute;
@@ -2158,10 +2158,25 @@ a:-webkit-any-link {
   }
   
   .topnav a:hover {
-	background-color: #ddd;
+	background-color: #BB4442;
 	color: black;
   }
   
+  .topnav2 a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+
+  .topnav3 a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+
+  .topnav4 a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+
   .active {
 	background-color: #1B2227;;
 	color: white;
