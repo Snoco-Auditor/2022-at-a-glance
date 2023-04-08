@@ -75,8 +75,30 @@ html, body {
 }
 	</style>
 	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	
+<script>
+	function myFunction() {
+	  var x = document.getElementById("myLinks");
+	  if (x.style.display === "block") {
+		x.style.display = "none";
+	  } else {
+		x.style.display = "block";
+	  }
+	}
+</script>
 	</head>
 	<body>
+		<div class="topnav">
+			<a href="#home" class="active">Logo</a>
+			<div id="myLinks">
+			  <a href="#news">News</a>
+			  <a href="#contact">Contact</a>
+			  <a href="#about">About</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			  <i class="fa fa-bars"></i>
+			</a>
+		  </div>
 	<div class="animal-content" style="padding:0; display:block">
 		<div class="bgimg-2 w3-display-container"><a id="animal_services_more"></a>
 			<h3 style="background-color:#e94f37; float:left; text-align: right;font-size: 5vh;">Animal Services</h3>
