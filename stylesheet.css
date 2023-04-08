@@ -396,7 +396,7 @@
 	
 @media (min-width: 1601px){
 	.animal-content {
-		max-height: 200vh;
+		min-height: 200vh;
 	}
 	}
 
