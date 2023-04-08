@@ -2130,18 +2130,17 @@ a:-webkit-any-link {
   #loader_content {
 	display: none;
   }
-  
-  .topnav, .topnav2, .topnav3, .topnav4 {
+  .topnav {
 	overflow: hidden;
-	background-color: #1b2227;
+	background-color: #333;
 	position: relative;
   }
   
-  .topnav, .topnav2, .topnav3, .topnav4 #myLinks {
+  .topnav #myLinks {
 	display: none;
   }
   
-  .topnav, .topnav2, .topnav3, .topnav4 a {
+  .topnav a {
 	color: white;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -2149,7 +2148,7 @@ a:-webkit-any-link {
 	display: block;
   }
   
-  .topnav, .topnav2, .topnav3, .topnav4 a.icon {
+  .topnav a.icon {
 	background: black;
 	display: block;
 	position: absolute;
@@ -2158,25 +2157,10 @@ a:-webkit-any-link {
   }
   
   .topnav a:hover {
-	background-color: #BB4442;
+	background-color: #ddd;
 	color: black;
   }
   
-  .topnav2 a:hover {
-	background-color: #ddd;
-	color: black;
-  }
-
-  .topnav3 a:hover {
-	background-color: #ddd;
-	color: black;
-  }
-
-  .topnav4 a:hover {
-	background-color: #ddd;
-	color: black;
-  }
-
   .active {
 	background-color: #1B2227;;
 	color: white;
