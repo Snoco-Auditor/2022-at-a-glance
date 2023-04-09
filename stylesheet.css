@@ -16,6 +16,14 @@
 	box-sizing: border-box
 }
 
+.parent {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 5em;
+	}
+
 @media (max-width: 767px) {
 	.column-4 div {
 	  left:10vw;
@@ -1758,6 +1766,7 @@ margin: 2px;
     border-style:solid none;
 	border-width: 16px;
 	border-color: #1B2227;
+	grid-area: 1/1;
 }
 
 	
@@ -1778,6 +1787,7 @@ a:-webkit-any-link {
 	padding: 5em;
 	display:flex;
 	overflow:hidden;
+	grid-area: 2/1;
 }
   
 @media (max-width: 1000px){
@@ -1818,6 +1828,7 @@ a:-webkit-any-link {
     border-style:solid none;
 	border-width: 16px;
 	border-color: #1B2227;
+	grid-area: 3/1;
 }
 
   @media (min-width: 1051px) {
@@ -1851,6 +1862,7 @@ a:-webkit-any-link {
 	height: 180vh;
 	display:flex;
 	overflow:hidden;
+	grid-area: 4/1
 }
 
   @media (min-width: 1051px) and (max-width: 3000px) {
@@ -1890,6 +1902,7 @@ a:-webkit-any-link {
     padding: 5em;
     height: 125vw;
     overflow: hidden;
+	grid-area: 5/1;
 }
 
 @media (min-width:768px) and (max-width: 1000px) {
