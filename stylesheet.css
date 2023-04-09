@@ -291,7 +291,7 @@
   }
   }
   
-  @media only screen and (max-device-height: 750px) {
+  @media only screen and (max-device-width: 767px) {
   .w3-center {
 	flex-direction:column;
 	padding: 10vh 2vw 10vh 2vw;
