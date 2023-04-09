@@ -930,7 +930,8 @@ ul {
 }
 
 .column-4 {
-	width: 33.33333333333333%
+	width: 33.33333333333333%;
+	flex-direction: column;
 }
 
 .column-8 {
