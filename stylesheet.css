@@ -16,10 +16,6 @@
 	box-sizing: border-box
 }
 
-.maincontent {
-	position: relative;
-}
-
 @media (max-width: 767px) {
 	.column-4 div {
 	  left:10vw;
@@ -1762,7 +1758,6 @@ margin: 2px;
     border-style:solid none;
 	border-width: 16px;
 	border-color: #1B2227;
-	position:absolute;
 }
 
 	
@@ -1772,7 +1767,6 @@ a:-webkit-any-link {
 }
 
 .elections-content{
-	position:absolute;
 	max-width:100vw;
 	margin-left:auto;
 	margin-right:auto;
