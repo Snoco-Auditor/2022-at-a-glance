@@ -215,6 +215,7 @@
   @media only screen and (max-device-width: 767px) {
 	.column-4 {
 		min-width: 100vw;
+		flex-direction: column;
   }
   }
   
@@ -286,10 +287,17 @@
 	  position: relative;
 	  color: white;
 	  background-color: #1B2227!important;
-	  padding-top: 5vh;
+	  margin:0;
   }
   }
   
+  @media only screen and (max-device-height: 750px) {
+  .w3-center {
+	flex-direction:column;
+	padding: 10vh 2vw 10vh 2vw;
+}
+  }
+
   @media only screen and (max-device-width: 767px) {
 	.custom-row {
 	  -webkit-flex-direction: column;
@@ -2076,12 +2084,14 @@ a:-webkit-any-link {
 
 .w3-center{
 	text-align:left;
+	flex-direction:row;
 }
 
 .w3-dark-grey {
 	color:#fff!important;
 	background-color:#1B2227!important;
 	position: relative;
+	display: flex;
 }
 
 .footer {
