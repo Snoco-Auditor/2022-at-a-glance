@@ -70,9 +70,9 @@
 	.electionsparent {
 		display: grid;
 		grid-template-columns: fit-content(50%) fit-content(50%);
-		grid-template-rows: 25vh;
+		grid-template-rows: fit-content(50%) fit-content(50%) fit-content(50%) fit-content(20%);
 		grid-column-gap: 0px;
-		grid-row-gap: 3%;
+		grid-row-gap: 0px;
 		grid-template-areas:
 			"Voters Voters"
 			"Inbound Inbound"
