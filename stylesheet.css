@@ -37,7 +37,7 @@
 	margin: 0 15em;
 	}
 
-@media (max-width: 1050px){
+@media (max-width: 1200px){
 .animalparent {
 	display: grid;
 	grid-template-columns: fit-content(50%) fit-content(50%);
@@ -66,7 +66,7 @@
 	margin: 0 15em;
 	}
 
-@media (max-width: 1050px){
+@media (max-width: 1200px){
 	.electionsparent {
 		display: grid;
 		grid-template-columns: fit-content(50%) fit-content(50%);
@@ -85,7 +85,7 @@
 .licensingparent {
 	display: grid;
 	grid-template-columns: fit-content(50%) fit-content(50%);
-	grid-template-rows: 25vh 50vh 25vh 25vh 20vh;
+	grid-template-rows: 25vh 50vh 30vh 25vh 20vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
@@ -97,7 +97,7 @@
 	margin: 0 15em;
 }
 
-@media (max-width: 1050px){
+@media (max-width: 1200px){
 	.licensingparent {
 		display: grid;
 		grid-template-columns: fit-content(50%) fit-content(50%);
@@ -1603,15 +1603,16 @@ a:link {
 	border-radius: 10px;
 	color: white;
 	border: none;
-	padding: 16px 32px;
+	padding: 16px 16px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 18px;
-	margin: 0em 2em 10em 0em;
+	margin: 0em 0em 5em 0em;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	box-shadow:  0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
+	font-family: 'Poppins', sans-serif;
 }
 
 .button_red:hover {
@@ -1626,15 +1627,16 @@ a:link {
 	border-radius: 10px;
 	color: white;
 	border: none;
-	padding: 16px 32px;
+	padding: 16px 16px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 18px;
-	margin: 4px 2px 2px 0px;
+	margin: 0em 0em 5em 0em;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	box-shadow:  0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
+	font-family: 'Poppins', sans-serif;
 }
 
 .button_purple:hover {
@@ -1649,17 +1651,18 @@ a:link {
     border-radius: 10px;
     color: white;
     border: none;
-    padding: 16px 32px;
+    padding: 16px 16px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 115%;
-    margin: 4px 2px 2px 0px;
+    margin: 0em 0em 5em 0em;
     transition-duration: 0.4s;
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgb(0 0 0 / 30%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     position: relative;
     flex-wrap: wrap;
+	font-family: 'Poppins', sans-serif;
 }
 
 .button_blue:hover {
@@ -1674,15 +1677,16 @@ a:link {
 	border-radius: 10px;
 	color: black;
 	border: none;
-	padding: 16px 32px;
+	padding: 16px 16px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size:115%;
-	margin: 4px 2px 2px 0px;
+	margin: 0em 0em 5em 0em;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	box-shadow:  0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
+	font-family: 'Poppins', sans-serif;
 }
 
 .button_yellow:hover {
