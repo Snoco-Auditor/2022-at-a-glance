@@ -27,26 +27,28 @@
 .animalparent {
 	display: grid;
     grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
-	grid-template-rows: 75vh;
+	grid-template-rows: 60vh 75vh 20vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
 		". Officer Officer ."
 		"Cases Cases Licensing Licensing"
-		". . button button"
+		". . button button";
+	margin: 0 5em;
 	}
 
 @media (max-width: 1050px){
 .animalparent {
 	display: grid;
 	grid-template-columns: fit-content(50%) fit-content(50%);
-	grid-template-rows: 75vh;
+	grid-template-rows: 40vh;
 	grid-column-gap: 0px;
-	grid-row-gap: 2%;
+	grid-row-gap: 3%;
 	grid-template-areas:"Officer Officer"
 						"Cases Cases"
 						"Licensing Licensing"
 						". button";
+	margin: 0 5em;
 	}
 }
 
@@ -1543,7 +1545,7 @@ a:link {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 18px;
-	margin: 4px 2px 2px 0px;
+	margin: 0em 2em 10em 0em;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	box-shadow:  0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
