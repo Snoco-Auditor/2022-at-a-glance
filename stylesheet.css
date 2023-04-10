@@ -85,7 +85,7 @@
 .licensingparent {
 	display: grid;
 	grid-template-columns: fit-content(50%) fit-content(50%);
-	grid-template-rows: 25vh 50vh 30vh 25vh 20vh;
+	grid-template-rows: 15vh 50vh 25vh 30vh 20vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
@@ -117,7 +117,7 @@
 .recordingparent {
 	display: grid;
 	grid-template-columns: fit-content(12.5%) fit-content(37.5%) fit-content(37.5%) fit-content(12.5%);
-	grid-template-rows: 50vh 75vh;
+	grid-template-rows: fit-content(50%);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
@@ -162,6 +162,23 @@
     margin: 0;
     width: 100%;
 	font-size: 1.75em;
+}
+
+@media (max-width: 1200px){
+	.beyondparent {
+		display: grid;
+		grid-template-columns: fit-content(50%) fit-content(50%);
+		grid-template-rows: fit-content(50%) fit-content(50%) fit-content(50%);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		grid-template-areas:
+			"descriptionB descriptionB"
+			"Security Security"
+			"Community Community"
+			"Backpost Backpost"
+			"Auditing Auditing";
+		margin: 0 5em;
+	}
 }
 
 @media (max-width: 767px) {
