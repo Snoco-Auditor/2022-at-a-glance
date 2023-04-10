@@ -149,10 +149,19 @@
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
-		". descriptionB descriptionB ."
+		"descriptionB descriptionB . ."
 		"Security Security Community Community"
 		"Backpost Backpost Auditing Auditing";
 	margin: 0 15em;
+}
+
+.beyond_description {
+	position: relative;
+    grid-area: descriptionB;
+    top: 0;
+    margin: 0;
+    width: 100%;
+	font-size: 1.75em;
 }
 
 @media (max-width: 767px) {
