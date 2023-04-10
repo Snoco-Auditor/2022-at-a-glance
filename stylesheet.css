@@ -60,7 +60,7 @@
 
 .electionsparent {
 	display: grid;
-	grid-template-columns: fit-content(23%) fit-content(23%) fit-content(23%) fit-content(23%);
+	grid-template-columns: fit-content(23%) fit-content(23%) fit-content(8%) fit-content(23%) fit-content(23%);
 	grid-template-rows: 25vh 40vh 50vh 20vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
