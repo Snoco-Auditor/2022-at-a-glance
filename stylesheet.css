@@ -40,14 +40,14 @@
 @media (max-width: 1200px){
 .animalparent {
 	display: grid;
-	grid-template-columns: fit-content(50%) fit-content(50%);
+	grid-template-columns: fit-content(35%) fit-content(35%) fit-content(30%);
 	grid-template-rows: 40vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
-	grid-template-areas:"Officer Officer"
-						"Cases Cases"
-						"Licensing Licensing"
-						". button";
+	grid-template-areas:"Officer Officer ."
+						"Cases Cases ."
+						"Licensing Licensing ."
+						". . button";
 	margin: 0 5em;
 	}
 }
