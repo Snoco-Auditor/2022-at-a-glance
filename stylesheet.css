@@ -24,21 +24,29 @@
 	grid-row-gap: 5em;
 	}
 
-.divisionparent {
+.animalparent {
 	display: grid;
     grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
 	grid-template-rows: 75vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
+	grid-template-areas:
+		". Officer Officer ."
+		"Cases Cases Licensing Licensing"
+		". . button button"
 	}
 
 @media (max-width: 1050px){
-.divisionparent {
+.animalparent {
 	display: grid;
 	grid-template-columns: fit-content(50%) fit-content(50%);
 	grid-template-rows: 75vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 2%;
+	grid-template-areas:"Officer Officer"
+						"Cases Cases"
+						"Licenses Licenses"
+						". button";
 	}
 }
 
