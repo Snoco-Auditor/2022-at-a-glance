@@ -77,7 +77,7 @@ background-color:#BB4442;
 	}
 
 @media (max-width: 767px) {
-.admin-content, .animalparent, .licensing-content, .recording-content, .electionsparent, .beyond-content {
+.admin-content, .animalparent, .licensingparent, .recording-content, .electionsparent, .beyond-content {
 visibility:hidden;
 max-height: 0vh;
 	}
@@ -685,7 +685,7 @@ left: 0;
 </div>
 <div style="width: 100vw;position: relative;display: block;height: 21%;border-top-style: solid;border-width: 16px;border-color: #1B2227;margin: bottom 1%;">
 	<h3 style="background-color:#772D8B;; float:left; padding-left: 15%;text-align: right;">Elections</h3>
-	<a id="animal_services_more"></a>		
+	<a id="elections_more"></a>		
 </div>
 <div class="electionsparent">
 	<div class="flex-item-left" style="grid-area: Voters"><h4>Voter Registration Transactions</h4>
@@ -702,6 +702,10 @@ left: 0;
 		<img src="graphics/Elections/Outreach.png" alt="chart" width= "50%"/>
 	</div>
 	<button class="button_purple" style="grid-area: purpleb;font-size:135%; float:right;" onclick="slideTab('tab1', ['tab2', 'tab3', 'tab4'])"><a href="#Licensing_top"><i class="fa-solid fa-circle-right"></i>&nbsp; Read about Licensing</a></button>
+</div>
+<div style="width: 100vw;position: relative;display: block;height: 21%;border-top-style: solid;border-width: 16px;border-color: #1B2227;margin: bottom 1%;">
+	<h3 style="background-color:#5E6AEC;; float:left; padding-left: 15%;text-align: right; letter-spacing:2px;">Licensing</h3>
+	<a id="licensing_more"></a>		
 </div>
 <div class="licensingparent">
 	<div class="flex-item-left" style="grid-area: descriptionL; vertical-align:middle"><h4>Licensing Transactions</h4>
@@ -724,36 +728,27 @@ left: 0;
 	</div>
 <button class="button_blue" style="grid-area: blueb; float:right;font-size:135%;" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])"><a href="#Recording_top"><i class="fa-solid fa-circle-right"></i>&nbsp; Read about Recording</a></button>
 </div>
-<div class="licensing-content" style="padding:0; display:block">
-	<div class="bgimg-4 w3-display-container"><a id="Licensing_more">
-		<h3 style="background-color:#5E6AEC; float:left; padding-left: 15%;text-align: right; letter-spacing:2px;">Licensing</h3>
-		<div class="w3-display-topmiddle" style="top:15em">
-
-		</div></a>
-	</div>
+<div class="recordingparent">
+		<div class="flex-item-left" style="grid-area:descriptionR"><h4>Top 5 Recorded Documents</h4>
+			<p style="font-size:1.075em; float:left;">Property documents recorded by Snohomish County Recording directly reflect the home buying, refinancing, and foreclosure activities in Snohomish County. The top five recorded documents represent more than 60% of all documents recorded by the Auditor’s Office and are used as housing market indicators by the real estate community.</p>
+		</div>
+		<div class="flex-item-right" sytle="grid-area:Documents; padding:0">
+			<img src="graphics/Recording/top5.png" alt="chart" width="100%"/>
+		</div>	
+		<div class="flex-item-left" style="grid-area:Marriages"><h4>Marriage Certificates Issued</h4>
+			<p style="font-size:1.075em; padding: 0px 15px 0px 0px;">During the pandemic, the number of marriage certificates issued by Snohomish County Recording dropped by 25%. As COVID-19 restrictions eased, the number of marriages increased!  In 2022 the number of marriage certificates issued in Snohomish County was the highest it has been in over 5 years. </p>
+			<img src="graphics/Recording/Marriages.png" alt="chart" width= "100%" style="padding-top:1em;"/>
+		</div>
+		<div class="flex-item-right" style="grid-area:Recorded"><h4>Total Documents Recorded</h4>
+			<p style="font-size:1.075em;">Due to historically low interest rates, a record number of real estate related documents were recorded in 2020 and 2021. But rising national interest rates and an uncertain housing market in 2022 meant Snohomish County Recording experienced a noticeable decrease in the number of documents recorded.</p>
+			<img src="graphics/Recording/Decline.png" alt="chart" width= "100%" style="padding-top:1em;">
+		</div>
 </div>
 	<div class="recording-content" style="padding:0; display:block">
 	<div class="bgimg-4 w3-display-container"><a id="Recording_more">
 	<h3 style="background-color:#ffbf00; float:left; padding-left: 15%;text-align: right; letter-spacing:2px;">Recording</h3>
 		<div class="w3-display-topmiddle" style="margin:0">
-				<div class="flex-container" style="padding: 0em 15%; width: 100vw;">
-						<div class="flex-item-left"><h4>Top 5 Recorded Documents</h4>
-							<p style="font-size:1.075em; float:left;">Property documents recorded by Snohomish County Recording directly reflect the home buying, refinancing, and foreclosure activities in Snohomish County. The top five recorded documents represent more than 60% of all documents recorded by the Auditor’s Office and are used as housing market indicators by the real estate community.</p>
-						</div>
-						<div class="flex-item-right" sytle="padding:0">
-							<img src="graphics/Recording/top5.png" alt="chart" width="100%"/>
-						</div>
-				</div>
-				<div class="flex-container" style="padding: 0em 15%; width: 100vw;">	
-					<div class="flex-item-left"><h4>Marriage Certificates Issued</h4>
-						<p style="font-size:1.075em; padding: 0px 15px 0px 0px;">During the pandemic, the number of marriage certificates issued by Snohomish County Recording dropped by 25%. As COVID-19 restrictions eased, the number of marriages increased!  In 2022 the number of marriage certificates issued in Snohomish County was the highest it has been in over 5 years. </p>
-						<img src="graphics/Recording/Marriages.png" alt="chart" width= "100%" style="padding-top:1em;"/>
-					</div>
-					<div class="flex-item-right" style="padding:0"><h4>Total Documents Recorded</h4>
-						<p style="font-size:1.075em;">Due to historically low interest rates, a record number of real estate related documents were recorded in 2020 and 2021. But rising national interest rates and an uncertain housing market in 2022 meant Snohomish County Recording experienced a noticeable decrease in the number of documents recorded.</p>
-						<img src="graphics/Recording/Decline.png" alt="chart" width= "100%" style="padding-top:1em;">
-					</div>
-				</div>
+			
 		</div>
 	</div></a>
 	</div>
