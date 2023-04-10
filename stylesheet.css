@@ -75,15 +75,15 @@
 @media (max-width: 1200px){
 	.electionsparent {
 		display: grid;
-		grid-template-columns: fit-content(50%) fit-content(50%);
-		grid-template-rows: fit-content(50%) fit-content(50%) fit-content(50%) fit-content(20%);
+		grid-template-columns: 25vw 50vw 25vw;
+		grid-template-rows: 75vh;
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
 		grid-template-areas:
-			"Voters Voters"
-			"Inbound Inbound"
-			"Outreach Outreach"
-			". purpleb";
+			". Voters ."
+			". Inbound ."
+			". Outreach ."
+			". . purpleb";
 		margin: 0 5em;
 	}
 }
