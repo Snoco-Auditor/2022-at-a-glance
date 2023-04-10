@@ -16,6 +16,11 @@
 	box-sizing: border-box
 }
 
+.hideme
+{
+    opacity:0;
+}
+
 .parent {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -40,15 +45,16 @@
 @media (max-width: 1200px){
 .animalparent {
 	display: grid;
-	grid-template-columns: 10vw 80vw 10vw;
-	grid-template-rows: 40vh;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-	grid-template-areas:". Officer ."
-						". Cases ."
-						". Licensing ."
-						". . button";
-	margin: 0;
+    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-rows: 75vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        ". Officer ."
+        ". Cases ."
+        ". Licensing ."
+        ". . button";
+    margin: 0;
 	}
 }
 
