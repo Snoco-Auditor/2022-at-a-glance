@@ -55,7 +55,7 @@
 .electionsparent {
 	display: grid;
 	grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
-	grid-template-rows: 60vh 75vh 20vh;
+	grid-template-rows: 25vh 25vh 25vh 25vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
