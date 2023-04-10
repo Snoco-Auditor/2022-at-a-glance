@@ -458,25 +458,15 @@ left: 0;
 	}
 </script>
 <script>
-$(function () {
-  // $(document).ready shorthand
-  $(".admin-content").fadeIn("slow");
-});
+window.addEventListener('scroll', function() {
+  const element = document.getElementsByClassName('hideme');
+  const position = element.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
 
-$(document).ready(function () {
-  /* Every time the window is scrolled ... */
-  $(window).scroll(function () {
-    /* Check the location of each desired element */
-    $(".hideme").each(function (i) {
-      var top_of_object = $(this).offset().top;
-      var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-      /* If the top of the object is visible in the window, fade it in */
-      if (bottom_of_window > top_of_object) {
-        $(this).animate({ opacity: "1" }, 1500);
-      }
-    });
-  });
+  if (position < windowHeight) {
+    element.style.opacity = 1;
+    element.style.transition = 'opacity 1s ease-in-out';
+  }
 });
 </script>
 </head>
