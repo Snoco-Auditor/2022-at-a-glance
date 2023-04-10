@@ -55,7 +55,7 @@
 .electionsparent {
 	display: grid;
 	grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
-	grid-template-rows: 25vh 25vh 25vh 25vh;
+	grid-template-rows: 25vh 25vh 50vh 50vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
@@ -66,6 +66,21 @@
 	margin: 0 5em;
 	}
 
+@media (max-width: 1050px){
+	.electionsparent {
+		display: grid;
+		grid-template-columns: fit-content(50%) fit-content(50%);
+		grid-template-rows: 25vh;
+		grid-column-gap: 0px;
+		grid-row-gap: 3%;
+		grid-template-areas:
+			"Voters Voters"
+			"Inbound Inbound"
+			"Outreach Outreach"
+			". purpleb";
+		margin: 0 5em;
+	}
+}
 @media (max-width: 767px) {
 	.column-4 div {
 	  left:10vw;
