@@ -116,13 +116,42 @@
 
 .recordingparent {
 	display: grid;
-	grid-template-columns: fit-content(50%) fit-content(50%);
+	grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
 	grid-template-rows: 75vh 75vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
 		". descriptionR Documents ."
 		"Marriages Marriages Recorded Recorded";
+	margin: 0 15em;
+}
+
+@media (max-width: 1200px){
+	.recordingparent {
+		display: grid;
+		grid-template-columns: fit-content(50%) fit-content(50%);
+		grid-template-rows: fit-content(50%) fit-content(50%) fit-content(50%);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		grid-template-areas:
+			"descriptionR descriptionR"
+			"Documents Documents"
+			"Marriages Marriages"
+			"Recorded Recorded";
+		margin: 0 5em;
+	}
+}
+
+.beyondparent {
+	display: grid;
+	grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
+	grid-template-rows: 20vh 75vh 75vh;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	grid-template-areas:
+		". descriptionB descriptionB ."
+		"Security Security Community Community"
+		"Backpost Backpost Auditing Auditing";
 	margin: 0 15em;
 }
 
