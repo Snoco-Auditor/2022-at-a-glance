@@ -26,8 +26,8 @@
 
 .divisionparent {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
+	grid-template-rows: 75vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	}
