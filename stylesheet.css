@@ -116,7 +116,7 @@
 
 .recordingparent {
 	display: grid;
-	grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
+	grid-template-columns: fit-content(12.5%) fit-content(37.5%) fit-content(37.5%) fit-content(12.5%);
 	grid-template-rows: 75vh 75vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
@@ -145,11 +145,11 @@
 .beyondparent {
 	display: grid;
 	grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
-	grid-template-rows: 20vh 75vh 75vh;
+	grid-template-rows: fit-content(10%) fit-content(50%) fit-content(50%);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
-		"descriptionB descriptionB . ."
+		"descriptionB descriptionB descriptionB ."
 		"Security Security Community Community"
 		"Backpost Backpost Auditing Auditing";
 	margin: 0 15em;
