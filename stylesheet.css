@@ -45,7 +45,7 @@
 	grid-row-gap: 2%;
 	grid-template-areas:"Officer Officer"
 						"Cases Cases"
-						"Licenses Licenses"
+						"Licensing Licensing"
 						". button";
 	}
 }
