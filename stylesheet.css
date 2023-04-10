@@ -34,7 +34,7 @@
 		". Officer Officer ."
 		"Cases Cases Licensing Licensing"
 		". . button button";
-	margin: 0 10em;
+	margin: 0 15em;
 	}
 
 @media (max-width: 1050px){
@@ -43,7 +43,7 @@
 	grid-template-columns: fit-content(50%) fit-content(50%);
 	grid-template-rows: 40vh;
 	grid-column-gap: 0px;
-	grid-row-gap: 3%;
+	grid-row-gap: 0px;
 	grid-template-areas:"Officer Officer"
 						"Cases Cases"
 						"Licensing Licensing"
@@ -63,7 +63,7 @@
 		"Voters Voters Inbound Inbound"
 		"Outreach Outreach Inbound Inbound"
 		"Outreach Outreach purpleb purpleb";
-	margin: 0 10em;
+	margin: 0 15em;
 	}
 
 @media (max-width: 1050px){
@@ -87,14 +87,31 @@
 	grid-template-columns: fit-content(50%) fit-content(50%);
 	grid-template-rows: 25vh 50vh 25vh 25vh 20vh;
 	grid-column-gap: 0px;
-	grid-row-gap: 3%;
+	grid-row-gap: 0px;
 	grid-template-areas:
 		". Transactions"
 		"descriptionL Transactions"
 		"Offices Certification"
 		"Offices Certification"
 		". blueb";
-	margin: 0 10em;
+	margin: 0 15em;
+}
+
+@media (max-width: 1050px){
+	.licensingparent {
+		display: grid;
+		grid-template-columns: fit-content(50%) fit-content(50%);
+		grid-template-rows: fit-content(50%) fit-content(50%) fit-content(50%) fit-content(50%) fit-content(20%);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		grid-template-areas:
+			"descriptionL descriptionL"
+			"Transactions Transactions"
+			"Offices Offices"
+			"Certification Certification"
+			". blueb";
+		margin: 0 5em;
+	}
 }
 
 
@@ -420,7 +437,7 @@
   }
   
   .flex-item-left {
-	padding: 1% 5% 1% 0%;
+	padding: 1% 15% 1% 0%;
 	flex: 50%;
   }
   
