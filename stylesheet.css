@@ -34,7 +34,7 @@
 		". Officer Officer ."
 		"Cases Cases Licensing Licensing"
 		". . button button";
-	margin: 0 5em;
+	margin: 0 10em;
 	}
 
 @media (max-width: 1050px){
@@ -63,7 +63,7 @@
 		"Voters Voters Inbound Inbound"
 		"Outreach Outreach Inbound Inbound"
 		"Outreach Outreach purpleb purpleb";
-	margin: 0 5em;
+	margin: 0 10em;
 	}
 
 @media (max-width: 1050px){
@@ -81,6 +81,22 @@
 		margin: 0 5em;
 	}
 }
+
+.licensingparent {
+	display: grid;
+	grid-template-columns: fit-content(50%) fit-content(50%);
+	grid-template-rows: 25vh 50vh 25vh 25vh 20vh;
+	grid-column-gap: 0px;
+	grid-row-gap: 3%;
+	grid-template-areas:
+		". Transactions"
+		"descriptionL Transactions"
+		"Offices Certification"
+		"Offices Certification"
+		". blueb";
+	margin: 0 10em;
+}
+
 
 @media (max-width: 767px) {
 	.column-4 div {
