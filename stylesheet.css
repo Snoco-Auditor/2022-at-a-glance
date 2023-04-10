@@ -52,6 +52,20 @@
 	}
 }
 
+.electionsparent {
+	display: grid;
+	grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
+	grid-template-rows: 60vh 75vh 20vh;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	grid-template-areas:
+		"Voters Voters Inbound Inbound"
+		"Voters Voters Inbound Inbound"
+		"Outreach Outreach Inbound Inbound"
+		"Outreach Outreach purpleb purpleb";
+	margin: 0 5em;
+	}
+
 @media (max-width: 767px) {
 	.column-4 div {
 	  left:10vw;
