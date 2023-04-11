@@ -95,14 +95,13 @@
 .licensingparent {
 	display: grid;
 	grid-template-columns: 50vw 30vw;
-	grid-template-rows: 15vh 15vh 50vh 25vh 30vh 20vh;
+	grid-template-rows: 20vh 10vh 50vh 75vh 10vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
 		"divisionb divisionb"
 		". Transactions"
 		"descriptionL Transactions"
-		"Offices Certification"
 		"Offices Certification"
 		". blueb";
 	margin: 0 5vw 2vw 5vw;
@@ -232,7 +231,6 @@
 	background-color:#1B2227!important;
 	position: relative;
 	float: left;
-	width:35%;
 	grid-area: mission;
 	margin: 2vw;
 }
