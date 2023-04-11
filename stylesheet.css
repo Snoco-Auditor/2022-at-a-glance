@@ -61,8 +61,8 @@
 
 .electionsparent {
 	display: grid;
-	grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
-	grid-template-rows: fit-content(50%);
+	grid-template-columns: 25vw 25vw 25vw 25vw;
+	grid-template-rows: fit-content(10%);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
@@ -71,7 +71,7 @@
 		"Voters Voters Inbound Inbound"
 		"Outreach Outreach Inbound Inbound"
 		"Outreach Outreach purpleb purpleb";
-	margin: 0 15em;
+	margin: 0 5vw;
 	}
 
 @media (max-width: 1200px){
@@ -97,6 +97,7 @@
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
+		"divisionb divisionb divisionb divisionb"
 		". Transactions"
 		"descriptionL Transactions"
 		"Offices Certification"
@@ -129,6 +130,7 @@
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
+		"divisionb divisionb divisionb divisionb"
 		". descriptionR Documents ."
 		"Marriages Marriages Recorded Recorded";
 	margin: 0 15em;
