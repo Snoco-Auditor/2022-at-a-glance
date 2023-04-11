@@ -78,38 +78,31 @@ html, body {
    <link href="stylesheet.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-    <div class="licensing-content" style="padding:0; display:block;height: 300vh">
-      <div class="bgimg-2 w3-display-container"><a id="animal_services_more"></a>
-        <h3 style="background-color:#5E6AEC; float:left; text-align: right;font-size: 5vh;">Licensing</h3>
-        <div class="w3-display-topmiddle" style="top: 15vh;width: 100vw;margin: 0 6vw 0 5vw;left: 0;padding-right: 12vw;">
-          <h4 style="font-size:2em; margin-bottom: 3vh">Helpful and Efficient Licensing Services</h4>
-            <p style="position: relative;margin: 1% 0em 0em 0em;font-size:1.075em;">Snohomish County Licensing, a division of the Auditor’s Office, and in partnership with the Washington State Department of Licensing, issues and renews vehicle and vessel registrations, processes title transactions, issues license plates, and provides training and oversight to the county’s 16 vehicle licensing subagent offices. We ensure high-quality service delivery and compliance with Department of Licensing standards. Our knowledgeable and friendly staff process transactions for a variety of motorized and non-motorized vehicles and vessels including farm equipment, snowmobiles, mobile homes, motorhomes, and more!<br><br>
-              We also process licenses for specific businesses that engage in regulated activities within unincorporated Snohomish County, including pawn shops and adult entertainment businesses.<br><br></p>
-          <div class="flex-container" style="margin: 0;left: 0;min-width: 75vw;flex-direction: row;">
-            <div class="flex-item-left" style="margin: 0; padding:0">
-              <h4>Licensing Transactions</h4>
-              <img src="graphics/Licensing/Vehicles.png" alt="vehicle licensing transactions" width="100%"/>
-              <p style="font-size:1.075em;">In 2022, Snohomish County Licensing and the 16 licensing subagent offices processed over 1 million registration, title, tab renewal and permit transactions for a range of vehicles and vessels.</p>
-            </div>
-          </div>
-          <div class="flex-container" style="width: 75vw">
-            <div class="flex-item-left">
-              <div><h4>Local Licensing Offices</h4>
-                <p style="font-size:1.075em;">Snohomish County Licensing oversees 16 local licensing subagent offices located throughout the county. These vehicle licensing offices are contracted through the county auditor and authorized by Washington State Department of Licensing to perform vehicle and vessel title and licensing services for our community.</p>
-                <img src="graphics/Licensing/Offices.jpg" alt="chart" width= "100%"/>
-              </div>
-            </div>
-            <div class="flex-item-right" style="padding-left:0px">
-              <div><h4>Training &amp; Certification</h4>
-                <p style="font-size:1.075em;">The 16 vehicle licensing subagent offices receive training, support and oversight from Snohomish County Licensing to ensure high-quality delivery and compliance with Department of Licensing standards. In 2022, our staff conducted in-person and virtual training with licensing subagents, administered the Department of Licensing Qualification Exam and certified vehicle licensing representatives.</p>
-                <img src="graphics/Licensing/Certification.png" alt="chart" width= "50%" style="margin-bottom:2em;"/>
-              </div>
-            </div>
-          </div>
-          <button class="button_blue" style="float:right;font-family: 'Poppins', sans-serif;font-size:135%;"><a href="Recording.html"><i class="fa-solid fa-circle-right"></i>&nbsp; Read about Recording</a></button>
-          </div>
+        <div class="divisionbanner">
+          <h3 style="background-color:#5E6AEC;; float:left; padding-left: 15%;text-align: right; letter-spacing:2px;font-size: 5vh;">Licensing</h3>
+          <a id="licensing_more"></a>		
         </div>
-      </div>
+        <div class="licensingparent">
+          <div class="flex-item-left" style="grid-area: descriptionL; vertical-align:middle"><h4>Licensing Transactions</h4>
+            <p style="font-size:1.075em; float:left;">In 2022, Snohomish County Licensing and the 16 licensing subagent offices processed over 1 million registration, title, tab renewal and permit transactions for a range of vehicles and vessels.</p>
+          </div>
+          <div class="flex-item-right" style="grid-area: Transactions;margin: 0; vertical-align:middle;">
+            <img src="graphics/Licensing/Vehicles.png" alt="vehicle licensing transactions" width="75%"/>
+          </div>
+          <div class="flex-item-left" style="grid-area:Offices">
+            <div><h4>Local Licensing Offices</h4>
+              <p style="font-size:1.075em;">Snohomish County Licensing oversees 16 local licensing subagent offices located throughout the county. These vehicle licensing offices are contracted through the county auditor and authorized by Washington State Department of Licensing to perform vehicle and vessel title and licensing services for our community.</p>
+              <img src="graphics/Licensing/Offices.jpg" alt="chart" width= "100%"/>
+            </div>
+          </div>
+          <div class="flex-item-right" style="grid-area:Certification; padding-left:0px">
+            <div><h4>Training &amp; Certification</h4>
+              <p style="font-size:1.075em;">The 16 vehicle licensing subagent offices receive training, support and oversight from Snohomish County Licensing to ensure high-quality delivery and compliance with Department of Licensing standards. In 2022, our staff conducted in-person and virtual training with licensing subagents, administered the Department of Licensing Qualification Exam and certified vehicle licensing representatives.</p>
+              <img src="graphics/Licensing/Certification.png" alt="chart" width= "50%" style="margin-bottom:2em;"/>
+            </div>
+          </div>
+        <button class="button_blue" style="grid-area: blueb; float:right;font-size:135%;" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])"><a href="#Recording_top"><i class="fa-solid fa-circle-right"></i>&nbsp; Read about Recording</a></button>
+        </div>
       <div class="w3-row w3-center w3-dark-grey" style="padding: 1vw;">
         <div class="column-4 w3-dark-grey" style="z-index: 5; margin-right: 5vw"><ul style="z-index:5"><a href="https://www.snohomishcountywa.gov/176/Auditor"><img src="Logos/Auditor.png" alt="black and white image of three triangular trees" width="300px" style="margin:0; padding"></a>
           <p style="m=">The Snohomish County Auditor's Office provides courteous, accurate and efficient services in the areas of elections; animal control; vehicle, vessel, marriage, business, and pet licensing; and document recording.</p></ul></div>

@@ -32,7 +32,7 @@
 .animalparent {
 	display: grid;
     grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
-	grid-template-rows: fit-content(40%) fit-content(40%) fit-content(20%);
+	grid-template-rows: fit-content(50%) fit-content(50%);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
@@ -40,7 +40,7 @@
 		". Officer Officer ."
 		"Cases Cases Licensing Licensing"
 		". . button button";
-	margin: 0 15em;
+	margin: 0 5vw;
 	}
 
 @media (max-width: 1200px){
@@ -66,6 +66,7 @@
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
+		"divisionb divisionb divisionb divisionb"
 		"Voters Voters Inbound Inbound"
 		"Voters Voters Inbound Inbound"
 		"Outreach Outreach Inbound Inbound"
@@ -197,7 +198,7 @@
     border-width: 16px;
     border-color: #1B2227;
 	position: relative;
-	left: -15vw;
+	left: -5vw;
 }
 
 @media (max-width: 767px) {
