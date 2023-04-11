@@ -92,7 +92,7 @@
 
 .licensingparent {
 	display: grid;
-	grid-template-columns: fit-content(50%) fit-content(50%);
+	grid-template-columns: 50vw 30vw;
 	grid-template-rows: 15vh 15vh 50vh 25vh 30vh 20vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
@@ -2339,7 +2339,8 @@ a:-webkit-any-link {
 	width: 50px;
 	height: 50px;
 	border: 3px solid #ddd;
-	border-top-color: linear-gradient(to right, #BB4442 25%,#7030A0 25%, #3588cc 25%, #FFBF00 25%);;
+	border-top-color: #3588cc;
+	background-image: url("Logos/seal.png");
 	animation: spin 1s infinite linear;
   }
   
