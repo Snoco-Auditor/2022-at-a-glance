@@ -51,11 +51,12 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas:
+		"divisionb divisionb divisionb"
         ". Officer ."
         ". Cases ."
         ". Licensing ."
         ". . button";
-    margin: 0;
+    margin:  0 1vw 1vh 0;
 	}
 }
 
@@ -82,11 +83,12 @@
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
 		grid-template-areas:
+			"divisionb divisionb divisionb"
 			". Voters ."
 			". Inbound ."
 			". Outreach ."
-			". . purpleb";
-		margin: 0;
+			". purpleb purpleb";
+		margin:  0 1vw 1vh 0;
 	}
 }
 
@@ -109,17 +111,18 @@
 @media (max-width: 1200px){
 	.licensingparent {
 		display: grid;
-		grid-template-columns: fit-content(50%) fit-content(50%);
-		grid-template-rows: fit-content(50%) fit-content(50%) fit-content(50%) fit-content(50%) fit-content(20%);
+		grid-template-columns: 25vw 50vw 25vw;
+		grid-template-rows: 75vh;
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
 		grid-template-areas:
-			"descriptionL descriptionL"
-			"Transactions Transactions"
-			"Offices Offices"
-			"Certification Certification"
-			". blueb";
-		margin: 0 5em;
+			"divisionb divisionb divisionb"
+			". descriptionL ."
+			". Transactions ."
+			". Offices ."
+			". Certification ."
+			". blueb blueb";
+		margin: 0 1vw 1vh 0;
 	}
 }
 
@@ -139,23 +142,24 @@
 @media (max-width: 1200px){
 	.recordingparent {
 		display: grid;
-		grid-template-columns: fit-content(50%) fit-content(50%);
-		grid-template-rows: fit-content(50%) fit-content(50%) fit-content(50%);
+		grid-template-columns: 25vw 50vw 25vw;
+		grid-template-rows: 75vh;
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
 		grid-template-areas:
-			"descriptionR descriptionR"
-			"Documents Documents"
-			"Marriages Marriages"
-			"Recorded Recorded";
-		margin: 0 5em;
+			"divisionb divisionb divisionb"
+			". descriptionR ."
+			". Documents ."
+			". Marriages ."
+			". Recorded .";
+		margin: 0 1vw 1vh 0;
 	}
 }
 
 .beyondparent {
 	display: grid;
 	grid-template-columns: 25vw 25vw 25vw 20vw;
-	grid-template-rows: 10vh 10vh 25vh 25vh;
+	grid-template-rows: fit-content(50%);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
@@ -178,31 +182,46 @@
 @media (max-width: 1200px){
 	.beyondparent {
 		display: grid;
-		grid-template-columns: fit-content(50%) fit-content(50%);
-		grid-template-rows: fit-content(50%) fit-content(50%) fit-content(50%);
+		grid-template-columns: 25vw 50vw 25vw;
+		grid-template-rows: 75vh;
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
 		grid-template-areas:
-			"descriptionB descriptionB"
-			"Security Security"
-			"Community Community"
-			"Backpost Backpost"
-			"Auditing Auditing";
-		margin: 0 5em;
+			"divisionb divisionb divisionb"
+			"descriptionB descriptionB ."
+			". Security ."
+			". Community ."
+			". Backpost ."
+			". Auditing .";
+		margin:  0 1vw 1vh 0;
 	}
 }
 
 .footerparent {
 	display: grid;
 	grid-template-columns: 30vw 30vw;
-	grid-template-rows: 30vh;
+	grid-template-rows: fit-content(100%);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
 		"mission contact";
-	margin: 0 1em;
+	margin: 0;
 	color:#fff!important;
 	background-color:#1B2227!important;
+}
+
+@media (max-width: 1200px){
+	.footerparent {
+		display: grid;
+		grid-template-columns: 100vw;
+		grid-template-rows: fit-content(50%);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		grid-template-areas:
+			"mission"
+			"contact";
+		margin: 0;
+	}
 }
 
 .mission {
@@ -215,6 +234,7 @@
 	float: left;
 	width:35%;
 	grid-area: mission;
+	margin: 2vw;
 }
 
 .contact {
@@ -225,8 +245,7 @@
 	color:#fff!important;
 	background-color:#1B2227!important;
 	grid-area: contact;
-	width: 35%;
-
+	margin: 2vw;
 }
 
 .divisionbanner {
