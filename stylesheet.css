@@ -21,6 +21,19 @@
     opacity:1;
 }
 
+.homeparent {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 10vh 20vh 20vh 10vh;
+	grid-column-gap: 0px;
+	grid-row-gap: 0em;
+	grid-template-areas:none
+		"logo . . ."
+		"title title . ."
+		"greeting greeting greeting arrow"
+		"greenb greenb . ."
+	}
+
 .parent {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -1544,9 +1557,9 @@ ul {
 }
 
 .effect.effect-eleven img {
-	transform: translate3d(0px, -15px, 0);
+	transform: translate3d(-10px, -55px, 0);
 	transition: all .35s;
-	-webkit-transform: translate3d(0px, -55px, 0);
+	-webkit-transform: translate3d(-10px, -55px, 0);
 	-webkit-transition: all .35s
 }
 
@@ -1944,7 +1957,7 @@ margin: 2px;
     position: absolute;
     margin-top: 13vh;
 	width: 50vw;
-	margin-left: 5vw;
+	margin-left: 1vw;
     -webkit-box-pack: start;
     -webkit-justify-content: normal;
 	justify-content:normal;
@@ -1964,12 +1977,12 @@ margin: 2px;
 
 .E-row {
 	padding: 2px;
-	margin: 2vw 0vw 1vw 12vw;
+	margin: 2vw 0vw 1vw 15vw;
 	display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 56vw;    
+    width: 55vw;    
 	height: 95%;
 	background: white;
 	z-index: 15
