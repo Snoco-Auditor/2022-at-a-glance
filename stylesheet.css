@@ -154,11 +154,12 @@
 
 .beyondparent {
 	display: grid;
-	grid-template-columns: fit-content(25%) fit-content(25%) fit-content(25%) fit-content(25%);
-	grid-template-rows: fit-content(10%) fit-content(50%) fit-content(50%);
+	grid-template-columns: 25vw 25vw 25vw 20vw;
+	grid-template-rows: 10vh 10vh 25vh 25vh;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
+		"divisionb divisionb divisionb divisionb"
 		"descriptionB descriptionB descriptionB ."
 		"Security Security Community Community"
 		"Backpost Backpost Auditing Auditing";
