@@ -396,9 +396,12 @@ left: 0;
 
 </style>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
+<script src="main.js"></script>
 </head>
 <body>
-	<div class="loader"></div>
+	<div id="loading-screen">
+		<div class="loading-icon"></div>
+	  </div>
 	<div class="bgimg-1 w3-display-container">
 	<div id="tab0" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])"">
 	<div class ="AS-menu">
@@ -734,15 +737,5 @@ left: 0;
 				</ul></div>
 	</div>
 <div class="footer"><a href="#home">Back to Top</a></div>
-<script src="main.js"></script>
-<script>
-  // Hide the loader and show the content when the page is fully loaded
-  window.addEventListener('load', function () {
-	const loader = document.querySelector('.loader');
-	const content = document.querySelector('#content');
-	loader.style.display = 'none';
-	content.style.display = 'block';
-  });
-</script>
 </body>
 </html>

@@ -1,4 +1,15 @@
-	function slideTab(selectedTabId, tabsToTransformIds) {
+	// JavaScript code to show and hide the loading screen
+document.addEventListener("DOMContentLoaded", function() {
+	// Show the loading screen
+	document.getElementById("loading-screen").style.display = "flex";
+  
+	// Hide the loading screen when the page is fully loaded
+	window.addEventListener("load", function() {
+	  document.getElementById("loading-screen").style.display = "none";
+	});
+  });
+  
+  function slideTab(selectedTabId, tabsToTransformIds) {
 	  const selectedTab = document.getElementById(selectedTabId);
 	  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
   
