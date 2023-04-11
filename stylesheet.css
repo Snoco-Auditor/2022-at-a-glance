@@ -223,6 +223,12 @@
 	}
 }
 
+@media (max-width: 767px){
+	.footerparent {
+		margin: 33vh 0 0 0;
+	}
+}
+
 .mission {
 	z-index: 5; 
 	display: flex; 
