@@ -196,6 +196,8 @@
     border-top-style: solid;
     border-width: 16px;
     border-color: #1B2227;
+	position: relative;
+	left: -15vw;
 }
 
 @media (max-width: 767px) {
