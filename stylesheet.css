@@ -2337,7 +2337,7 @@ a:-webkit-any-link {
 	width: 50px;
 	height: 50px;
 	border: 3px solid #ddd;
-	border-top-color: #0077be;
+	border-top-color: #0077be, #BB4442;
 	animation: spin 1s infinite linear;
   }
   
