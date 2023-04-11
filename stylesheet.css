@@ -40,7 +40,7 @@
 		". Officer Officer ."
 		"Cases Cases Licensing Licensing"
 		". . button button";
-	margin: 0 5vw;
+	margin: 0 5vw 2vw 5vw;
 	}
 
 @media (max-width: 1200px){
@@ -71,7 +71,7 @@
 		"Voters Voters Inbound Inbound"
 		"Outreach Outreach Inbound Inbound"
 		"Outreach Outreach purpleb purpleb";
-	margin: 0 5vw;
+	margin: 0 5vw 2vw 5vw;
 	}
 
 @media (max-width: 1200px){
@@ -103,7 +103,7 @@
 		"Offices Certification"
 		"Offices Certification"
 		". blueb";
-	margin: 0 5vw;
+	margin: 0 5vw 2vw 5vw;
 }
 
 @media (max-width: 1200px){
@@ -131,9 +131,9 @@
 	grid-row-gap: 0px;
 	grid-template-areas:
 		"divisionb divisionb divisionb divisionb"
-		". descriptionR Documents ."
+		"descriptionR descriptionR Documents ."
 		"Marriages Marriages Recorded Recorded";
-	margin: 0 5vw;
+	margin: 0 5vw 2vw 5vw;
 }
 
 @media (max-width: 1200px){
@@ -162,7 +162,7 @@
 		"descriptionB descriptionB descriptionB ."
 		"Security Security Community Community"
 		"Backpost Backpost Auditing Auditing";
-	margin: 0 15em;
+	margin: 0 5vw 2vw 5vw;
 }
 
 .beyond_description {
@@ -189,6 +189,43 @@
 			"Auditing Auditing";
 		margin: 0 5em;
 	}
+}
+
+.footerparent {
+	display: grid;
+	grid-template-columns: 30vw 30vw;
+	grid-template-rows: 30vh;
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	grid-template-areas:
+		"mission contact";
+	margin: 0 1em;
+	color:#fff!important;
+	background-color:#1B2227!important;
+}
+
+.mission {
+	z-index: 5; 
+	display: flex; 
+	margin-right: 5vw;
+	color:#fff!important;
+	background-color:#1B2227!important;
+	position: relative;
+	float: left;
+	width:35%;
+	grid-area: mission;
+}
+
+.contact {
+	float: right;
+	position:relative;
+	padding:0;
+	margin-top: 0;
+	color:#fff!important;
+	background-color:#1B2227!important;
+	grid-area: contact;
+	width: 35%;
+
 }
 
 .divisionbanner {
@@ -1696,7 +1733,7 @@ a:link {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 18px;
-	margin: 0em 0em 5em 0em;
+	margin: 0em;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	box-shadow:  0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -1720,7 +1757,7 @@ a:link {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 18px;
-	margin: 0em 0em 5em 0em;
+	margin: 0em;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	box-shadow:  0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -1733,7 +1770,6 @@ a:link {
 }
 
 .button_blue {
-	position:relative;
 	z-index: 50;
     background-color: #3F88C5;
     border-radius: 10px;
@@ -1743,13 +1779,12 @@ a:link {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 115%;
-    margin: 0em 0em 5em 0em;
+    font-size: 18px;
+    margin: 0em;
     transition-duration: 0.4s;
     cursor: pointer;
     box-shadow: 0 8px 16px 0 rgb(0 0 0 / 30%), 0 6px 20px 0 rgb(0 0 0 / 19%);
     position: relative;
-    flex-wrap: wrap;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -1769,8 +1804,8 @@ a:link {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size:115%;
-	margin: 0em 0em 5em 0em;
+	font-size:18px;
+	margin: 0em;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	box-shadow:  0 8px 16px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.19);
