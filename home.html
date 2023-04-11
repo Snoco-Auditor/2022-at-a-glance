@@ -396,83 +396,12 @@ left: 0;
 
 </style>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
-<script>
-	function slideTab(selectedTabId, tabsToTransformIds) {
-	  const selectedTab = document.getElementById(selectedTabId);
-	  const tabsToTransform = tabsToTransformIds.map(id => document.getElementById(id));
-  
-	  if (window.innerWidth >= 768) {
-		// Check if any of the tabs are already translated, and move them back if they are
-		tabsToTransform.forEach(tab => {
-		  if (tab.style.transform === "translateX(-55vw)" || tab.style.transform === "") {
-			tab.style.transform = "translateX(0)";
-		  }
-		});
-  
-		// Translate the selected tab and the other tabs together
-		tabsToTransform.forEach(tab => {
-		  tab.style.transform = "translateX(-55vw)";
-		  tab.style.transition = "all .5s";
-		});
-		selectedTab.style.transform = "translateX(0)";
-	  } else {
-		// Open the respective URL in a new window
-		switch(selectedTabId) {
-		  case "tab0":
-			window.open("https://snoco-auditor.github.io/2022-at-a-glance/Recording.html", "_blank");
-			break;
-		  case "tab1":
-			window.open("https://snoco-auditor.github.io/2022-at-a-glance/Licensing.html", "_blank");
-			break;
-		  case "tab2":
-			window.open("https://snoco-auditor.github.io/2022-at-a-glance/Elections.html", "_blank");
-			break;
-		  case "tab3":
-			window.open("https://snoco-auditor.github.io/2022-at-a-glance/Animal_Services.html", "_blank");
-			break;
-		  default:
-			break;
-		}
-	  }
-	}
-  </script>
-<script type="text/javascript">
-	function showPopup() {
-		var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-		if (screenWidth < 800) {
-			document.getElementById("popup").style.display = "block";
-		}
-	}
-
-	window.onload = showPopup;
-</script>
-<script>
-	function redirectToURL() {
-		if (window.innerWidth > 767) {
-			// Redirect to URL for larger screens
-			window.location.href = "#admin";
-		} else {
-			// Redirect to URL for smaller screens
-			window.location.href = "https://snoco-auditor.github.io/2022-at-a-glance/County_Auditor_letter.html";
-		}
-	}
-</script>
-<script>
-window.addEventListener('scroll', function() {
-  const element = document.getElementsByClassName('hideme');
-  const position = element.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
-
-  if (position < windowHeight) {
-    element.style.opacity = 1;
-    element.style.transition = 'opacity 1s ease-in-out';
-  }
-});
-</script>
 </head>
 <body>
+	<div class="loader"></div>
+	<div id="content">
 	<div class="bgimg-1 w3-display-container">
-	<div id="tab0" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])">
+	<div id="tab0" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])"">
 	<div class ="AS-menu">
 			<div class="AS-row" style="margin-left: 32vw; position:relative">
 				<div class="row" style="width: 100vw; height: 100px;">
@@ -805,6 +734,16 @@ window.addEventListener('scroll', function() {
 					&nbsp; <a href="https://twitter.com/snoco_auditor"><i class="fa-brands fa-square-twitter fa-2xl" style="color: #ffffff;"></i></a>
 				</ul></div>
 	</div>
-<div class="footer"><a href="#home">Back to Top</a></div>
+<div class="footer"><a href="#home">Back to Top</a></div></div>
+<script src="main.js"></script>
+<script>
+  // Hide the loader and show the content when the page is fully loaded
+  window.addEventListener('load', function () {
+	const loader = document.querySelector('.loader');
+	const content = document.querySelector('#content');
+	loader.style.display = 'none';
+	content.style.display = 'block';
+  });
+</script>
 </body>
 </html>
