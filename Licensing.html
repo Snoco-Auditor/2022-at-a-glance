@@ -76,6 +76,16 @@ html, body {
   
 	</style>
    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+    x.style.display = "none";
+    } else {
+    x.style.display = "block";
+    }
+  }
+</script>
 	</head>
 	<body>
     <div class="topnav">
@@ -90,11 +100,11 @@ html, body {
 			  <i class="fa fa-bars"></i>
 			</a>
 		  </div>
-        <div class="divisionbanner">
+        <div class="divisionbanner" style="left:0; height: 15vh">
           <h3 style="background-color:#5E6AEC;; float:left; padding-left: 15%;text-align: right; letter-spacing:2px;font-size: 5vh;">Licensing</h3>
           <a id="licensing_more"></a>		
         </div>
-        <div class="licensingparent">
+        <div class="licensingparent" style="margin-left:2vw; grid-template-areas: "descriptionL descriptionL" "Transactions Transactions" "Offices Offices" "Certification Certification" "blueb blueb";">
           <div class="flex-item-left" style="grid-area: descriptionL; vertical-align:middle"><h4>Licensing Transactions</h4>
             <p style="font-size:1.075em; float:left;">In 2022, Snohomish County Licensing and the 16 licensing subagent offices processed over 1 million registration, title, tab renewal and permit transactions for a range of vehicles and vessels.</p>
           </div>
@@ -107,10 +117,10 @@ html, body {
               <img src="graphics/Licensing/Offices.jpg" alt="chart" width= "100%"/>
             </div>
           </div>
-          <div class="flex-item-right" style="grid-area:Certification; padding-left:0px">
+          <div class="flex-item-right" style="grid-area:Certification; padding-left:0px; margin-top:5vh">
             <div><h4>Training &amp; Certification</h4>
               <p style="font-size:1.075em;">The 16 vehicle licensing subagent offices receive training, support and oversight from Snohomish County Licensing to ensure high-quality delivery and compliance with Department of Licensing standards. In 2022, our staff conducted in-person and virtual training with licensing subagents, administered the Department of Licensing Qualification Exam and certified vehicle licensing representatives.</p>
-              <img src="graphics/Licensing/Certification.png" alt="chart" width= "50%" style="margin-bottom:2em;"/>
+              <img src="graphics/Licensing/Certification.png" alt="chart" width= "75%" style="margin:0;"/>
             </div>
           </div>
         <button class="button_blue" style="grid-area: blueb; float:right;font-size:135%;" onclick="slideTab('tab0', ['tab1', 'tab2', 'tab3', 'tab4'])"><a href="#Recording_top"><i class="fa-solid fa-circle-right"></i>&nbsp; Read about Recording</a></button>
