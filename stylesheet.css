@@ -1584,15 +1584,15 @@ ul {
 
 .effect.effect-nine img {
 	transition: all .3s ease-in-out;
-	transform: translate3d(0, 0, 0) scale(1, 1);
+	transform: translate3d(-24px, -20px, 0) scale(1, 1);
 	-webkit-transition: all .3s ease-in-out;
-	-webkit-transform: translate3d(0, 0, 0) scale(1, 1)
+	-webkit-transform: translate3d(-24px, -20px, 0) scale(1, 1)
 }
 
 .effect.effect-nine:hover img {
 	opacity: .6;
-	transform: translate3d(-20px, 0, 0) scale(1.1, 1.1);
-	-webkit-transform: translate3d(-20px, 0, 0) scale(1.1, 1.1)
+	transform: translate3d(-20px, -15px, 0) scale(1.1, 1.1);
+	-webkit-transform: translate3d(-20px, -15px, 0) scale(1.1, 1.1)
 }
 
 .effect.effect-nine .tab-text h2 {
