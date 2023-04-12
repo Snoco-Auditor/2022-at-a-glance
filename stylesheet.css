@@ -150,11 +150,12 @@
 		grid-row-gap: 0px;
 		grid-template-areas:
 			"divisionb divisionb"
+			"description description"
 			"Voters Voters"
-			". Inbound ."
-			". Outreach ."
-			". purpleb purpleb";
-		margin:  0 1vw 1vh 0;
+			"Inbound Inbound"
+			"Outreach Outreach"
+			"purpleb purpleb";
+		margin:  0 2vw 1vh 2vw;
 	}
 }
 
@@ -191,6 +192,25 @@
 	}
 }
 
+@media (max-width: 767px){
+	.licensingparent {
+		display: grid;
+		grid-template-columns: 75vw 5vw;
+		grid-template-rows: fit-content(100%);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		grid-template-areas:
+			"divisionb divisionb"
+			"description description"
+			"descriptionL descriptionL"
+			"Transactions Transactions"
+			"Offices Offices"
+			"Certification Certification"
+			"blueb blueb";
+		margin: 0 2vw 1vh 2vw;
+	}
+}
+
 .recordingparent {
 	display: grid;
 	grid-template-columns: 25vw 25vw 25vw 10vw;
@@ -218,6 +238,25 @@
 			". Marriages ."
 			". Recorded .";
 		margin: 0 1vw 1vh 0;
+	}
+}
+
+@media (max-width: 767px){
+	.recordingparent {
+		display: grid;
+		grid-template-columns: 75vw 5vw;
+		grid-template-rows: fit-content(100%);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		grid-template-areas:
+			"divisionb divisionb"
+			"description description"
+			"descriptionR descriptionR"
+			"Documents Docments"
+			"Marriages Marriages"
+			"Recorded Recorded"
+			"beyondb beyondb";
+		margin: 0 2vw 1vh 2vw;
 	}
 }
 
@@ -268,6 +307,25 @@
 		margin:  0 1vw 1vh 0;
 	}
 }
+
+@media (max-width: 767px){
+	.beyondparent {
+		display: grid;
+		grid-template-columns: 75vw 5vw;
+		grid-template-rows: fit-content(100%);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		grid-template-areas:
+			"divisionb divisionb"
+			"descriptionB descriptionB"
+			"Security Security"
+			"Community Community"
+			"Backpost Backpost"
+			"Auditing Auditing";
+		margin: 0 2vw 1vh 2vw;
+	}
+}
+
 
 .footerparent {
 	display: grid;
