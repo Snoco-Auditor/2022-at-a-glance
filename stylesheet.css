@@ -23,8 +23,8 @@
 
 .homeparent {
 	display: grid;
-	grid-template-columns: 10% 5% 5% 5%;
-	grid-template-rows: 10vh 20vh 20vh 10vh;
+	grid-template-columns: 30% 30% 30% 10%;
+	grid-template-rows: fit-content(100%);
 	grid-column-gap: 0px;
 	grid-row-gap: 0em;
 	grid-template-areas:
@@ -32,6 +32,23 @@
 		"title title . ."
 		"greeting greeting greeting arrow"
 		"greenb greenb . ."
+	}
+
+@media (max-width: 1200px){
+	.homeparent {
+		display: grid;
+		grid-template-columns: 25vw 50vw 25vw;
+		grid-template-rows: 15vh 75vh;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		grid-template-areas:
+			"divisionb divisionb divisionb"
+			". Officer ."
+			". Cases ."
+			". Licensing ."
+			". . button";
+		margin:  0 1vw 1vh 0;
+		}
 	}
 
 .parent {
@@ -84,7 +101,7 @@
 		"Voters Inbound"
 		"Voters Inbound"
 		"Outreach Inbound"
-		"Outreach purpleb purpleb";
+		"Outreach purpleb";
 	margin: 0 5vw 2vw 5vw;
 	}
 
@@ -195,7 +212,8 @@
 .beyond {
 	background-color:#55A595;
 	text-align: center;
-	font-size: 
+	font-size: 2em;
+	color: white;
 }
 
 @media (max-width: 1200px){
@@ -853,12 +871,6 @@ min-width: 100vw;
 @media screen and (min-width: 768px) and (max-width: 1000px){
 	#tab1 div.AS-menu button.button_blue {
 	top: -15vh;
-		}
-	}
-
-@media screen and (min-width: 768px) and (max-width: 1000px){
-	#tab2 div.E-menu button.button_purple {
-	top: -25vh;
 		}
 	}
 
