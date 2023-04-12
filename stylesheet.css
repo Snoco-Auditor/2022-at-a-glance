@@ -94,16 +94,17 @@
 	.animalparent {
 		display: grid;
 		grid-template-columns: 75vw 10vw;
-		grid-template-rows: 15vh 50vh 50vh 50vh 10vh;
+		grid-template-rows: fit-content(100%);
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
 		grid-template-areas:
-			"divisionb divisionb divisionb"
+			"divisionb divisionb"
+			"description description"
 			"Officer Officer"
 			"Cases Cases"
 			"Licensing Licensing"
-			". button";
-		margin:  0 2vw 1vh 1vw;
+			"button button";
+		margin:  0 2vw 1vh 2vw;
 		}
 	}
 	
@@ -133,6 +134,23 @@
 		grid-template-areas:
 			"divisionb divisionb divisionb"
 			". Voters ."
+			". Inbound ."
+			". Outreach ."
+			". purpleb purpleb";
+		margin:  0 1vw 1vh 0;
+	}
+}
+
+@media (max-width: 767px){
+	.electionsparent {
+		display: grid;
+		grid-template-columns: 75vw 5vw;
+		grid-template-rows: fit-content(100%);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		grid-template-areas:
+			"divisionb divisionb"
+			"Voters Voters"
 			". Inbound ."
 			". Outreach ."
 			". purpleb purpleb";
