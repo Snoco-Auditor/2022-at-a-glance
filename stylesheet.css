@@ -23,13 +23,13 @@
 
 .homeparent {
 	display: grid;
-	grid-template-columns: 30% 30% 30% 10%;
+	grid-template-columns: 30% 35% 30% 5%;
 	grid-template-rows: fit-content(100%);
 	grid-column-gap: 0px;
 	grid-row-gap: 0em;
 	grid-template-areas:
 		"logo . . ."
-		"title title . ."
+		"title title title ."
 		"greeting greeting greeting arrow"
 		"greenb greenb . ."
 	}
@@ -328,34 +328,24 @@
   @media (max-width: 3500px) {
 	h1 {
 	font-size: 7vw;
-	top: -13vh;
-	left: -6vw;
 	}
   }
 
   @media (max-width: 767px) and (min-width:351px) {
 	h1 {
-		top: 0vh;
 		font-size: 4rem;
-		left: 5vw;
 	}
   }
 
   @media (max-width: 350px) {
 	h1 {
-		top: -2vh;
 		font-size: 4rem;
-		left: 3vw;
 	}
   }
   
   @media (max-width: 1200px) and (min-width: 768px) {
 	h1 {
-	top: -3vh;
 	font-size: 5rem;
-	top: -15vh;
-	width: 50vw;
-	left: -5vw;
 	}
   }
 
@@ -1112,7 +1102,6 @@ font-size: 0.75rem;
 h1 {
     padding-top: 0em;
     display: flex;
-    margin: 3vw 0em 0em 1vw;
     line-height: 1.1;
     color: white;
 	position:relative;
@@ -1385,6 +1374,12 @@ ul {
 
 .svg {
 	top: 0vh;
+}
+
+@media (max-width:767px) {
+.svg {
+	visibility: hidden;
+}
 }
 
 .effect.effect-two h2 {
