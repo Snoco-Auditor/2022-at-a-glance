@@ -188,7 +188,7 @@
 
 .beyondparent {
 	display: grid;
-	grid-template-columns: 40vw 40vw;
+	grid-template-columns: 35vw 35vw;
 	grid-template-rows: fit-content(50%);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
@@ -197,7 +197,7 @@
 		"descriptionB descriptionB"
 		"Security Community"
 		"Backpost Auditing";
-	margin: 0 5vw 2vw 5vw;
+	margin: 0 5vw 2vw 20vw;
 }
 
 .beyond_description {
