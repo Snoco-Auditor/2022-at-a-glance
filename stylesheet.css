@@ -356,7 +356,7 @@
 
 @media (max-width: 767px){
 	.footerparent {
-		margin: 33vh 0 0 0;
+		position: absolute;
 	}
 }
 
@@ -998,10 +998,10 @@ min-width: 100vw;
 
 @media screen and (max-width: 767px) {
 #tab4 .button_green {
-min-width: 50vw;	
+min-width: 75vw;	
 top: 1vh;
 max-height: 50vh;
-font-size: 0.75rem;
+font-size: 1rem;
 }
 }
 
