@@ -158,12 +158,11 @@
 .recordingparent {
 	display: grid;
 	grid-template-columns: 25vw 25vw 25vw 10vw;
-	grid-template-rows: 1fr 1fr 2fr 3fr;
+	grid-template-rows: 1fr 2fr 3fr;
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	grid-template-areas:
 		"divisionb divisionb divisionb divisionb"
-		". . Documents Documents"
 		"descriptionR descriptionR Documents Documents"
 		"Marriages Marriages Recorded Recorded";
 	margin: 0 5vw 2vw 5vw;
