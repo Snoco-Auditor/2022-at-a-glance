@@ -45,16 +45,18 @@ document.addEventListener("DOMContentLoaded", function() {
 		  default:
 			break;
 		}
-	}
-	
-	// Move back all tabs that are already translated
-	tabsToTransform.forEach(tab => {
-	  if (tab.style.transform === "translateX(-55vw)") {
-		tab.style.transform = "translateX(0)";
-		tab.style.transition = "all .5s";
 	  }
-	});
-  }
+	}
+
+	function redirectToURL() {
+		if (window.innerWidth > 767) {
+			// Redirect to URL for larger screens
+			window.location.href = "#admin";
+		} else {
+			// Redirect to URL for smaller screens
+			window.location.href = "https://snoco-auditor.github.io/2022-at-a-glance/County_Auditor_letter.html";
+		}
+	}
 
 window.addEventListener('scroll', function() {
   const element = document.getElementsByClassName('hideme');
