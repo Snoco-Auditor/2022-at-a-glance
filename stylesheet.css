@@ -31,7 +31,8 @@
 		"logo . . ."
 		"title title title ."
 		"greeting greeting greeting arrow"
-		"greenb greenb . ."
+		"greenb greenb . .";
+	margin-left: 2vw
 	}
 
 @media (max-width: 767px){
@@ -46,7 +47,7 @@
 			"title title"
 			"greeting greeting"
 			"greenb .";
-		margin:  0 1vw 1vh 0;
+		margin:  0 1vw 1vh 1vw;
 		}
 	}
 
@@ -211,7 +212,7 @@
 .beyond {
 	background-color:#55A595;
 	text-align: center;
-	font-size: 2em;
+	font-size: 1.75vw;
 	color: white;
 }
 
@@ -541,6 +542,7 @@
 	.row {
 	  -webkit-flex-direction: column;
 	  flex-direction: column;
+	  padding-left: 0vw;
   }
   }
   
@@ -1563,9 +1565,9 @@ ul {
 }
 
 .effect.effect-eleven img {
-	transform: translate3d(-10px, -55px, 0);
+	transform: translate3d(-33px, -55px, 0);
 	transition: all .35s;
-	-webkit-transform: translate3d(-10px, -55px, 0);
+	-webkit-transform: translate3d(-33px, -55px, 0);
 	-webkit-transition: all .35s
 }
 
@@ -1577,20 +1579,20 @@ ul {
 
 .effect.effect-eleven p {
 	text-align: left;
-	line-height: 1.2;
-	padding: 1em 4em 0 0em;
-	font-size: 1.25rem;
-	transform: translate3d(5px, 0, 0);
-	-webkit-transform: translate3d(5px, 0, 0);
-	opacity: 0;
-	transition: all .35s 0s;
-	z-index: 5;
-	position: absolute;
-	word-spacing: 3px;
-	top: 5px;
-	width: 90%;
-	font-family: Poppins;
-	font-weight:400;
+    line-height: 1.2;
+    padding: 1em 2em 0 0em;
+    font-size: 1.15rem;
+    transform: translate3d(5px, 0, 0);
+    -webkit-transform: translate3d(0px, 0, 0);
+    opacity: 0;
+    transition: all .35s 0s;
+    z-index: 5;
+    position: absolute;
+    word-spacing: 3px;
+    top: 5px;
+    width: 90%;
+    font-family: Poppins;
+    font-weight: 400;
 }
 
 .effect.effect-eleven:hover p {
@@ -1891,7 +1893,6 @@ margin: 0em 1em 0em 2em;
 }
 
 .row {
-	padding-left: 40px;
 	position:relative;
 }
 
