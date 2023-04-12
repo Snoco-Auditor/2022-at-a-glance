@@ -34,19 +34,18 @@
 		"greenb greenb . ."
 	}
 
-@media (max-width: 1200px){
+@media (max-width: 767px){
 	.homeparent {
 		display: grid;
-		grid-template-columns: 25vw 50vw 25vw;
-		grid-template-rows: 15vh 75vh;
+		grid-template-columns: 25vw 75vw;
+		grid-template-rows: fit-content(100%);
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
 		grid-template-areas:
-			"divisionb divisionb divisionb"
-			". Officer ."
-			". Cases ."
-			". Licensing ."
-			". . button";
+			"logo ."
+			"title title"
+			"greeting greeting"
+			"greenb .";
 		margin:  0 1vw 1vh 0;
 		}
 	}
