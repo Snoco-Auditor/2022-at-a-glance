@@ -38,7 +38,7 @@
 @media (max-width: 767px){
 	.homeparent {
 		display: grid;
-		grid-template-columns: 25vw 75vw;
+		grid-template-columns: 25vw 70vw;
 		grid-template-rows: fit-content(100%);
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
@@ -468,7 +468,7 @@
   
   @media only screen and (max-device-width: 767px) {
 	.top-logo {
-		left: -4vw;
+		left: 1vw;
 		top: 2vh;
 		max-width: 20%;
   }
