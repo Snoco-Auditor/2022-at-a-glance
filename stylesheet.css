@@ -1564,9 +1564,9 @@ ul {
 }
 
 .effect.effect-eleven img {
-	transform: translate3d(-33px, -55px, 0);
+	transform: translate3d(-50px, -60px, 0);
 	transition: all .35s;
-	-webkit-transform: translate3d(-33px, -55px, 0);
+	-webkit-transform: translate3d(-50px, -60px, 0);
 	-webkit-transition: all .35s
 }
 
@@ -1904,9 +1904,9 @@ margin: 0em 1em 0em 2em;
 .AS-left-about{   
     position: absolute;
     margin-top: 13vh;
-	margin-left: 5vw;
-	padding-right:10vw;
-	width: 56vw;
+	margin-left: 1vw;
+	padding-right:0vw;
+	width: 50vw;
     -webkit-box-pack: start;
     -webkit-justify-content: normal;
 	justify-content:normal;
@@ -1996,12 +1996,12 @@ margin: 2px;
 
 .AS-row {
 	padding: 2px;
-	margin: 2vw 0vw 1vw 2vw;
+	margin: 2vw 0vw 1vw 5vw;
 	display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    width: 56vw;    
+    width: 55vw;    
 	height: 95vh;
 	background: white;
 }

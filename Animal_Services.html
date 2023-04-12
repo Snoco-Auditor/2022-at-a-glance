@@ -99,31 +99,26 @@ html, body {
 			  <i class="fa fa-bars"></i>
 			</a>
 		  </div>
-	<div class="animal-content" style="padding:0; display:block">
-		<div class="bgimg-2 w3-display-container"><a id="animal_services_more"></a>
-			<h3 style="background-color:#e94f37; float:left; text-align: right;font-size: 5vh;">Animal Services</h3>
-			<div class="w3-display-topmiddle" style="top: 15vh;width: 100vw;margin: 0 6vw 0 5vw;left: 0;padding-right: 12vw;">
-				<h4 style="font-size:2em; margin-bottom: 3vh">Protecting Animals, Protecting People</h4>
-					<p style="position: relative;margin: 1% 0em 0em 0em;font-size:1.075em;">Snohomish County Animal Services, a division of the Auditor’s Office, protects the health, safety and welfare of animals and people in our community, working closely with local law enforcement, animal advocacy groups, veterinarians, animal shelters and safe havens.  Animal control officers and the administrative support staff respond to community concerns through 911, via our non-emergency phone line and by online complaint.  Animal Services works to promote responsible animal ownership in unincorporated Snohomish County through education, licensing, investigation, enforcement, and community collaboration.<br><br></p>
-				<div class="flex-container" style="margin: 0;left: 0;min-width: 75vw;flex-direction: row;">
-					<div class="flex-item-left" style="margin: 0; padding:0; min-width: 75vw">
-					<img src="graphics/Animals/ACO.png" alt="chart" width="100%"/><p style="font-size:1.075em;">Animal Control Officers are highly trained in animal care and handling and must graduate from the Washington Animal Control Academy.</p>
-					</div>
-				</div>
-				<div class="flex-container" style="margin:0;padding: 0;min-width: 75vw; left:0">
-					<div class="flex-item-left" style="margin:0;padding: 5vh 0;min-width: 75vw;">
-					<h4>Animal Service Cases by Type</h4><p style="font-size:1.075em;;margin:0 0 1em 0">Animal Control Officers respond to a variety of cases in unincorporated Snohomish County throughout the year.</p>
-						<img src="graphics/Animals/Cases.png" alt="chart" width= "100%"/>
-					</div>
-				<div class="flex-item-right" style="padding:0">
-					<h4>Pet Licensing</h4>
-						<p style="font-size:1.075em;;margin:1em 0 1em 0;">In unincorporated Snohomish County all dogs and cats must be licensed annually. License fees help us promote responsible pet ownership through education, outreach and enforcement when necessary. </p>
-						<img src="graphics/Animals/Licenses.png" alt="chart" width= "100%"/>
-					</div>
-				</div>
-				<button class="button_red" style="float:right;font-family: 'Poppins', sans-serif;font-size:135%;"><a href="Elections.html"><i class="fa-solid fa-circle-right"></i> &nbsp; Read about Elections</a></button>
+		<div class="animalparent hideme">
+			<div class="divisionbanner hideme" style="grid-area:divisionb">
+				<h3 style="background-color:#e94f37; float:left; padding-left: 15%;text-align: right;">Animal Services</h3>
+				<a id="animal_services_more"></a>		
+			</div>
+			<div class="flex-container" style="grid-area: Officer;overflow-wrap: anywhere;overflow: auto;">
+				<div class="flex-item-left" style="padding:1% 0; margin-bottom: 10vh">
+				<img src="graphics/Animals/ACO.png" alt="chart" width="100%"/><p style="font-size:1.075em;">Animal Control Officers are highly trained in animal care and handling and must graduate from the Washington Animal Control Academy. They enforce state and local laws related to animals, issue civil violation notices and refer criminal investigations to the Prosecuting Attorney’s Office for charging decisions.</p>
 				</div>
 			</div>
+				<div class="flex-item-left" style="margin:0; grid-area: Cases;">
+				<h4>Animal Service Cases by Type</h4><p style="font-size:1.075em;margin:1em 0 2em 0;">Snohomish County Animal Control Officers investigate complaints regarding animal welfare, dog bites/attacks, nuisance or vicious animals, livestock at large, leash law violations and more. Animal Control Officers also respond to a variety of cases in unincorporated Snohomish County throughout the year and assist Snohomish County Sheriff Deputies on cases involving animals.</p>
+					<img src="graphics/Animals/Cases.png" alt="chart" width= "100%"/>
+				</div>
+			<div class="flex-item-right" style="grid-area: Licensing;">
+				<h4>Pet Licensing</h4>
+					<p style="font-size:1.075em;;margin:1em 0 1em 0;">In unincorporated Snohomish County all dogs and cats must be licensed annually. License fees help us promote responsible pet ownership through education, outreach and enforcement when necessary. </p>
+					<img src="graphics/Animals/Licenses.png" alt="chart" width= "100%"/>
+			</div>
+			<button class="button_red" style="grid-area: button;float:right;font-size:135%;" onclick="slideTab('tab2', ['tab3', 'tab4'])"><a href="#Elections_top"><i class="fa-solid fa-circle-right"></i> &nbsp; Read about Elections</a></button>
 		</div>
 		<div class="footerparent">
 			<div class="mission">
