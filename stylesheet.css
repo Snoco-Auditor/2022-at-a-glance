@@ -317,7 +317,7 @@
 		grid-row-gap: 0px;
 		grid-template-areas:
 			"divisionb divisionb"
-			"descriptionB descriptionB"
+			"description description"
 			"Security Security"
 			"Community Community"
 			"Backpost Backpost"
