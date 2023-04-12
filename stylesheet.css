@@ -357,6 +357,7 @@
 @media (max-width: 767px){
 	.footerparent {
 		position: relative;
+		top:30vh;
 	}
 }
 
@@ -551,11 +552,14 @@
     
   @media only screen and (max-device-width: 767px) {
 	#tab1 .AS-menu .recording {
-	  rotate: 90deg;
-	  margin-top: 75vh;
-	  margin-left: -75vw;
-	  width: 100vw;
-	  font-size: 2.5em;
+	rotate:90deg;
+	transform: rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	margin-top: 75vh;
+	margin-left: -75vw;
+	width: 100vw;
+	font-size: 2.5em;
   }
   }
   
@@ -604,6 +608,9 @@
   @media only screen and (max-device-width: 767px) {
 	.E-menu .recording {
 	  rotate: 90deg;
+	  transform: rotate(90deg);
+	  -moz-transform:rotate(90deg);
+	  -webkit-transform:rotate(90deg);
 	  margin-top: 30vh;
 	  margin-left: -45vw;
 	  width: 100vw;
@@ -857,6 +864,9 @@ margin-left: -5vw;
 @media screen and (max-width: 767px){
 #tab3 .AS-menu .recording {
 rotate:90deg;
+transform: rotate(90deg);
+-moz-transform:rotate(90deg);
+-webkit-transform:rotate(90deg);
 margin-top:53vh;
 margin-left:-40vw;
 min-width: 100vw;
@@ -916,6 +926,9 @@ min-width: 100vw;
 @media screen and (max-width: 767px) {
 #tab0 .AS-menu .recording {
 	rotate:90deg;
+	transform: rotate(90deg);
+	-moz-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
 	margin-top:100vh;
 	margin-left:-60vw;
 	min-width: 100vw;
