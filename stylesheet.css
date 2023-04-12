@@ -90,6 +90,24 @@
 	}
 }
 
+@media (max-width: 767px){
+	.animalparent {
+		display: grid;
+		grid-template-columns: 75vw 10vw;
+		grid-template-rows: 15vh 50vh 50vh 50vh 10vh;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		grid-template-areas:
+			"divisionb divisionb divisionb"
+			"Officer Officer"
+			"Cases Cases"
+			"Licensing Licensing"
+			". button";
+		margin:  0 2vw 1vh 1vw;
+		}
+	}
+	
+
 .electionsparent {
 	display: grid;
 	grid-template-columns: 50vw 35vw;
