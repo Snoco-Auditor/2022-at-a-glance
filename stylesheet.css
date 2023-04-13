@@ -2350,14 +2350,23 @@ a:-webkit-any-link {
   }
 
   @media (min-width: 800px) {
-  .topnav a {
-    color: #181515;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 1vh;
-  }
+	.topnav {
+	overflow: hidden;
+	background-color: #1B2227;
+	position: relative;
+	height: 4vh;
+}
 }
 
+@media (min-width: 800px) {
+	.topnav a {
+	  color: #181515;
+	  padding: 10px 15px;
+	  text-decoration: none;
+	  font-size: 1vh;
+	}
+  }
+  
 @media (min-width: 800px) {
 	.topnav a.icon {
 		background: #ffffff;
