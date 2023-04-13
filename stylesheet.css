@@ -61,7 +61,7 @@
 
 .animalparent {
 	display: grid;
-    grid-template-columns: 25vw 25vw 25vw 10vw;
+    grid-template-columns: 20vw 25vw 25vw 10vw;
 	grid-template-rows: fit-content(50%) fit-content(50%);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
