@@ -371,30 +371,15 @@
 	}
 }
 
-@media (max-width: 767px){
-	.mission {
-		top: 0vh;
-		margin-top: 0vh;
-	}
-} 
-
-@media (max-width: 767px){
-	.contact {
-		top: 0vh;
-		margin-top: 0vh;
-	}
-} 
-
 .mission {
 	z-index: 5; 
 	display: flex; 
-	margin-right: 5vw;
 	color:#fff!important;
 	background-color:#1B2227!important;
 	position: relative;
 	float: left;
 	grid-area: mission;
-	margin: 2vw;
+	padding: 2vw 5vw 2vw 2vw;
 }
 
 .contact {
@@ -405,7 +390,7 @@
 	color:#fff!important;
 	background-color:#1B2227!important;
 	grid-area: contact;
-	margin: 2vw;
+	padding: 2vw;
 }
 
 .divisionbanner {
