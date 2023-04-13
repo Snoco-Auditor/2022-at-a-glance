@@ -2324,7 +2324,6 @@ a:-webkit-any-link {
   }
   
   .topnav {
-	overflow: hidden;
 	background-color: #1B2227;
 	position: relative;
   }
