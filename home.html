@@ -400,6 +400,8 @@ left: 0;
 		x.style.display = "none";
 	  } else {
 		x.style.display = "block";
+        x.style.position = "absolute";
+        x.style.zIndex = "9999"; // or any other value greater than the z-index of the other divs
 	  }
 	}
 </script>
