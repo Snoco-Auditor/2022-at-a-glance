@@ -51,17 +51,21 @@
 		}
 	}
 
+.parent {
+	display: initial;
+}
+
 @media (max-width: 767px){
 	.parent {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: fit-content(100%);
-		grid-column-gap: 0px;
-		grid-row-gap: 5em;
-		grid-template-areas: 
-		"home"
-		"Footer";
-		margin:0;
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 105vh 20vh;
+    grid-column-gap: 0px;
+    grid-row-gap: 5vh;
+    grid-template-areas:
+        "home"
+        "Footer";
+    margin: 0;
 	}
 }
 
@@ -366,6 +370,20 @@
 		top:30vh;
 	}
 }
+
+@media (max-width: 767px){
+	.mission {
+		top: 0vh;
+		margin-top: 0vh;
+	}
+} 
+
+@media (max-width: 767px){
+	.contact {
+		top: 0vh;
+		margin-top: 0vh;
+	}
+} 
 
 .mission {
 	z-index: 5; 
