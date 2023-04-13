@@ -2291,6 +2291,7 @@ a:-webkit-any-link {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 #loading-screen {
 	display: flex;
 	align-items: center;
@@ -2337,12 +2338,23 @@ a:-webkit-any-link {
 	display: block;
   }
   
-  .topnav a.icon {
-	background: black;
-	display: block;
-	position: absolute;
-	right: 0;
-	top: 0;
+  @media (min-width: 800px) {
+  .topnav a {
+    color: #181515;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 1vh;
+  }
+}
+
+@media (min-width: 800px) {
+	.topnav a.icon {
+		background: #ffffff;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
   }
   
   .topnav a:hover {
