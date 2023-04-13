@@ -2341,6 +2341,14 @@ a:-webkit-any-link {
 	display: block;
   }
   
+  .topnav a.icon {
+	background: black;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+  }
+
   @media (min-width: 800px) {
   .topnav a {
     color: #181515;
