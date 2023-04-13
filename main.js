@@ -68,3 +68,12 @@ window.addEventListener('scroll', function() {
     element.style.transition = 'opacity 1s ease-in-out';
   }
 });
+
+function myFunction() {
+	var x = document.getElementById("myLinks");
+	if (x.style.display === "block") {
+	x.style.display = "none";
+	} else {
+	x.style.display = "block";
+	}
+}

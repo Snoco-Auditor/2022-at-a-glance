@@ -51,13 +51,19 @@
 		}
 	}
 
-.parent {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(5, 1fr);
-	grid-column-gap: 0px;
-	grid-row-gap: 5em;
+@media (max-width: 767px){
+	.parent {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: fit-content(100%);
+		grid-column-gap: 0px;
+		grid-row-gap: 5em;
+		grid-template-areas: 
+		"home"
+		"Footer";
+		margin:0;
 	}
+}
 
 .animalparent {
 	display: grid;
@@ -844,7 +850,7 @@
 		color: #f0f0f0db;
 		text-shadow: 2px 2px 400px #1b1a1936;
 	}
-	
+
   .AS-menu .recording {
 	  color: white;
 	  width: 45%;
