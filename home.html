@@ -384,55 +384,13 @@ right: 0vw;
 left: 0;
 }
 
-@media (max-width: 767px) {
-	.topnav {
-	height: 4vh;
-	overflow: visible;
-}
-}
-
-@media (max-width: 767px) {
-	.topnav a{
-	padding: 5px 16px;
-}
-}
-
-@media (min-width: 768px) {
-	.topnav {
-	display: none;
-}
-}
-
 </style>
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
 <script src="main.js"></script>
-<script>
-	function myFunction() {
-	  var x = document.getElementById("myLinks");
-	  if (x.style.display === "block") {
-		x.style.display = "none";
-	  } else {
-		x.style.display = "block";
-		x.style.overflow = "visible";
-	  }
-	}
-</script>
 </head>
 <body>
 	<div id="loading-screen">
 		<div class="loading-icon"></div>
-	  </div>
-	  <div class="topnav">
-		<div id="myLinks" style="background-color: rgb(24, 21, 21); position: absolute; right: 0px; top: 4vh;">
-		  <a href="home.html">Home</a>
-		  <a href="Elections.html">Elections</a>
-		  <a href="Licensing.html">Licensing</a>
-		  <a href="Recording.html">Recording</a>
-		  <a href="2023_and_Beyond.html">2023 & Beyond</a>
-		</div>
-		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-		  <i class="fa fa-bars" style="font-size:2vh"></i>
-		</a>
 	  </div>
 	<div class="parent">
 	<div class="bgimg-1 w3-display-container" style="grid-area: home">
