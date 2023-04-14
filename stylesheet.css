@@ -95,7 +95,7 @@
         ". Officer ."
         ". Cases ."
         ". Licensing ."
-        ". . button";
+        ". button button";
     margin:  0 1vw 1vh 0;
 	}
 }
@@ -1432,7 +1432,7 @@ ul {
 
 	@media (min-width:768px) and (max-width:991px) {
 		.column-md-6 {
-			width: 50%;
+			width: 45%;
 			float: left;
 			padding: 15px
 		}
