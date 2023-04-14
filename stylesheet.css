@@ -516,7 +516,7 @@
 	}
   }
   
-  @media only screen and (max-device-width: 767px) {
+  @media screen and (max-device-width: 767px) {
 	#tab1 .AS-row {
 		min-width: 100vw;
 		top: -39vw;
@@ -528,7 +528,7 @@
   }
   }
   
-  @media only screen and (max-device-width: 767px) {
+  @media screen and (max-device-width: 767px) {
 	#tab0 .AS-left-about {
 		min-width: 100vw;
 		top: 3vw;
@@ -539,7 +539,7 @@
   }
   }
 
-  @media only screen and (max-device-width: 767px) {
+  @media screen and (max-device-width: 767px) {
 	#tab3 .AS-left-about {
 		min-width: 100vw;
 		top: -25vh;
@@ -549,7 +549,7 @@
   }
   }
 
-  @media only screen and (max-device-width: 767px) {
+  @media screen and (max-device-width: 767px) {
 	#tab1 .AS-left-about {
 		min-width: 100vw;
 		top: 3vw;
@@ -559,7 +559,7 @@
   }
   }
     
-  @media only screen and (max-device-width: 767px) {
+  @media screen and (max-device-width: 767px) {
 	#tab1 .AS-menu .recording {
 	transform: rotate(0deg);
 	-moz-transform: rotate(0deg);
@@ -570,7 +570,7 @@
   }
   }
   
-  @media only screen and (max-device-width: 767px) {
+  @media screen and (max-device-width: 767px) {
 	.top-logo {
 		left: 1vw;
 		top: 2vh;
@@ -578,7 +578,7 @@
   }
   }
   
-  @media only screen and (max-device-width: 1050px) {
+  @media screen and (max-device-width: 1050px) {
 	.custom-row {
 	visibility:hidden;
 	max-height:0vh;
